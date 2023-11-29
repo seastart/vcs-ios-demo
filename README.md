@@ -11,7 +11,7 @@ API是以HTTP Restful形式提供的一组接口，主要负责帐号的登录�
 
 ## 示例的使用
 
-##### step 1：下载示例到本地
+#### step 1：下载示例到本地
 
 ```
 git clone git@github.com:seastart/vcs-ios-demo.git
@@ -20,19 +20,19 @@ git clone git@github.com:seastart/vcs-ios-demo.git
 
 [下载压缩包](https://github.com/seastart/vcs-ios-demo/archive/refs/heads/master.zip)
 
-##### step 2：变更```Podfile```文件中的依赖为远程依赖
+#### step 2：变更```Podfile```文件中的依赖为远程依赖
 
 ```
 pod 'VCSSDK'
 ```
 
-##### step 3：重新安装示例所需的依赖
+#### step 3：重新安装示例所需的依赖
 
 ```
 pod install
 ```
 
-##### step 4：替换申请的```AppID```和```AppKey```
+#### step 4：替换申请的```AppID```和```AppKey```
 
 ```
 NSString * const VCSSDKAPPID = <# 替换成平台分配的AppID #>
