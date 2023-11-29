@@ -14,8 +14,11 @@ API是以HTTP Restful形式提供的一组接口，主要负责帐号的登录�
 step 1：下载示例到本地
 
 ```
-git clone git@github.com:seastart/vcs-ios-demo.git 或 直接下载压缩包
+git clone git@github.com:seastart/vcs-ios-demo.git
 ```
+或
+
+[下载压缩包](https://github.com/seastart/vcs-ios-demo/archive/refs/heads/master.zip)
 
 step 2：变更```Podfile```文件中的依赖为远程依赖
 
