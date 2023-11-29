@@ -1,6 +1,0 @@
-framework module AnyliveSDK {
-  umbrella header "AnyliveSDK.h"
-
-  export *
-  module * { export * }
-}
