@@ -18,6 +18,9 @@ DerivedData
 *.hmap
 *.ipa
 
+# keychain
+FWKeychain.m
+
 # Bundler
 .bundle
 
