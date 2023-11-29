@@ -8,12 +8,6 @@
 
 #import "FWInterfaces.h"
 
-#pragma mark - VCSSDK Appid
-NSString * const VCSSDKAPPID = <# 替换成平台分配的Appid #>
-#pragma mark - VCSSDK AppKey
-NSString * const VCSSDKAPPKEY = <# 替换成平台分配的AppKey #>
-#pragma mark - VCSSDK Signature
-NSString * const VCSSDKSIGNATURE = @"";
 #pragma mark - 密码HmacSHA1加密Key
 NSString * const HmacSha1Key = @"0a6430bcb7084269817813a06e905979";
 #pragma mark - Application Group Identifier

@@ -89,6 +89,7 @@
 		F488AFF02702EE6500FAF978 /* FWSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = F488AFEF2702EE6500FAF978 /* FWSlider.m */; };
 		F488AFF22702EF5400FAF978 /* Beauty.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488AFF12702EF5400FAF978 /* Beauty.xcassets */; };
 		F48BBA662614A6D200A98DA5 /* FWMQTTClientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F48BBA652614A6D200A98DA5 /* FWMQTTClientModel.m */; };
+		F48F59DD2B17350B00F6E6F3 /* FWKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F59DC2B17350B00F6E6F3 /* FWKeychain.m */; };
 		F49640942A1C5238001BB911 /* FWCastingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F49640922A1C5238001BB911 /* FWCastingViewController.m */; };
 		F49640952A1C5238001BB911 /* FWCastingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49640932A1C5238001BB911 /* FWCastingViewController.xib */; };
 		F49640982A1C54AE001BB911 /* FWCastingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F49640972A1C54AE001BB911 /* FWCastingViewModel.m */; };
@@ -280,6 +281,8 @@
 		F488AFF12702EF5400FAF978 /* Beauty.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Beauty.xcassets; sourceTree = "<group>"; };
 		F48BBA642614A6D200A98DA5 /* FWMQTTClientModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWMQTTClientModel.h; sourceTree = "<group>"; };
 		F48BBA652614A6D200A98DA5 /* FWMQTTClientModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWMQTTClientModel.m; sourceTree = "<group>"; };
+		F48F59DB2B17350B00F6E6F3 /* FWKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWKeychain.h; sourceTree = "<group>"; };
+		F48F59DC2B17350B00F6E6F3 /* FWKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWKeychain.m; sourceTree = "<group>"; };
 		F49640912A1C5238001BB911 /* FWCastingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCastingViewController.h; sourceTree = "<group>"; };
 		F49640922A1C5238001BB911 /* FWCastingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCastingViewController.m; sourceTree = "<group>"; };
 		F49640932A1C5238001BB911 /* FWCastingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWCastingViewController.xib; sourceTree = "<group>"; };
@@ -410,6 +413,8 @@
 			children = (
 				A6972F6D246D5E58003CE84D /* FWEnum.h */,
 				A6972F71246D5E58003CE84D /* FWEnum.m */,
+				F48F59DB2B17350B00F6E6F3 /* FWKeychain.h */,
+				F48F59DC2B17350B00F6E6F3 /* FWKeychain.m */,
 				A6972F70246D5E58003CE84D /* FWInterfaces.h */,
 				A6972F6E246D5E58003CE84D /* FWInterfaces.m */,
 				A6972F6F246D5E58003CE84D /* FWConstants.h */,
@@ -1174,6 +1179,7 @@
 				A6972F8A246D5E58003CE84D /* FWInterfaces.m in Sources */,
 				F488AFE82702E4F900FAF978 /* FWBeautyViewBar.m in Sources */,
 				A69EAA262471301600A42AEB /* FWCameraView.m in Sources */,
+				F48F59DD2B17350B00F6E6F3 /* FWKeychain.m in Sources */,
 				A6F114CD2458404C00662C6C /* FWRegisterViewModel.m in Sources */,
 				D16FDFA12456FD9500A48951 /* FWLoginViewController.m in Sources */,
 				A6972F8B246D5E58003CE84D /* FWEnum.m in Sources */,

@@ -11,6 +11,7 @@
 
 #import "FWEnum.h"
 #import "FWMacros.h"
+#import "FWKeychain.h"
 #import "FWConstants.h"
 #import "FWInterfaces.h"
 #import "FWBeautyAuth.h"

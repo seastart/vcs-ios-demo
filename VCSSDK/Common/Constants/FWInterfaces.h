@@ -10,12 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#pragma mark - VCSSDK Appid
-FOUNDATION_EXTERN NSString *__nonnull const VCSSDKAPPID;
-#pragma mark - VCSSDK AppKey
-FOUNDATION_EXTERN NSString *__nonnull const VCSSDKAPPKEY;
-#pragma mark - VCSSDK Signature
-FOUNDATION_EXTERN NSString *__nonnull const VCSSDKSIGNATURE;
 #pragma mark - 密码HmacSHA1加密Key
 FOUNDATION_EXTERN NSString *__nonnull const HmacSha1Key;
 #pragma mark - Application Group Identifier
