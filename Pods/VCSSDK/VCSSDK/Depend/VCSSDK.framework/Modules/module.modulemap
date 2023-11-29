@@ -1,0 +1,6 @@
+framework module VCSSDK {
+  umbrella header "VCSSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

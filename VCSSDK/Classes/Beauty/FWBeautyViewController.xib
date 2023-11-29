@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FWBeautyViewController">
+            <connections>
+                <outlet property="beautyContrastButton" destination="DL6-w4-QXJ" id="Kls-4E-P2u"/>
+                <outlet property="beautyViewBar" destination="Bgy-PL-gTL" id="7Gu-fx-oIy"/>
+                <outlet property="cameraButton" destination="wen-J1-hd0" id="WMt-aB-8V0"/>
+                <outlet property="closeButton" destination="Mwk-nb-9sg" id="Ov9-yf-hfb"/>
+                <outlet property="superView" destination="w6P-FG-wjD" id="Z1s-em-jN4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6P-FG-wjD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwk-nb-9sg">
+                    <rect key="frame" x="5" y="52" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="HWk-Ge-jWD"/>
+                        <constraint firstAttribute="width" secondItem="Mwk-nb-9sg" secondAttribute="height" multiplier="1:1" id="fIT-jD-LCp"/>
+                    </constraints>
+                    <state key="normal" image="icon_common_goback_white"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wen-J1-hd0">
+                    <rect key="frame" x="356" y="49.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wen-J1-hd0" secondAttribute="height" multiplier="1:1" id="2YU-Kz-TaT"/>
+                        <constraint firstAttribute="height" constant="50" id="adb-eP-BbE"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="icon_beauty_camera"/>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DL6-w4-QXJ">
+                    <rect key="frame" x="0.0" y="608" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="DL6-w4-QXJ" secondAttribute="height" multiplier="1:1" id="KQc-Lo-ZOV"/>
+                        <constraint firstAttribute="height" constant="60" id="ioj-Ow-GGR"/>
+                    </constraints>
+                    <state key="normal" image="icon_room_contrast"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fe8-aZ-GYW">
+                    <rect key="frame" x="0.0" y="668" width="414" height="228"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgy-PL-gTL" customClass="FWBeautyViewBar">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="194" id="Bwb-uO-Gmd"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="se2-E8-mVi" userLabel="Safe View">
+                            <rect key="frame" x="0.0" y="194" width="414" height="34"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.60191835969999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Bgy-PL-gTL" firstAttribute="leading" secondItem="Fe8-aZ-GYW" secondAttribute="leading" id="8BY-RP-cbp"/>
+                        <constraint firstAttribute="trailing" secondItem="Bgy-PL-gTL" secondAttribute="trailing" id="Ra4-HV-m7v"/>
+                        <constraint firstItem="se2-E8-mVi" firstAttribute="top" secondItem="Bgy-PL-gTL" secondAttribute="bottom" id="Xwk-jn-jCA"/>
+                        <constraint firstItem="Bgy-PL-gTL" firstAttribute="top" secondItem="Fe8-aZ-GYW" secondAttribute="top" id="r9O-E3-Pet"/>
+                        <constraint firstItem="se2-E8-mVi" firstAttribute="leading" secondItem="Fe8-aZ-GYW" secondAttribute="leading" id="tjy-eU-Voc"/>
+                        <constraint firstAttribute="trailing" secondItem="se2-E8-mVi" secondAttribute="trailing" id="yOh-0q-oYg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="w6P-FG-wjD" secondAttribute="bottom" id="4cB-sT-Lvi"/>
+                <constraint firstItem="Mwk-nb-9sg" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="8" id="83S-AA-Z1K"/>
+                <constraint firstItem="DL6-w4-QXJ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="IxC-Rp-d8n"/>
+                <constraint firstAttribute="trailing" secondItem="w6P-FG-wjD" secondAttribute="trailing" id="K4W-mI-OQz"/>
+                <constraint firstItem="se2-E8-mVi" firstAttribute="bottom" secondItem="Fe8-aZ-GYW" secondAttribute="bottom" id="QAF-vl-BgF"/>
+                <constraint firstAttribute="bottom" secondItem="Fe8-aZ-GYW" secondAttribute="bottom" id="XDB-XN-bW3"/>
+                <constraint firstItem="w6P-FG-wjD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xp1-km-Ibd"/>
+                <constraint firstItem="w6P-FG-wjD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZK9-pi-Vaj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Fe8-aZ-GYW" secondAttribute="trailing" id="abI-jO-6NG"/>
+                <constraint firstItem="Mwk-nb-9sg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="5" id="c30-jn-QTi"/>
+                <constraint firstItem="wen-J1-hd0" firstAttribute="centerY" secondItem="Mwk-nb-9sg" secondAttribute="centerY" id="d4f-HR-pRt"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wen-J1-hd0" secondAttribute="trailing" constant="8" id="gbV-Sl-jzZ"/>
+                <constraint firstItem="Fe8-aZ-GYW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="pDU-GX-0mG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Bgy-PL-gTL" secondAttribute="bottom" id="wBb-uY-pcB"/>
+                <constraint firstItem="Fe8-aZ-GYW" firstAttribute="top" secondItem="DL6-w4-QXJ" secondAttribute="bottom" id="xYK-Zg-N4N"/>
+            </constraints>
+            <point key="canvasLocation" x="56.521739130434788" y="60.9375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_beauty_camera" width="35.5" height="29.5"/>
+        <image name="icon_common_goback_white" width="11" height="18"/>
+        <image name="icon_room_contrast" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

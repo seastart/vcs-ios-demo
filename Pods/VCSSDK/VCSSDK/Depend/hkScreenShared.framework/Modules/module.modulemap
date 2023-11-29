@@ -1,0 +1,6 @@
+framework module hkScreenShared {
+  umbrella header "hkScreenShared.h"
+
+  export *
+  module * { export * }
+}

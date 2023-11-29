@@ -1,0 +1,1500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DDCAACF423C8F616D78C5D2 /* Pods_VCSSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542BD432CD9FBAAA539098FA /* Pods_VCSSDK_Example.framework */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		993CF6609D48BDE5E7363672 /* Pods_VCSReplayBroadcastUpload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E529EB95FCAC8D38834D80 /* Pods_VCSReplayBroadcastUpload.framework */; };
+		A6284D8B247B7B5C00008574 /* Launch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6284D8A247B7B5C00008574 /* Launch.xcassets */; };
+		A6920BA6247F9E7100269F49 /* FWCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6920BA5247F9E7100269F49 /* FWCameraView.xib */; };
+		A6920BA9247FA91D00269F49 /* FWWhiteBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6920BA8247FA91D00269F49 /* FWWhiteBoardView.m */; };
+		A6920BAB247FA93B00269F49 /* FWWhiteBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6920BAA247FA93B00269F49 /* FWWhiteBoardView.xib */; };
+		A694BEF324590F8400DCFA04 /* FWServeConfigViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A694BEF224590F8400DCFA04 /* FWServeConfigViewModel.m */; };
+		A694BEF62459323A00DCFA04 /* FWRoomConfigViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A694BEF52459323A00DCFA04 /* FWRoomConfigViewModel.m */; };
+		A694BEFF24595DF900DCFA04 /* RoomConfig.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A694BEFE24595DF900DCFA04 /* RoomConfig.xcassets */; };
+		A694BF0224598DA800DCFA04 /* FWEnterRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A694BF0124598DA800DCFA04 /* FWEnterRoomModel.m */; };
+		A694BF0A245A6B6F00DCFA04 /* FWPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A694BF09245A6B6F00DCFA04 /* FWPlayerView.m */; };
+		A694BF10245A9E3C00DCFA04 /* FWYUVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A694BF0F245A9E3C00DCFA04 /* FWYUVPlayerView.m */; };
+		A694BF1A245DCF3100DCFA04 /* Room.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A694BF19245DCF3100DCFA04 /* Room.xcassets */; };
+		A694BF1C2463EB4500DCFA04 /* FWYUVPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A694BF1B2463EB4500DCFA04 /* FWYUVPlayerView.xib */; };
+		A694BF1E24643AD300DCFA04 /* FWPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A694BF1D24643AD300DCFA04 /* FWPlayerView.xib */; };
+		A6972F8A246D5E58003CE84D /* FWInterfaces.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F6E246D5E58003CE84D /* FWInterfaces.m */; };
+		A6972F8B246D5E58003CE84D /* FWEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F71246D5E58003CE84D /* FWEnum.m */; };
+		A6972F8C246D5E58003CE84D /* FWConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F72246D5E58003CE84D /* FWConstants.m */; };
+		A6972F8D246D5E58003CE84D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F79246D5E58003CE84D /* UIView+Extension.m */; };
+		A6972F8E246D5E58003CE84D /* FWBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F7E246D5E58003CE84D /* FWBaseModel.m */; };
+		A6972F8F246D5E58003CE84D /* FWNetworkBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F7F246D5E58003CE84D /* FWNetworkBridge.m */; };
+		A6972F90246D5E58003CE84D /* FWIPAddressConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F82246D5E58003CE84D /* FWIPAddressConfig.m */; };
+		A6972F91246D5E58003CE84D /* FWIPAddressBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F83246D5E58003CE84D /* FWIPAddressBridge.m */; };
+		A6972F92246D5E58003CE84D /* FWToastBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F88246D5E58003CE84D /* FWToastBridge.m */; };
+		A6972F93246D5E58003CE84D /* FWToolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F89246D5E58003CE84D /* FWToolHelper.m */; };
+		A69EAA262471301600A42AEB /* FWCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = A69EAA252471301600A42AEB /* FWCameraView.m */; };
+		A6F114C424580E1500662C6C /* FWLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F114C324580E1500662C6C /* FWLoginViewModel.m */; };
+		A6F114CA2458222700662C6C /* FWLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F114C92458222700662C6C /* FWLoginModel.m */; };
+		A6F114CD2458404C00662C6C /* FWRegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F114CC2458404C00662C6C /* FWRegisterViewModel.m */; };
+		A6FDBF9824849A3B00856C8C /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FDBF84248499C700856C8C /* ReplayKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		A6FDBF9C24849A3B00856C8C /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FDBF9B24849A3B00856C8C /* SampleHandler.m */; };
+		A6FDBFAF24849A3B00856C8C /* VCS屏幕录制.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A6FDBF9724849A3B00856C8C /* VCS屏幕录制.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D16FDF942456FA8900A48951 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D16FDF842456FA8800A48951 /* main.m */; };
+		D16FDF952456FA8900A48951 /* FWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D16FDF872456FA8800A48951 /* FWAppDelegate.m */; };
+		D16FDF962456FA8900A48951 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D16FDF8A2456FA8800A48951 /* InfoPlist.strings */; };
+		D16FDF982456FA8900A48951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16FDF8E2456FA8800A48951 /* LaunchScreen.storyboard */; };
+		D16FDF992456FA8900A48951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16FDF902456FA8800A48951 /* Main.storyboard */; };
+		D16FDF9A2456FA8900A48951 /* VCSSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D16FDF922456FA8900A48951 /* VCSSDK-Info.plist */; };
+		D16FDF9C2456FBCB00A48951 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16FDF9B2456FBCB00A48951 /* AppIcon.xcassets */; };
+		D16FDFA12456FD9500A48951 /* FWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16FDF9F2456FD9500A48951 /* FWLoginViewController.m */; };
+		D16FDFA22456FD9500A48951 /* FWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16FDFA02456FD9500A48951 /* FWLoginViewController.xib */; };
+		D16FDFAB245709D100A48951 /* FWServeConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16FDFA9245709D100A48951 /* FWServeConfigViewController.m */; };
+		D16FDFAC245709D100A48951 /* FWServeConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16FDFAA245709D100A48951 /* FWServeConfigViewController.xib */; };
+		D16FDFB3245709F400A48951 /* FWRoomConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16FDFB1245709F400A48951 /* FWRoomConfigViewController.m */; };
+		D16FDFB4245709F400A48951 /* FWRoomConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16FDFB2245709F400A48951 /* FWRoomConfigViewController.xib */; };
+		D16FDFB824570A0400A48951 /* FWRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16FDFB624570A0400A48951 /* FWRoomViewController.m */; };
+		D16FDFB924570A0400A48951 /* FWRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16FDFB724570A0400A48951 /* FWRoomViewController.xib */; };
+		D16FDFBE24570A9100A48951 /* FWRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16FDFBC24570A9100A48951 /* FWRegisterViewController.m */; };
+		D16FDFBF24570A9100A48951 /* FWRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16FDFBD24570A9100A48951 /* FWRegisterViewController.xib */; };
+		F425826929F119BE00E4A1C2 /* FWCastingBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F425826829F119BE00E4A1C2 /* FWCastingBridge.m */; };
+		F432A571272FD2EC0001FE46 /* FWNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F432A56F272FD2EC0001FE46 /* FWNetworkViewController.m */; };
+		F432A572272FD2EC0001FE46 /* FWNetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F432A570272FD2EC0001FE46 /* FWNetworkViewController.xib */; };
+		F432A575273005FA0001FE46 /* FWNetworkViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F432A574273005FA0001FE46 /* FWNetworkViewModel.m */; };
+		F43AD3ED24EBF4D600922C59 /* FWNetCallBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F43AD3EC24EBF4D600922C59 /* FWNetCallBridge.m */; };
+		F43AD45E24F39A9B00922C59 /* FWNetCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43AD45C24F39A9B00922C59 /* FWNetCallViewController.m */; };
+		F43AD45F24F39A9B00922C59 /* FWNetCallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F43AD45D24F39A9B00922C59 /* FWNetCallViewController.xib */; };
+		F43AD46224F3ABB600922C59 /* FWNetCallViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F43AD46124F3ABB600922C59 /* FWNetCallViewModel.m */; };
+		F43DFD9C24A228F8008BD9F7 /* FWRoomtempTokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F43DFD9B24A228F8008BD9F7 /* FWRoomtempTokenModel.m */; };
+		F45749C226B2A4F00058EE52 /* FWInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45749C026B2A4F00058EE52 /* FWInviteViewController.m */; };
+		F45749C326B2A4F00058EE52 /* FWInviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45749C126B2A4F00058EE52 /* FWInviteViewController.xib */; };
+		F45749C626B2A9990058EE52 /* FWInviteViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F45749C526B2A9990058EE52 /* FWInviteViewModel.m */; };
+		F45F0E94260C258300DDC21F /* FWRecorderAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F0E92260C258300DDC21F /* FWRecorderAudioViewController.m */; };
+		F45F0E95260C258300DDC21F /* FWRecorderAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45F0E93260C258300DDC21F /* FWRecorderAudioViewController.xib */; };
+		F45F0EF3260C632000DDC21F /* Recording.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F0EF2260C632000DDC21F /* Recording.xcassets */; };
+		F470498B24D7E43B0075BDD2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F470498A24D7E43B0075BDD2 /* CoreTelephony.framework */; };
+		F47782EE25FF08B30003E921 /* FWMQTTClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47782EC25FF08B30003E921 /* FWMQTTClientViewController.m */; };
+		F47782EF25FF08B30003E921 /* FWMQTTClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47782ED25FF08B30003E921 /* FWMQTTClientViewController.xib */; };
+		F47782F625FF0FC40003E921 /* FWMQTTClientViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F47782F525FF0FC40003E921 /* FWMQTTClientViewModel.m */; };
+		F477837226004BB00003E921 /* FWMQTTClientBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F477837126004BB00003E921 /* FWMQTTClientBridge.m */; };
+		F488AFD326FF15FA00FAF978 /* FWBeautyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F488AFD226FF15FA00FAF978 /* FWBeautyModel.m */; };
+		F488AFD926FF176500FAF978 /* FWFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F488AFD826FF176500FAF978 /* FWFilterView.m */; };
+		F488AFE42702AF3600FAF978 /* FWBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F488AFE22702AF3600FAF978 /* FWBeautyViewController.m */; };
+		F488AFE52702AF3600FAF978 /* FWBeautyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488AFE32702AF3600FAF978 /* FWBeautyViewController.xib */; };
+		F488AFE82702E4F900FAF978 /* FWBeautyViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F488AFE72702E4F900FAF978 /* FWBeautyViewBar.m */; };
+		F488AFEA2702E50200FAF978 /* FWBeautyViewBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488AFE92702E50200FAF978 /* FWBeautyViewBar.xib */; };
+		F488AFED2702E9BE00FAF978 /* FWBeautyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F488AFEC2702E9BE00FAF978 /* FWBeautyView.m */; };
+		F488AFF02702EE6500FAF978 /* FWSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = F488AFEF2702EE6500FAF978 /* FWSlider.m */; };
+		F488AFF22702EF5400FAF978 /* Beauty.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488AFF12702EF5400FAF978 /* Beauty.xcassets */; };
+		F48BBA662614A6D200A98DA5 /* FWMQTTClientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F48BBA652614A6D200A98DA5 /* FWMQTTClientModel.m */; };
+		F49640942A1C5238001BB911 /* FWCastingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F49640922A1C5238001BB911 /* FWCastingViewController.m */; };
+		F49640952A1C5238001BB911 /* FWCastingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49640932A1C5238001BB911 /* FWCastingViewController.xib */; };
+		F49640982A1C54AE001BB911 /* FWCastingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F49640972A1C54AE001BB911 /* FWCastingViewModel.m */; };
+		F49B132E2A4810430080D186 /* FWPackageBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = F49B132C2A4810430080D186 /* FWPackageBridge.mm */; };
+		F4B8AD5125BEAB5A00A6405D /* FWRoomGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B8AD4F25BEAB5A00A6405D /* FWRoomGestureViewController.m */; };
+		F4B8AD5225BEAB5A00A6405D /* FWRoomGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B8AD5025BEAB5A00A6405D /* FWRoomGestureViewController.xib */; };
+		F4BEA25C24E6308100039DF7 /* NSDictionary+compare.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BEA25B24E6308100039DF7 /* NSDictionary+compare.m */; };
+		F4CCCE0124A1A0E500ED67EB /* FWRoomViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CCCE0024A1A0E500ED67EB /* FWRoomViewModel.m */; };
+		F4D8CA8828E6955500D526F5 /* FWLoggerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D8CA8728E6955500D526F5 /* FWLoggerBridge.m */; };
+		F4E83A7E24D98BDF00657712 /* FWDrawingConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E83A7C24D98BDF00657712 /* FWDrawingConfigViewController.m */; };
+		F4E83A7F24D98BDF00657712 /* FWDrawingConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E83A7D24D98BDF00657712 /* FWDrawingConfigViewController.xib */; };
+		F4E83A8324D98BFB00657712 /* FWDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E83A8124D98BFB00657712 /* FWDrawingViewController.m */; };
+		F4E83A8424D98BFB00657712 /* FWDrawingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E83A8224D98BFB00657712 /* FWDrawingViewController.xib */; };
+		F4E83A8724D992CE00657712 /* FWDrawingConfigViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E83A8624D992CE00657712 /* FWDrawingConfigViewModel.m */; };
+		F4FB71E72611850100AF1B95 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FB71E62611850100AF1B95 /* Common.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6FDBFAD24849A3B00856C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FDBF9624849A3B00856C8C;
+			remoteInfo = VCSReplayBroadcastUpload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6FDBF8F248499C800856C8C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A6FDBFAF24849A3B00856C8C /* VCS屏幕录制.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		062932884AB1744D07DBBE17 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		28198E8D2CC61A6FACC60576 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		30E529EB95FCAC8D38834D80 /* Pods_VCSReplayBroadcastUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCSReplayBroadcastUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		443081FCC70D1E6D0D9F6AA6 /* Pods_VCSReplayBroadcastCasting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCSReplayBroadcastCasting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		542BD432CD9FBAAA539098FA /* Pods_VCSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C76B62C772BE5C2D9257E21 /* VCSSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VCSSDK.podspec; path = ../VCSSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6003F58A195388D20070C39A /* VCSDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCSDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		867BCCFAA44BE554E7B32E01 /* Pods-VCSSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCSSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		907819A3E8BC9D38AC73150C /* Pods-VCSReplayBroadcastUploadSetupUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCSReplayBroadcastUploadSetupUI.release.xcconfig"; path = "Target Support Files/Pods-VCSReplayBroadcastUploadSetupUI/Pods-VCSReplayBroadcastUploadSetupUI.release.xcconfig"; sourceTree = "<group>"; };
+		9D6290F7686191133F411AEB /* Pods-VCSReplayBroadcastUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCSReplayBroadcastUpload.debug.xcconfig"; path = "Target Support Files/Pods-VCSReplayBroadcastUpload/Pods-VCSReplayBroadcastUpload.debug.xcconfig"; sourceTree = "<group>"; };
+		A6284D89247B6C9300008574 /* VCSDEMO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VCSDEMO.entitlements; sourceTree = "<group>"; };
+		A6284D8A247B7B5C00008574 /* Launch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Launch.xcassets; sourceTree = "<group>"; };
+		A6920BA5247F9E7100269F49 /* FWCameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWCameraView.xib; sourceTree = "<group>"; };
+		A6920BA7247FA91D00269F49 /* FWWhiteBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWWhiteBoardView.h; sourceTree = "<group>"; };
+		A6920BA8247FA91D00269F49 /* FWWhiteBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWWhiteBoardView.m; sourceTree = "<group>"; };
+		A6920BAA247FA93B00269F49 /* FWWhiteBoardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWWhiteBoardView.xib; sourceTree = "<group>"; };
+		A694BEF124590F8400DCFA04 /* FWServeConfigViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWServeConfigViewModel.h; sourceTree = "<group>"; };
+		A694BEF224590F8400DCFA04 /* FWServeConfigViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWServeConfigViewModel.m; sourceTree = "<group>"; };
+		A694BEF42459323A00DCFA04 /* FWRoomConfigViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRoomConfigViewModel.h; sourceTree = "<group>"; };
+		A694BEF52459323A00DCFA04 /* FWRoomConfigViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRoomConfigViewModel.m; sourceTree = "<group>"; };
+		A694BEFE24595DF900DCFA04 /* RoomConfig.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RoomConfig.xcassets; sourceTree = "<group>"; };
+		A694BF0024598DA800DCFA04 /* FWEnterRoomModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWEnterRoomModel.h; sourceTree = "<group>"; };
+		A694BF0124598DA800DCFA04 /* FWEnterRoomModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWEnterRoomModel.m; sourceTree = "<group>"; };
+		A694BF08245A6B6F00DCFA04 /* FWPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWPlayerView.h; sourceTree = "<group>"; };
+		A694BF09245A6B6F00DCFA04 /* FWPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWPlayerView.m; sourceTree = "<group>"; };
+		A694BF0E245A9E3B00DCFA04 /* FWYUVPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWYUVPlayerView.h; sourceTree = "<group>"; };
+		A694BF0F245A9E3C00DCFA04 /* FWYUVPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWYUVPlayerView.m; sourceTree = "<group>"; };
+		A694BF19245DCF3100DCFA04 /* Room.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Room.xcassets; sourceTree = "<group>"; };
+		A694BF1B2463EB4500DCFA04 /* FWYUVPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWYUVPlayerView.xib; sourceTree = "<group>"; };
+		A694BF1D24643AD300DCFA04 /* FWPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWPlayerView.xib; sourceTree = "<group>"; };
+		A6972F6D246D5E58003CE84D /* FWEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWEnum.h; sourceTree = "<group>"; };
+		A6972F6E246D5E58003CE84D /* FWInterfaces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWInterfaces.m; sourceTree = "<group>"; };
+		A6972F6F246D5E58003CE84D /* FWConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWConstants.h; sourceTree = "<group>"; };
+		A6972F70246D5E58003CE84D /* FWInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWInterfaces.h; sourceTree = "<group>"; };
+		A6972F71246D5E58003CE84D /* FWEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWEnum.m; sourceTree = "<group>"; };
+		A6972F72246D5E58003CE84D /* FWConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWConstants.m; sourceTree = "<group>"; };
+		A6972F73246D5E58003CE84D /* FWCommons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWCommons.h; sourceTree = "<group>"; };
+		A6972F75246D5E58003CE84D /* FWMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWMacros.h; sourceTree = "<group>"; };
+		A6972F78246D5E58003CE84D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		A6972F79246D5E58003CE84D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		A6972F7B246D5E58003CE84D /* FWNetworkBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWNetworkBridge.h; sourceTree = "<group>"; };
+		A6972F7D246D5E58003CE84D /* FWBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWBaseModel.h; sourceTree = "<group>"; };
+		A6972F7E246D5E58003CE84D /* FWBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWBaseModel.m; sourceTree = "<group>"; };
+		A6972F7F246D5E58003CE84D /* FWNetworkBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWNetworkBridge.m; sourceTree = "<group>"; };
+		A6972F80246D5E58003CE84D /* FWToolHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWToolHelper.h; sourceTree = "<group>"; };
+		A6972F82246D5E58003CE84D /* FWIPAddressConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWIPAddressConfig.m; sourceTree = "<group>"; };
+		A6972F83246D5E58003CE84D /* FWIPAddressBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWIPAddressBridge.m; sourceTree = "<group>"; };
+		A6972F84246D5E58003CE84D /* FWIPAddressBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWIPAddressBridge.h; sourceTree = "<group>"; };
+		A6972F85246D5E58003CE84D /* FWIPAddressConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWIPAddressConfig.h; sourceTree = "<group>"; };
+		A6972F87246D5E58003CE84D /* FWToastBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWToastBridge.h; sourceTree = "<group>"; };
+		A6972F88246D5E58003CE84D /* FWToastBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWToastBridge.m; sourceTree = "<group>"; };
+		A6972F89246D5E58003CE84D /* FWToolHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWToolHelper.m; sourceTree = "<group>"; };
+		A69EAA242471301600A42AEB /* FWCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCameraView.h; sourceTree = "<group>"; };
+		A69EAA252471301600A42AEB /* FWCameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCameraView.m; sourceTree = "<group>"; };
+		A6F114C224580E1500662C6C /* FWLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLoginViewModel.h; sourceTree = "<group>"; };
+		A6F114C324580E1500662C6C /* FWLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLoginViewModel.m; sourceTree = "<group>"; };
+		A6F114C82458222700662C6C /* FWLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLoginModel.h; sourceTree = "<group>"; };
+		A6F114C92458222700662C6C /* FWLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLoginModel.m; sourceTree = "<group>"; };
+		A6F114CB2458404B00662C6C /* FWRegisterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRegisterViewModel.h; sourceTree = "<group>"; };
+		A6F114CC2458404C00662C6C /* FWRegisterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRegisterViewModel.m; sourceTree = "<group>"; };
+		A6FDBF84248499C700856C8C /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		A6FDBF9724849A3B00856C8C /* VCS屏幕录制.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VCS屏幕录制.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FDBF9A24849A3B00856C8C /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		A6FDBF9B24849A3B00856C8C /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		A6FDBF9D24849A3B00856C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FDBFB82484E08400856C8C /* ReplayBroadcastUpload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReplayBroadcastUpload.entitlements; sourceTree = "<group>"; };
+		AFAD24DC98496CC7A93EA639 /* Pods-VCSSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCSSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B622CDC53ADEEE13783E5123 /* Pods-VCSReplayBroadcastCasting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCSReplayBroadcastCasting.debug.xcconfig"; path = "Target Support Files/Pods-VCSReplayBroadcastCasting/Pods-VCSReplayBroadcastCasting.debug.xcconfig"; sourceTree = "<group>"; };
+		C911B6695BD919C3C1E4FA33 /* Pods-VCSReplayBroadcastUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCSReplayBroadcastUpload.release.xcconfig"; path = "Target Support Files/Pods-VCSReplayBroadcastUpload/Pods-VCSReplayBroadcastUpload.release.xcconfig"; sourceTree = "<group>"; };
+		D16FDF842456FA8800A48951 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D16FDF862456FA8800A48951 /* FWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWAppDelegate.h; sourceTree = "<group>"; };
+		D16FDF872456FA8800A48951 /* FWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWAppDelegate.m; sourceTree = "<group>"; };
+		D16FDF892456FA8800A48951 /* VCSSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VCSSDK-Prefix.pch"; sourceTree = "<group>"; };
+		D16FDF8B2456FA8800A48951 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D16FDF8F2456FA8800A48951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D16FDF912456FA8900A48951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D16FDF922456FA8900A48951 /* VCSSDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "VCSSDK-Info.plist"; sourceTree = "<group>"; };
+		D16FDF9B2456FBCB00A48951 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		D16FDF9E2456FD9500A48951 /* FWLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLoginViewController.h; sourceTree = "<group>"; };
+		D16FDF9F2456FD9500A48951 /* FWLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLoginViewController.m; sourceTree = "<group>"; };
+		D16FDFA02456FD9500A48951 /* FWLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWLoginViewController.xib; sourceTree = "<group>"; };
+		D16FDFA8245709D100A48951 /* FWServeConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWServeConfigViewController.h; sourceTree = "<group>"; };
+		D16FDFA9245709D100A48951 /* FWServeConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWServeConfigViewController.m; sourceTree = "<group>"; };
+		D16FDFAA245709D100A48951 /* FWServeConfigViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWServeConfigViewController.xib; sourceTree = "<group>"; };
+		D16FDFB0245709F400A48951 /* FWRoomConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRoomConfigViewController.h; sourceTree = "<group>"; };
+		D16FDFB1245709F400A48951 /* FWRoomConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRoomConfigViewController.m; sourceTree = "<group>"; };
+		D16FDFB2245709F400A48951 /* FWRoomConfigViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWRoomConfigViewController.xib; sourceTree = "<group>"; };
+		D16FDFB524570A0400A48951 /* FWRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRoomViewController.h; sourceTree = "<group>"; };
+		D16FDFB624570A0400A48951 /* FWRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRoomViewController.m; sourceTree = "<group>"; };
+		D16FDFB724570A0400A48951 /* FWRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWRoomViewController.xib; sourceTree = "<group>"; };
+		D16FDFBB24570A9100A48951 /* FWRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRegisterViewController.h; sourceTree = "<group>"; };
+		D16FDFBC24570A9100A48951 /* FWRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRegisterViewController.m; sourceTree = "<group>"; };
+		D16FDFBD24570A9100A48951 /* FWRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWRegisterViewController.xib; sourceTree = "<group>"; };
+		E9B858D23ED84174B43BD037 /* Pods-VCSReplayBroadcastCasting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCSReplayBroadcastCasting.release.xcconfig"; path = "Target Support Files/Pods-VCSReplayBroadcastCasting/Pods-VCSReplayBroadcastCasting.release.xcconfig"; sourceTree = "<group>"; };
+		F425826729F119BE00E4A1C2 /* FWCastingBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCastingBridge.h; sourceTree = "<group>"; };
+		F425826829F119BE00E4A1C2 /* FWCastingBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCastingBridge.m; sourceTree = "<group>"; };
+		F432A56E272FD2EC0001FE46 /* FWNetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWNetworkViewController.h; sourceTree = "<group>"; };
+		F432A56F272FD2EC0001FE46 /* FWNetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWNetworkViewController.m; sourceTree = "<group>"; };
+		F432A570272FD2EC0001FE46 /* FWNetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWNetworkViewController.xib; sourceTree = "<group>"; };
+		F432A573273005FA0001FE46 /* FWNetworkViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWNetworkViewModel.h; sourceTree = "<group>"; };
+		F432A574273005FA0001FE46 /* FWNetworkViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWNetworkViewModel.m; sourceTree = "<group>"; };
+		F43AD3EB24EBF4D600922C59 /* FWNetCallBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWNetCallBridge.h; sourceTree = "<group>"; };
+		F43AD3EC24EBF4D600922C59 /* FWNetCallBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWNetCallBridge.m; sourceTree = "<group>"; };
+		F43AD45B24F39A9B00922C59 /* FWNetCallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWNetCallViewController.h; sourceTree = "<group>"; };
+		F43AD45C24F39A9B00922C59 /* FWNetCallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWNetCallViewController.m; sourceTree = "<group>"; };
+		F43AD45D24F39A9B00922C59 /* FWNetCallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWNetCallViewController.xib; sourceTree = "<group>"; };
+		F43AD46024F3ABB600922C59 /* FWNetCallViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWNetCallViewModel.h; sourceTree = "<group>"; };
+		F43AD46124F3ABB600922C59 /* FWNetCallViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWNetCallViewModel.m; sourceTree = "<group>"; };
+		F43DFD9A24A228F8008BD9F7 /* FWRoomtempTokenModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRoomtempTokenModel.h; sourceTree = "<group>"; };
+		F43DFD9B24A228F8008BD9F7 /* FWRoomtempTokenModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRoomtempTokenModel.m; sourceTree = "<group>"; };
+		F45749BF26B2A4F00058EE52 /* FWInviteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWInviteViewController.h; sourceTree = "<group>"; };
+		F45749C026B2A4F00058EE52 /* FWInviteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWInviteViewController.m; sourceTree = "<group>"; };
+		F45749C126B2A4F00058EE52 /* FWInviteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWInviteViewController.xib; sourceTree = "<group>"; };
+		F45749C426B2A9990058EE52 /* FWInviteViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWInviteViewModel.h; sourceTree = "<group>"; };
+		F45749C526B2A9990058EE52 /* FWInviteViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWInviteViewModel.m; sourceTree = "<group>"; };
+		F45F0E91260C258300DDC21F /* FWRecorderAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRecorderAudioViewController.h; sourceTree = "<group>"; };
+		F45F0E92260C258300DDC21F /* FWRecorderAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRecorderAudioViewController.m; sourceTree = "<group>"; };
+		F45F0E93260C258300DDC21F /* FWRecorderAudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWRecorderAudioViewController.xib; sourceTree = "<group>"; };
+		F45F0EF2260C632000DDC21F /* Recording.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Recording.xcassets; sourceTree = "<group>"; };
+		F470498A24D7E43B0075BDD2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F47782EB25FF08B30003E921 /* FWMQTTClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWMQTTClientViewController.h; sourceTree = "<group>"; };
+		F47782EC25FF08B30003E921 /* FWMQTTClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWMQTTClientViewController.m; sourceTree = "<group>"; };
+		F47782ED25FF08B30003E921 /* FWMQTTClientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWMQTTClientViewController.xib; sourceTree = "<group>"; };
+		F47782F425FF0FC40003E921 /* FWMQTTClientViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWMQTTClientViewModel.h; sourceTree = "<group>"; };
+		F47782F525FF0FC40003E921 /* FWMQTTClientViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWMQTTClientViewModel.m; sourceTree = "<group>"; };
+		F477837026004BB00003E921 /* FWMQTTClientBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWMQTTClientBridge.h; sourceTree = "<group>"; };
+		F477837126004BB00003E921 /* FWMQTTClientBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWMQTTClientBridge.m; sourceTree = "<group>"; };
+		F488AFD126FF15FA00FAF978 /* FWBeautyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWBeautyModel.h; sourceTree = "<group>"; };
+		F488AFD226FF15FA00FAF978 /* FWBeautyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBeautyModel.m; sourceTree = "<group>"; };
+		F488AFD726FF176500FAF978 /* FWFilterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWFilterView.h; sourceTree = "<group>"; };
+		F488AFD826FF176500FAF978 /* FWFilterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWFilterView.m; sourceTree = "<group>"; };
+		F488AFDB2701D49500FAF978 /* FWBeautyAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWBeautyAuth.h; sourceTree = "<group>"; };
+		F488AFE12702AF3600FAF978 /* FWBeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWBeautyViewController.h; sourceTree = "<group>"; };
+		F488AFE22702AF3600FAF978 /* FWBeautyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBeautyViewController.m; sourceTree = "<group>"; };
+		F488AFE32702AF3600FAF978 /* FWBeautyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWBeautyViewController.xib; sourceTree = "<group>"; };
+		F488AFE62702E4F900FAF978 /* FWBeautyViewBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWBeautyViewBar.h; sourceTree = "<group>"; };
+		F488AFE72702E4F900FAF978 /* FWBeautyViewBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBeautyViewBar.m; sourceTree = "<group>"; };
+		F488AFE92702E50200FAF978 /* FWBeautyViewBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWBeautyViewBar.xib; sourceTree = "<group>"; };
+		F488AFEB2702E9BE00FAF978 /* FWBeautyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWBeautyView.h; sourceTree = "<group>"; };
+		F488AFEC2702E9BE00FAF978 /* FWBeautyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBeautyView.m; sourceTree = "<group>"; };
+		F488AFEE2702EE6500FAF978 /* FWSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWSlider.h; sourceTree = "<group>"; };
+		F488AFEF2702EE6500FAF978 /* FWSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWSlider.m; sourceTree = "<group>"; };
+		F488AFF12702EF5400FAF978 /* Beauty.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Beauty.xcassets; sourceTree = "<group>"; };
+		F48BBA642614A6D200A98DA5 /* FWMQTTClientModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWMQTTClientModel.h; sourceTree = "<group>"; };
+		F48BBA652614A6D200A98DA5 /* FWMQTTClientModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWMQTTClientModel.m; sourceTree = "<group>"; };
+		F49640912A1C5238001BB911 /* FWCastingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCastingViewController.h; sourceTree = "<group>"; };
+		F49640922A1C5238001BB911 /* FWCastingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCastingViewController.m; sourceTree = "<group>"; };
+		F49640932A1C5238001BB911 /* FWCastingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWCastingViewController.xib; sourceTree = "<group>"; };
+		F49640962A1C54AE001BB911 /* FWCastingViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCastingViewModel.h; sourceTree = "<group>"; };
+		F49640972A1C54AE001BB911 /* FWCastingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCastingViewModel.m; sourceTree = "<group>"; };
+		F49B132C2A4810430080D186 /* FWPackageBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FWPackageBridge.mm; sourceTree = "<group>"; };
+		F49B132D2A4810430080D186 /* FWPackageBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWPackageBridge.h; sourceTree = "<group>"; };
+		F4B8AD4E25BEAB5A00A6405D /* FWRoomGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRoomGestureViewController.h; sourceTree = "<group>"; };
+		F4B8AD4F25BEAB5A00A6405D /* FWRoomGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRoomGestureViewController.m; sourceTree = "<group>"; };
+		F4B8AD5025BEAB5A00A6405D /* FWRoomGestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWRoomGestureViewController.xib; sourceTree = "<group>"; };
+		F4BEA25A24E6308100039DF7 /* NSDictionary+compare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+compare.h"; sourceTree = "<group>"; };
+		F4BEA25B24E6308100039DF7 /* NSDictionary+compare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+compare.m"; sourceTree = "<group>"; };
+		F4CCCDFF24A1A0E500ED67EB /* FWRoomViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRoomViewModel.h; sourceTree = "<group>"; };
+		F4CCCE0024A1A0E500ED67EB /* FWRoomViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRoomViewModel.m; sourceTree = "<group>"; };
+		F4D8CA8628E6955500D526F5 /* FWLoggerBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWLoggerBridge.h; sourceTree = "<group>"; };
+		F4D8CA8728E6955500D526F5 /* FWLoggerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWLoggerBridge.m; sourceTree = "<group>"; };
+		F4E83A7B24D98BDF00657712 /* FWDrawingConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWDrawingConfigViewController.h; sourceTree = "<group>"; };
+		F4E83A7C24D98BDF00657712 /* FWDrawingConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWDrawingConfigViewController.m; sourceTree = "<group>"; };
+		F4E83A7D24D98BDF00657712 /* FWDrawingConfigViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWDrawingConfigViewController.xib; sourceTree = "<group>"; };
+		F4E83A8024D98BFB00657712 /* FWDrawingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWDrawingViewController.h; sourceTree = "<group>"; };
+		F4E83A8124D98BFB00657712 /* FWDrawingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWDrawingViewController.m; sourceTree = "<group>"; };
+		F4E83A8224D98BFB00657712 /* FWDrawingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWDrawingViewController.xib; sourceTree = "<group>"; };
+		F4E83A8524D992CE00657712 /* FWDrawingConfigViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWDrawingConfigViewModel.h; sourceTree = "<group>"; };
+		F4E83A8624D992CE00657712 /* FWDrawingConfigViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWDrawingConfigViewModel.m; sourceTree = "<group>"; };
+		F4FB71E62611850100AF1B95 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
+		F7E5B3EC321F702CF2F3B406 /* Pods-VCSReplayBroadcastUploadSetupUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCSReplayBroadcastUploadSetupUI.debug.xcconfig"; path = "Target Support Files/Pods-VCSReplayBroadcastUploadSetupUI/Pods-VCSReplayBroadcastUploadSetupUI.debug.xcconfig"; sourceTree = "<group>"; };
+		FC8BB528030C9E12A51EED8C /* Pods_VCSReplayBroadcastUploadSetupUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCSReplayBroadcastUploadSetupUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				F470498B24D7E43B0075BDD2 /* CoreTelephony.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				4DDCAACF423C8F616D78C5D2 /* Pods_VCSSDK_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FDBF9424849A3B00856C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FDBF9824849A3B00856C8C /* ReplayKit.framework in Frameworks */,
+				993CF6609D48BDE5E7363672 /* Pods_VCSReplayBroadcastUpload.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for VCSSDK */,
+				A6FDBF9924849A3B00856C8C /* VCSReplayBroadcastUpload */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				BF600774A068713804785EAA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* VCSDEMO.app */,
+				A6FDBF9724849A3B00856C8C /* VCS屏幕录制.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F470498A24D7E43B0075BDD2 /* CoreTelephony.framework */,
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				A6FDBF84248499C700856C8C /* ReplayKit.framework */,
+				30E529EB95FCAC8D38834D80 /* Pods_VCSReplayBroadcastUpload.framework */,
+				FC8BB528030C9E12A51EED8C /* Pods_VCSReplayBroadcastUploadSetupUI.framework */,
+				542BD432CD9FBAAA539098FA /* Pods_VCSSDK_Example.framework */,
+				443081FCC70D1E6D0D9F6AA6 /* Pods_VCSReplayBroadcastCasting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for VCSSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F6B246D5E58003CE84D /* Common */,
+				D16FDF802456FA8800A48951 /* Classes */,
+				D16FDF882456FA8800A48951 /* Resources */,
+				D16FDF832456FA8800A48951 /* Main */,
+			);
+			name = "Example for VCSSDK";
+			path = VCSSDK;
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				5C76B62C772BE5C2D9257E21 /* VCSSDK.podspec */,
+				28198E8D2CC61A6FACC60576 /* README.md */,
+				062932884AB1744D07DBBE17 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A6972F6B246D5E58003CE84D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F73246D5E58003CE84D /* FWCommons.h */,
+				A6972F6C246D5E58003CE84D /* Constants */,
+				A6972F76246D5E58003CE84D /* Helper */,
+				A6972F74246D5E58003CE84D /* Macros */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A6972F6C246D5E58003CE84D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F6D246D5E58003CE84D /* FWEnum.h */,
+				A6972F71246D5E58003CE84D /* FWEnum.m */,
+				A6972F70246D5E58003CE84D /* FWInterfaces.h */,
+				A6972F6E246D5E58003CE84D /* FWInterfaces.m */,
+				A6972F6F246D5E58003CE84D /* FWConstants.h */,
+				A6972F72246D5E58003CE84D /* FWConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A6972F74246D5E58003CE84D /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F75246D5E58003CE84D /* FWMacros.h */,
+				F488AFDB2701D49500FAF978 /* FWBeautyAuth.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		A6972F76246D5E58003CE84D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F77246D5E58003CE84D /* Category */,
+				F49B132B2A4810430080D186 /* PackageBridge */,
+				F425826629F119A600E4A1C2 /* CastingBridge */,
+				F4D8CA8528E6953F00D526F5 /* LoggerBridge */,
+				F43AD3EA24EBF4C400922C59 /* NetCallBridge */,
+				F477836F26004B990003E921 /* MQTTClientBridge */,
+				A6972F7A246D5E58003CE84D /* NetworkBridge */,
+				A6972F81246D5E58003CE84D /* IPAddressBridge */,
+				A6972F86246D5E58003CE84D /* ToastBridge */,
+				A6972F80246D5E58003CE84D /* FWToolHelper.h */,
+				A6972F89246D5E58003CE84D /* FWToolHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A6972F77246D5E58003CE84D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F78246D5E58003CE84D /* UIView+Extension.h */,
+				A6972F79246D5E58003CE84D /* UIView+Extension.m */,
+				F4BEA25A24E6308100039DF7 /* NSDictionary+compare.h */,
+				F4BEA25B24E6308100039DF7 /* NSDictionary+compare.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A6972F7A246D5E58003CE84D /* NetworkBridge */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F7C246D5E58003CE84D /* Models */,
+				A6972F7B246D5E58003CE84D /* FWNetworkBridge.h */,
+				A6972F7F246D5E58003CE84D /* FWNetworkBridge.m */,
+			);
+			path = NetworkBridge;
+			sourceTree = "<group>";
+		};
+		A6972F7C246D5E58003CE84D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F7D246D5E58003CE84D /* FWBaseModel.h */,
+				A6972F7E246D5E58003CE84D /* FWBaseModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6972F81246D5E58003CE84D /* IPAddressBridge */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F85246D5E58003CE84D /* FWIPAddressConfig.h */,
+				A6972F82246D5E58003CE84D /* FWIPAddressConfig.m */,
+				A6972F84246D5E58003CE84D /* FWIPAddressBridge.h */,
+				A6972F83246D5E58003CE84D /* FWIPAddressBridge.m */,
+			);
+			path = IPAddressBridge;
+			sourceTree = "<group>";
+		};
+		A6972F86246D5E58003CE84D /* ToastBridge */ = {
+			isa = PBXGroup;
+			children = (
+				A6972F87246D5E58003CE84D /* FWToastBridge.h */,
+				A6972F88246D5E58003CE84D /* FWToastBridge.m */,
+			);
+			path = ToastBridge;
+			sourceTree = "<group>";
+		};
+		A6FDBF9924849A3B00856C8C /* VCSReplayBroadcastUpload */ = {
+			isa = PBXGroup;
+			children = (
+				A6FDBFB82484E08400856C8C /* ReplayBroadcastUpload.entitlements */,
+				A6FDBF9A24849A3B00856C8C /* SampleHandler.h */,
+				A6FDBF9B24849A3B00856C8C /* SampleHandler.m */,
+				A6FDBF9D24849A3B00856C8C /* Info.plist */,
+			);
+			path = VCSReplayBroadcastUpload;
+			sourceTree = "<group>";
+		};
+		BF600774A068713804785EAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFAD24DC98496CC7A93EA639 /* Pods-VCSSDK_Example.debug.xcconfig */,
+				867BCCFAA44BE554E7B32E01 /* Pods-VCSSDK_Example.release.xcconfig */,
+				9D6290F7686191133F411AEB /* Pods-VCSReplayBroadcastUpload.debug.xcconfig */,
+				C911B6695BD919C3C1E4FA33 /* Pods-VCSReplayBroadcastUpload.release.xcconfig */,
+				F7E5B3EC321F702CF2F3B406 /* Pods-VCSReplayBroadcastUploadSetupUI.debug.xcconfig */,
+				907819A3E8BC9D38AC73150C /* Pods-VCSReplayBroadcastUploadSetupUI.release.xcconfig */,
+				B622CDC53ADEEE13783E5123 /* Pods-VCSReplayBroadcastCasting.debug.xcconfig */,
+				E9B858D23ED84174B43BD037 /* Pods-VCSReplayBroadcastCasting.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D16FDF802456FA8800A48951 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDFBA24570A8300A48951 /* Register */,
+				D16FDF9D2456FD6800A48951 /* Login */,
+				F49640902A1C51D3001BB911 /* Casting */,
+				D16FDFA6245709AF00A48951 /* ServeConfig */,
+				F4E83A7924D98BA200657712 /* DrawingConfig */,
+				F4E83A7A24D98BA300657712 /* Drawing */,
+				F43AD45A24F39A6100922C59 /* NetCall */,
+				F432A56D272FD1EF0001FE46 /* Network */,
+				F47782EA25FF087D0003E921 /* MQTTClient */,
+				F45749BE26B2A4C50058EE52 /* Invite */,
+				F488AFE02702AF0F00FAF978 /* Beauty */,
+				F45F0E81260C250000DDC21F /* RecorderAudio */,
+				D16FDFA5245709AF00A48951 /* RoomConfig */,
+				F4B8AD4D25BEAB3700A6405D /* RoomGesture */,
+				D16FDFA7245709B000A48951 /* Room */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D16FDF832456FA8800A48951 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDF852456FA8800A48951 /* AppDelegate */,
+				D16FDF842456FA8800A48951 /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D16FDF852456FA8800A48951 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDF862456FA8800A48951 /* FWAppDelegate.h */,
+				D16FDF872456FA8800A48951 /* FWAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D16FDF882456FA8800A48951 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDF8C2456FA8800A48951 /* Images */,
+				D16FDF892456FA8800A48951 /* VCSSDK-Prefix.pch */,
+				D16FDF8A2456FA8800A48951 /* InfoPlist.strings */,
+				A6284D89247B6C9300008574 /* VCSDEMO.entitlements */,
+				D16FDF8E2456FA8800A48951 /* LaunchScreen.storyboard */,
+				D16FDF902456FA8800A48951 /* Main.storyboard */,
+				D16FDF922456FA8900A48951 /* VCSSDK-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D16FDF8C2456FA8800A48951 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A6284D8A247B7B5C00008574 /* Launch.xcassets */,
+				D16FDF9B2456FBCB00A48951 /* AppIcon.xcassets */,
+				A694BEFE24595DF900DCFA04 /* RoomConfig.xcassets */,
+				A694BF19245DCF3100DCFA04 /* Room.xcassets */,
+				F45F0EF2260C632000DDC21F /* Recording.xcassets */,
+				F4FB71E62611850100AF1B95 /* Common.xcassets */,
+				F488AFF12702EF5400FAF978 /* Beauty.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D16FDF9D2456FD6800A48951 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDF9E2456FD9500A48951 /* FWLoginViewController.h */,
+				D16FDF9F2456FD9500A48951 /* FWLoginViewController.m */,
+				D16FDFA02456FD9500A48951 /* FWLoginViewController.xib */,
+				A6F114C224580E1500662C6C /* FWLoginViewModel.h */,
+				A6F114C324580E1500662C6C /* FWLoginViewModel.m */,
+				A6F114C82458222700662C6C /* FWLoginModel.h */,
+				A6F114C92458222700662C6C /* FWLoginModel.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D16FDFA5245709AF00A48951 /* RoomConfig */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDFB0245709F400A48951 /* FWRoomConfigViewController.h */,
+				D16FDFB1245709F400A48951 /* FWRoomConfigViewController.m */,
+				D16FDFB2245709F400A48951 /* FWRoomConfigViewController.xib */,
+				A694BEF42459323A00DCFA04 /* FWRoomConfigViewModel.h */,
+				A694BEF52459323A00DCFA04 /* FWRoomConfigViewModel.m */,
+				A694BF0024598DA800DCFA04 /* FWEnterRoomModel.h */,
+				A694BF0124598DA800DCFA04 /* FWEnterRoomModel.m */,
+			);
+			path = RoomConfig;
+			sourceTree = "<group>";
+		};
+		D16FDFA6245709AF00A48951 /* ServeConfig */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDFA8245709D100A48951 /* FWServeConfigViewController.h */,
+				D16FDFA9245709D100A48951 /* FWServeConfigViewController.m */,
+				D16FDFAA245709D100A48951 /* FWServeConfigViewController.xib */,
+				A694BEF124590F8400DCFA04 /* FWServeConfigViewModel.h */,
+				A694BEF224590F8400DCFA04 /* FWServeConfigViewModel.m */,
+			);
+			path = ServeConfig;
+			sourceTree = "<group>";
+		};
+		D16FDFA7245709B000A48951 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDFB524570A0400A48951 /* FWRoomViewController.h */,
+				D16FDFB624570A0400A48951 /* FWRoomViewController.m */,
+				D16FDFB724570A0400A48951 /* FWRoomViewController.xib */,
+				A694BF08245A6B6F00DCFA04 /* FWPlayerView.h */,
+				A694BF09245A6B6F00DCFA04 /* FWPlayerView.m */,
+				A694BF1D24643AD300DCFA04 /* FWPlayerView.xib */,
+				A69EAA242471301600A42AEB /* FWCameraView.h */,
+				A69EAA252471301600A42AEB /* FWCameraView.m */,
+				A6920BA5247F9E7100269F49 /* FWCameraView.xib */,
+				A694BF0E245A9E3B00DCFA04 /* FWYUVPlayerView.h */,
+				A694BF0F245A9E3C00DCFA04 /* FWYUVPlayerView.m */,
+				A694BF1B2463EB4500DCFA04 /* FWYUVPlayerView.xib */,
+				A6920BA7247FA91D00269F49 /* FWWhiteBoardView.h */,
+				A6920BA8247FA91D00269F49 /* FWWhiteBoardView.m */,
+				A6920BAA247FA93B00269F49 /* FWWhiteBoardView.xib */,
+				F4CCCDFF24A1A0E500ED67EB /* FWRoomViewModel.h */,
+				F4CCCE0024A1A0E500ED67EB /* FWRoomViewModel.m */,
+				F43DFD9A24A228F8008BD9F7 /* FWRoomtempTokenModel.h */,
+				F43DFD9B24A228F8008BD9F7 /* FWRoomtempTokenModel.m */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		D16FDFBA24570A8300A48951 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D16FDFBB24570A9100A48951 /* FWRegisterViewController.h */,
+				D16FDFBC24570A9100A48951 /* FWRegisterViewController.m */,
+				D16FDFBD24570A9100A48951 /* FWRegisterViewController.xib */,
+				A6F114CB2458404B00662C6C /* FWRegisterViewModel.h */,
+				A6F114CC2458404C00662C6C /* FWRegisterViewModel.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F425826629F119A600E4A1C2 /* CastingBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F425826729F119BE00E4A1C2 /* FWCastingBridge.h */,
+				F425826829F119BE00E4A1C2 /* FWCastingBridge.m */,
+			);
+			path = CastingBridge;
+			sourceTree = "<group>";
+		};
+		F432A56D272FD1EF0001FE46 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F432A56E272FD2EC0001FE46 /* FWNetworkViewController.h */,
+				F432A56F272FD2EC0001FE46 /* FWNetworkViewController.m */,
+				F432A570272FD2EC0001FE46 /* FWNetworkViewController.xib */,
+				F432A573273005FA0001FE46 /* FWNetworkViewModel.h */,
+				F432A574273005FA0001FE46 /* FWNetworkViewModel.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F43AD3EA24EBF4C400922C59 /* NetCallBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F43AD3EB24EBF4D600922C59 /* FWNetCallBridge.h */,
+				F43AD3EC24EBF4D600922C59 /* FWNetCallBridge.m */,
+			);
+			path = NetCallBridge;
+			sourceTree = "<group>";
+		};
+		F43AD45A24F39A6100922C59 /* NetCall */ = {
+			isa = PBXGroup;
+			children = (
+				F43AD45B24F39A9B00922C59 /* FWNetCallViewController.h */,
+				F43AD45C24F39A9B00922C59 /* FWNetCallViewController.m */,
+				F43AD45D24F39A9B00922C59 /* FWNetCallViewController.xib */,
+				F43AD46024F3ABB600922C59 /* FWNetCallViewModel.h */,
+				F43AD46124F3ABB600922C59 /* FWNetCallViewModel.m */,
+			);
+			path = NetCall;
+			sourceTree = "<group>";
+		};
+		F45749BE26B2A4C50058EE52 /* Invite */ = {
+			isa = PBXGroup;
+			children = (
+				F45749BF26B2A4F00058EE52 /* FWInviteViewController.h */,
+				F45749C026B2A4F00058EE52 /* FWInviteViewController.m */,
+				F45749C126B2A4F00058EE52 /* FWInviteViewController.xib */,
+				F45749C426B2A9990058EE52 /* FWInviteViewModel.h */,
+				F45749C526B2A9990058EE52 /* FWInviteViewModel.m */,
+			);
+			path = Invite;
+			sourceTree = "<group>";
+		};
+		F45F0E81260C250000DDC21F /* RecorderAudio */ = {
+			isa = PBXGroup;
+			children = (
+				F45F0E91260C258300DDC21F /* FWRecorderAudioViewController.h */,
+				F45F0E92260C258300DDC21F /* FWRecorderAudioViewController.m */,
+				F45F0E93260C258300DDC21F /* FWRecorderAudioViewController.xib */,
+			);
+			path = RecorderAudio;
+			sourceTree = "<group>";
+		};
+		F47782EA25FF087D0003E921 /* MQTTClient */ = {
+			isa = PBXGroup;
+			children = (
+				F47782EB25FF08B30003E921 /* FWMQTTClientViewController.h */,
+				F47782EC25FF08B30003E921 /* FWMQTTClientViewController.m */,
+				F47782ED25FF08B30003E921 /* FWMQTTClientViewController.xib */,
+				F47782F425FF0FC40003E921 /* FWMQTTClientViewModel.h */,
+				F47782F525FF0FC40003E921 /* FWMQTTClientViewModel.m */,
+				F48BBA642614A6D200A98DA5 /* FWMQTTClientModel.h */,
+				F48BBA652614A6D200A98DA5 /* FWMQTTClientModel.m */,
+			);
+			path = MQTTClient;
+			sourceTree = "<group>";
+		};
+		F477836F26004B990003E921 /* MQTTClientBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F477837026004BB00003E921 /* FWMQTTClientBridge.h */,
+				F477837126004BB00003E921 /* FWMQTTClientBridge.m */,
+			);
+			path = MQTTClientBridge;
+			sourceTree = "<group>";
+		};
+		F488AFE02702AF0F00FAF978 /* Beauty */ = {
+			isa = PBXGroup;
+			children = (
+				F488AFE12702AF3600FAF978 /* FWBeautyViewController.h */,
+				F488AFE22702AF3600FAF978 /* FWBeautyViewController.m */,
+				F488AFE32702AF3600FAF978 /* FWBeautyViewController.xib */,
+				F488AFE62702E4F900FAF978 /* FWBeautyViewBar.h */,
+				F488AFE72702E4F900FAF978 /* FWBeautyViewBar.m */,
+				F488AFE92702E50200FAF978 /* FWBeautyViewBar.xib */,
+				F488AFD726FF176500FAF978 /* FWFilterView.h */,
+				F488AFD826FF176500FAF978 /* FWFilterView.m */,
+				F488AFEB2702E9BE00FAF978 /* FWBeautyView.h */,
+				F488AFEC2702E9BE00FAF978 /* FWBeautyView.m */,
+				F488AFEE2702EE6500FAF978 /* FWSlider.h */,
+				F488AFEF2702EE6500FAF978 /* FWSlider.m */,
+				F488AFD126FF15FA00FAF978 /* FWBeautyModel.h */,
+				F488AFD226FF15FA00FAF978 /* FWBeautyModel.m */,
+			);
+			path = Beauty;
+			sourceTree = "<group>";
+		};
+		F49640902A1C51D3001BB911 /* Casting */ = {
+			isa = PBXGroup;
+			children = (
+				F49640912A1C5238001BB911 /* FWCastingViewController.h */,
+				F49640922A1C5238001BB911 /* FWCastingViewController.m */,
+				F49640932A1C5238001BB911 /* FWCastingViewController.xib */,
+				F49640962A1C54AE001BB911 /* FWCastingViewModel.h */,
+				F49640972A1C54AE001BB911 /* FWCastingViewModel.m */,
+			);
+			path = Casting;
+			sourceTree = "<group>";
+		};
+		F49B132B2A4810430080D186 /* PackageBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F49B132D2A4810430080D186 /* FWPackageBridge.h */,
+				F49B132C2A4810430080D186 /* FWPackageBridge.mm */,
+			);
+			path = PackageBridge;
+			sourceTree = "<group>";
+		};
+		F4B8AD4D25BEAB3700A6405D /* RoomGesture */ = {
+			isa = PBXGroup;
+			children = (
+				F4B8AD4E25BEAB5A00A6405D /* FWRoomGestureViewController.h */,
+				F4B8AD4F25BEAB5A00A6405D /* FWRoomGestureViewController.m */,
+				F4B8AD5025BEAB5A00A6405D /* FWRoomGestureViewController.xib */,
+			);
+			path = RoomGesture;
+			sourceTree = "<group>";
+		};
+		F4D8CA8528E6953F00D526F5 /* LoggerBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F4D8CA8628E6955500D526F5 /* FWLoggerBridge.h */,
+				F4D8CA8728E6955500D526F5 /* FWLoggerBridge.m */,
+			);
+			path = LoggerBridge;
+			sourceTree = "<group>";
+		};
+		F4E83A7924D98BA200657712 /* DrawingConfig */ = {
+			isa = PBXGroup;
+			children = (
+				F4E83A7B24D98BDF00657712 /* FWDrawingConfigViewController.h */,
+				F4E83A7C24D98BDF00657712 /* FWDrawingConfigViewController.m */,
+				F4E83A7D24D98BDF00657712 /* FWDrawingConfigViewController.xib */,
+				F4E83A8524D992CE00657712 /* FWDrawingConfigViewModel.h */,
+				F4E83A8624D992CE00657712 /* FWDrawingConfigViewModel.m */,
+			);
+			path = DrawingConfig;
+			sourceTree = "<group>";
+		};
+		F4E83A7A24D98BA300657712 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				F4E83A8024D98BFB00657712 /* FWDrawingViewController.h */,
+				F4E83A8124D98BFB00657712 /* FWDrawingViewController.m */,
+				F4E83A8224D98BFB00657712 /* FWDrawingViewController.xib */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* VCSSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "VCSSDK_Example" */;
+			buildPhases = (
+				3570B4A11079AD484732AAE1 /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				A6FDBF8F248499C800856C8C /* Embed App Extensions */,
+				42198F3958BFD26B0E1B737F /* [CP] Embed Pods Frameworks */,
+				6D0721670E40CCB25771ABFA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FDBFAE24849A3B00856C8C /* PBXTargetDependency */,
+			);
+			name = VCSSDK_Example;
+			productName = VCSSDK;
+			productReference = 6003F58A195388D20070C39A /* VCSDEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6FDBF9624849A3B00856C8C /* VCSReplayBroadcastUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FDBFB324849A3B00856C8C /* Build configuration list for PBXNativeTarget "VCSReplayBroadcastUpload" */;
+			buildPhases = (
+				3B5518C753FF9288E570545C /* [CP] Check Pods Manifest.lock */,
+				A6FDBF9324849A3B00856C8C /* Sources */,
+				A6FDBF9424849A3B00856C8C /* Frameworks */,
+				A6FDBF9524849A3B00856C8C /* Resources */,
+				D0406C52E78DCCB809A2C194 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VCSReplayBroadcastUpload;
+			productName = VCSReplayBroadcastUpload;
+			productReference = A6FDBF9724849A3B00856C8C /* VCS屏幕录制.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FW;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = SailorGa;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = RJ5C7D2C4E;
+						ProvisioningStyle = Manual;
+					};
+					A6FDBF9624849A3B00856C8C = {
+						CreatedOnToolsVersion = 11.4.1;
+						DevelopmentTeam = RJ5C7D2C4E;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "VCSSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* VCSSDK_Example */,
+				A6FDBF9624849A3B00856C8C /* VCSReplayBroadcastUpload */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45749C326B2A4F00058EE52 /* FWInviteViewController.xib in Resources */,
+				A6284D8B247B7B5C00008574 /* Launch.xcassets in Resources */,
+				D16FDF982456FA8900A48951 /* LaunchScreen.storyboard in Resources */,
+				A6920BA6247F9E7100269F49 /* FWCameraView.xib in Resources */,
+				F45F0EF3260C632000DDC21F /* Recording.xcassets in Resources */,
+				F4E83A8424D98BFB00657712 /* FWDrawingViewController.xib in Resources */,
+				F4FB71E72611850100AF1B95 /* Common.xcassets in Resources */,
+				A6920BAB247FA93B00269F49 /* FWWhiteBoardView.xib in Resources */,
+				D16FDF9A2456FA8900A48951 /* VCSSDK-Info.plist in Resources */,
+				F488AFF22702EF5400FAF978 /* Beauty.xcassets in Resources */,
+				A694BEFF24595DF900DCFA04 /* RoomConfig.xcassets in Resources */,
+				F45F0E95260C258300DDC21F /* FWRecorderAudioViewController.xib in Resources */,
+				F432A572272FD2EC0001FE46 /* FWNetworkViewController.xib in Resources */,
+				F4E83A7F24D98BDF00657712 /* FWDrawingConfigViewController.xib in Resources */,
+				F47782EF25FF08B30003E921 /* FWMQTTClientViewController.xib in Resources */,
+				D16FDFB924570A0400A48951 /* FWRoomViewController.xib in Resources */,
+				A694BF1E24643AD300DCFA04 /* FWPlayerView.xib in Resources */,
+				D16FDF9C2456FBCB00A48951 /* AppIcon.xcassets in Resources */,
+				D16FDFA22456FD9500A48951 /* FWLoginViewController.xib in Resources */,
+				D16FDFBF24570A9100A48951 /* FWRegisterViewController.xib in Resources */,
+				D16FDFB4245709F400A48951 /* FWRoomConfigViewController.xib in Resources */,
+				D16FDF962456FA8900A48951 /* InfoPlist.strings in Resources */,
+				F49640952A1C5238001BB911 /* FWCastingViewController.xib in Resources */,
+				F43AD45F24F39A9B00922C59 /* FWNetCallViewController.xib in Resources */,
+				D16FDF992456FA8900A48951 /* Main.storyboard in Resources */,
+				A694BF1C2463EB4500DCFA04 /* FWYUVPlayerView.xib in Resources */,
+				F488AFE52702AF3600FAF978 /* FWBeautyViewController.xib in Resources */,
+				D16FDFAC245709D100A48951 /* FWServeConfigViewController.xib in Resources */,
+				A694BF1A245DCF3100DCFA04 /* Room.xcassets in Resources */,
+				F4B8AD5225BEAB5A00A6405D /* FWRoomGestureViewController.xib in Resources */,
+				F488AFEA2702E50200FAF978 /* FWBeautyViewBar.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FDBF9524849A3B00856C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3570B4A11079AD484732AAE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VCSSDK_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B5518C753FF9288E570545C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VCSReplayBroadcastUpload-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42198F3958BFD26B0E1B737F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
+				"${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework",
+				"${BUILT_PRODUCTS_DIR}/MMKVCore/MMKVCore.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${PODS_ROOT}/../../VCSSDK/Classes/Beauty/Depend/FURenderKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMKV.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMKVCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FURenderKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D0721670E40CCB25771ABFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSAudio.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSBeauty.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSDrawing.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogger.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogin.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSMessage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSNetCall.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSAudio.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSBeauty.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSDrawing.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogger.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogin.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSMessage.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSNetCall.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0406C52E78DCCB809A2C194 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VCSReplayBroadcastUpload/Pods-VCSReplayBroadcastUpload-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSAudio.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSBeauty.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSDrawing.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogger.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogin.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSMessage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSNetCall.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSAudio.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSBeauty.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSDrawing.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogger.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogin.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSMessage.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSNetCall.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VCSReplayBroadcastUpload/Pods-VCSReplayBroadcastUpload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E83A8724D992CE00657712 /* FWDrawingConfigViewModel.m in Sources */,
+				A6F114CA2458222700662C6C /* FWLoginModel.m in Sources */,
+				F45F0E94260C258300DDC21F /* FWRecorderAudioViewController.m in Sources */,
+				F4E83A8324D98BFB00657712 /* FWDrawingViewController.m in Sources */,
+				F43DFD9C24A228F8008BD9F7 /* FWRoomtempTokenModel.m in Sources */,
+				D16FDFB3245709F400A48951 /* FWRoomConfigViewController.m in Sources */,
+				F4D8CA8828E6955500D526F5 /* FWLoggerBridge.m in Sources */,
+				A694BF0A245A6B6F00DCFA04 /* FWPlayerView.m in Sources */,
+				A694BF10245A9E3C00DCFA04 /* FWYUVPlayerView.m in Sources */,
+				F49640982A1C54AE001BB911 /* FWCastingViewModel.m in Sources */,
+				F47782F625FF0FC40003E921 /* FWMQTTClientViewModel.m in Sources */,
+				F43AD46224F3ABB600922C59 /* FWNetCallViewModel.m in Sources */,
+				F488AFED2702E9BE00FAF978 /* FWBeautyView.m in Sources */,
+				A6972F8F246D5E58003CE84D /* FWNetworkBridge.m in Sources */,
+				F425826929F119BE00E4A1C2 /* FWCastingBridge.m in Sources */,
+				F4E83A7E24D98BDF00657712 /* FWDrawingConfigViewController.m in Sources */,
+				D16FDF942456FA8900A48951 /* main.m in Sources */,
+				A6972F8E246D5E58003CE84D /* FWBaseModel.m in Sources */,
+				A6972F93246D5E58003CE84D /* FWToolHelper.m in Sources */,
+				F488AFD326FF15FA00FAF978 /* FWBeautyModel.m in Sources */,
+				F477837226004BB00003E921 /* FWMQTTClientBridge.m in Sources */,
+				A6F114C424580E1500662C6C /* FWLoginViewModel.m in Sources */,
+				A6972F90246D5E58003CE84D /* FWIPAddressConfig.m in Sources */,
+				F45749C626B2A9990058EE52 /* FWInviteViewModel.m in Sources */,
+				A6972F8D246D5E58003CE84D /* UIView+Extension.m in Sources */,
+				F45749C226B2A4F00058EE52 /* FWInviteViewController.m in Sources */,
+				F43AD45E24F39A9B00922C59 /* FWNetCallViewController.m in Sources */,
+				F432A571272FD2EC0001FE46 /* FWNetworkViewController.m in Sources */,
+				F43AD3ED24EBF4D600922C59 /* FWNetCallBridge.m in Sources */,
+				A694BF0224598DA800DCFA04 /* FWEnterRoomModel.m in Sources */,
+				D16FDF952456FA8900A48951 /* FWAppDelegate.m in Sources */,
+				F488AFF02702EE6500FAF978 /* FWSlider.m in Sources */,
+				F4BEA25C24E6308100039DF7 /* NSDictionary+compare.m in Sources */,
+				F488AFD926FF176500FAF978 /* FWFilterView.m in Sources */,
+				A6972F8C246D5E58003CE84D /* FWConstants.m in Sources */,
+				F4CCCE0124A1A0E500ED67EB /* FWRoomViewModel.m in Sources */,
+				F49B132E2A4810430080D186 /* FWPackageBridge.mm in Sources */,
+				A694BEF324590F8400DCFA04 /* FWServeConfigViewModel.m in Sources */,
+				F48BBA662614A6D200A98DA5 /* FWMQTTClientModel.m in Sources */,
+				D16FDFBE24570A9100A48951 /* FWRegisterViewController.m in Sources */,
+				A6972F92246D5E58003CE84D /* FWToastBridge.m in Sources */,
+				A6972F8A246D5E58003CE84D /* FWInterfaces.m in Sources */,
+				F488AFE82702E4F900FAF978 /* FWBeautyViewBar.m in Sources */,
+				A69EAA262471301600A42AEB /* FWCameraView.m in Sources */,
+				A6F114CD2458404C00662C6C /* FWRegisterViewModel.m in Sources */,
+				D16FDFA12456FD9500A48951 /* FWLoginViewController.m in Sources */,
+				A6972F8B246D5E58003CE84D /* FWEnum.m in Sources */,
+				F49640942A1C5238001BB911 /* FWCastingViewController.m in Sources */,
+				F4B8AD5125BEAB5A00A6405D /* FWRoomGestureViewController.m in Sources */,
+				F47782EE25FF08B30003E921 /* FWMQTTClientViewController.m in Sources */,
+				A694BEF62459323A00DCFA04 /* FWRoomConfigViewModel.m in Sources */,
+				F432A575273005FA0001FE46 /* FWNetworkViewModel.m in Sources */,
+				A6920BA9247FA91D00269F49 /* FWWhiteBoardView.m in Sources */,
+				A6972F91246D5E58003CE84D /* FWIPAddressBridge.m in Sources */,
+				F488AFE42702AF3600FAF978 /* FWBeautyViewController.m in Sources */,
+				D16FDFB824570A0400A48951 /* FWRoomViewController.m in Sources */,
+				D16FDFAB245709D100A48951 /* FWServeConfigViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FDBF9324849A3B00856C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FDBF9C24849A3B00856C8C /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6FDBFAE24849A3B00856C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FDBF9624849A3B00856C8C /* VCSReplayBroadcastUpload */;
+			targetProxy = A6FDBFAD24849A3B00856C8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D16FDF8A2456FA8800A48951 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D16FDF8B2456FA8800A48951 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D16FDF8E2456FA8800A48951 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D16FDF8F2456FA8800A48951 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D16FDF902456FA8800A48951 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D16FDF912456FA8900A48951 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFAD24DC98496CC7A93EA639 /* Pods-VCSSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/VCSSDK/Resources/VCSDEMO.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2022041801;
+				DEVELOPMENT_TEAM = RJ5C7D2C4E;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RJ5C7D2C4E;
+				ENABLE_BITCODE = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VCSSDK/Resources/VCSSDK-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/VCSSDK/Resources/VCSSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.seastart.vcsdemo;
+				PRODUCT_NAME = VCSDEMO;
+				PROVISIONING_PROFILE_SPECIFIER = vcsdemo_dev;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = vcsdemo_dev;
+				SWIFT_VERSION = 4.0;
+				VALID_ARCHS = arm64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867BCCFAA44BE554E7B32E01 /* Pods-VCSSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/VCSSDK/Resources/VCSDEMO.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2022041801;
+				DEVELOPMENT_TEAM = RJ5C7D2C4E;
+				ENABLE_BITCODE = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VCSSDK/Resources/VCSSDK-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/VCSSDK/Resources/VCSSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.seastart.vcsdemo;
+				PRODUCT_NAME = VCSDEMO;
+				PROVISIONING_PROFILE_SPECIFIER = vcsdemo_appstore;
+				SWIFT_VERSION = 4.0;
+				VALID_ARCHS = arm64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A6FDBFB424849A3B00856C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D6290F7686191133F411AEB /* Pods-VCSReplayBroadcastUpload.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = VCSReplayBroadcastUpload/ReplayBroadcastUpload.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2022041801;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = RJ5C7D2C4E;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = VCSReplayBroadcastUpload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.seastart.vcsdemo.replayBroadcastUpload;
+				PRODUCT_NAME = "VCS屏幕录制";
+				PROVISIONING_PROFILE_SPECIFIER = vcsdemoReplayBroadcastUpload_dev;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		A6FDBFB524849A3B00856C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C911B6695BD919C3C1E4FA33 /* Pods-VCSReplayBroadcastUpload.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = VCSReplayBroadcastUpload/ReplayBroadcastUpload.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2022041801;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = RJ5C7D2C4E;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = NO;
+				INFOPLIST_FILE = VCSReplayBroadcastUpload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.seastart.vcsdemo.replayBroadcastUpload;
+				PRODUCT_NAME = "VCS屏幕录制";
+				PROVISIONING_PROFILE_SPECIFIER = vcsdemoReplayBroadcastUpload_appstore;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "VCSSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "VCSSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FDBFB324849A3B00856C8C /* Build configuration list for PBXNativeTarget "VCSReplayBroadcastUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FDBFB424849A3B00856C8C /* Debug */,
+				A6FDBFB524849A3B00856C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}

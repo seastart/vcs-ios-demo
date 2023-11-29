@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FWRoomGestureViewController">
+            <connections>
+                <outlet property="cameraView" destination="TEs-2j-vYP" id="YaV-Qc-crl"/>
+                <outlet property="logoutButton" destination="XZv-Vk-t2Y" id="kIp-9k-bBY"/>
+                <outlet property="minePlayerView" destination="bjz-gp-LQt" id="8r4-Fp-o3k"/>
+                <outlet property="otherPlayerView" destination="ORh-1B-fzF" id="arI-wQ-8gM"/>
+                <outlet property="screenSharedButton" destination="TEh-ej-HtQ" id="Xer-Dt-RVy"/>
+                <outlet property="selfAudioSwitchButton" destination="fRp-kT-50r" id="6Ih-JF-n7r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjz-gp-LQt">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEs-2j-vYP" customClass="RTYUVPlayer">
+                    <rect key="frame" x="10" y="58" width="120" height="213.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="3ya-6W-KHW"/>
+                        <constraint firstAttribute="width" secondItem="TEs-2j-vYP" secondAttribute="height" multiplier="9:16" id="ITy-MF-Nao"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORh-1B-fzF">
+                    <rect key="frame" x="284" y="58" width="120" height="213.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ORh-1B-fzF" secondAttribute="height" multiplier="9:16" id="0nX-B0-tPX"/>
+                        <constraint firstAttribute="width" constant="120" id="c5K-fb-Hsx"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEh-ej-HtQ">
+                    <rect key="frame" x="10" y="752" width="78" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.35686274509999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2Cy-6P-BsX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="  屏幕共享  ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZv-Vk-t2Y">
+                    <rect key="frame" x="10" y="692" width="93" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.35686274509999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="W8X-gI-Xda"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="  退出会议室  ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRp-kT-50r">
+                    <rect key="frame" x="10" y="812" width="93" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.35686274509999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2qg-SI-HVo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="  已开启视频  ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" title="  已关闭视频  "/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XZv-Vk-t2Y" firstAttribute="leading" secondItem="fRp-kT-50r" secondAttribute="leading" id="64U-zg-5Qe"/>
+                <constraint firstItem="TEs-2j-vYP" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="AMi-pk-KD9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="bjz-gp-LQt" secondAttribute="bottom" id="AcI-Qj-Rkc"/>
+                <constraint firstItem="TEh-ej-HtQ" firstAttribute="top" secondItem="XZv-Vk-t2Y" secondAttribute="bottom" constant="20" id="CVs-gi-XHp"/>
+                <constraint firstItem="fRp-kT-50r" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="GwP-j0-qz1"/>
+                <constraint firstItem="TEs-2j-vYP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="L6d-em-g2L"/>
+                <constraint firstItem="ORh-1B-fzF" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="RXD-wT-wQj"/>
+                <constraint firstItem="fRp-kT-50r" firstAttribute="top" secondItem="TEh-ej-HtQ" secondAttribute="bottom" constant="20" id="VEW-8j-xch"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="fRp-kT-50r" secondAttribute="bottom" constant="10" id="XzG-1b-aSy"/>
+                <constraint firstItem="TEh-ej-HtQ" firstAttribute="leading" secondItem="fRp-kT-50r" secondAttribute="leading" id="a1w-aW-kjV"/>
+                <constraint firstItem="bjz-gp-LQt" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="eWi-U1-Gvl"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ORh-1B-fzF" secondAttribute="trailing" constant="10" id="iG5-yH-tCI"/>
+                <constraint firstItem="bjz-gp-LQt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="r1v-RX-jBe"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="bjz-gp-LQt" secondAttribute="trailing" id="vf5-CT-uLU"/>
+            </constraints>
+            <point key="canvasLocation" x="28" y="77"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

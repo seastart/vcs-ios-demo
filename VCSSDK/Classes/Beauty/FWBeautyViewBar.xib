@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FWBeautyViewBar">
+            <connections>
+                <outlet property="beautyFilterButton" destination="7fZ-PH-mhR" id="lBr-9j-w5e"/>
+                <outlet property="beautySkinButton" destination="gij-lv-sba" id="Wk6-Kv-Axq"/>
+                <outlet property="beautySlider" destination="fHT-7y-Rgf" id="D4a-mZ-I0R"/>
+                <outlet property="beautyView" destination="vtc-9i-3Ux" id="HSX-aU-mUT"/>
+                <outlet property="filterView" destination="fjF-Ib-8Ay" id="fTq-C9-uSX"/>
+                <outlet property="footerView" destination="8m6-RW-62d" id="YH8-qn-9rr"/>
+                <outlet property="headerView" destination="Wtj-3Q-gFR" id="AdT-ix-Fbz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtj-3Q-gFR" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="-1" width="414" height="146"/>
+                    <subviews>
+                        <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fHT-7y-Rgf" customClass="FWSlider">
+                            <rect key="frame" x="48" y="10" width="318" height="31"/>
+                            <color key="minimumTrackTintColor" red="0.1215686275" green="0.69803921570000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="sliderChangeEnd:" destination="-1" eventType="valueChanged" id="Hca-ex-Vha"/>
+                            </connections>
+                        </slider>
+                        <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fjF-Ib-8Ay" customClass="FWFilterView">
+                            <rect key="frame" x="0.0" y="48" width="414" height="98"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="98" id="yGa-lY-b1v"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="22" minimumInteritemSpacing="22" id="w3W-Pb-lXg">
+                                <size key="itemSize" width="44" height="74"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="6"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vtc-9i-3Ux" customClass="FWBeautyView">
+                            <rect key="frame" x="0.0" y="48" width="414" height="98"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="98" id="Cfc-a6-16d"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="22" minimumInteritemSpacing="22" id="M2e-sS-yfc">
+                                <size key="itemSize" width="44" height="74"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="6"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.59773651539999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fjF-Ib-8Ay" secondAttribute="bottom" id="6RD-QA-wLj"/>
+                        <constraint firstItem="fjF-Ib-8Ay" firstAttribute="top" secondItem="fHT-7y-Rgf" secondAttribute="bottom" constant="8" id="9In-yZ-c9s"/>
+                        <constraint firstItem="vtc-9i-3Ux" firstAttribute="leading" secondItem="Wtj-3Q-gFR" secondAttribute="leading" id="Cwp-pz-3XE"/>
+                        <constraint firstAttribute="trailing" secondItem="vtc-9i-3Ux" secondAttribute="trailing" id="OKa-Xx-i8q"/>
+                        <constraint firstAttribute="trailing" secondItem="fHT-7y-Rgf" secondAttribute="trailing" constant="50" id="VLz-lQ-w7C"/>
+                        <constraint firstItem="fjF-Ib-8Ay" firstAttribute="leading" secondItem="Wtj-3Q-gFR" secondAttribute="leading" id="ckO-yc-vAt"/>
+                        <constraint firstAttribute="bottom" secondItem="vtc-9i-3Ux" secondAttribute="bottom" id="cl8-tr-7oN"/>
+                        <constraint firstAttribute="trailing" secondItem="fjF-Ib-8Ay" secondAttribute="trailing" id="nYK-zo-1dW"/>
+                        <constraint firstAttribute="height" constant="146" id="q8i-Gx-UNv"/>
+                        <constraint firstItem="fHT-7y-Rgf" firstAttribute="leading" secondItem="Wtj-3Q-gFR" secondAttribute="leading" constant="50" id="t60-0x-hrV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8m6-RW-62d" userLabel="Footer View">
+                    <rect key="frame" x="0.0" y="145" width="414" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gij-lv-sba">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="49"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="美肤">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.36862745099999999" green="0.78039215689999997" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fZ-PH-mhR">
+                            <rect key="frame" x="207" y="0.0" width="207" height="49"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="滤镜">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.36862745099999999" green="0.78039215689999997" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.60191835969999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7fZ-PH-mhR" firstAttribute="centerY" secondItem="8m6-RW-62d" secondAttribute="centerY" id="4iu-pa-Ffh"/>
+                        <constraint firstItem="7fZ-PH-mhR" firstAttribute="height" secondItem="gij-lv-sba" secondAttribute="height" id="8av-Ut-2LL"/>
+                        <constraint firstItem="gij-lv-sba" firstAttribute="centerY" secondItem="8m6-RW-62d" secondAttribute="centerY" id="Bys-rY-OmU"/>
+                        <constraint firstItem="7fZ-PH-mhR" firstAttribute="width" secondItem="gij-lv-sba" secondAttribute="width" id="Utx-6G-AhI"/>
+                        <constraint firstAttribute="height" constant="49" id="eXS-sQ-jRc"/>
+                        <constraint firstItem="7fZ-PH-mhR" firstAttribute="leading" secondItem="gij-lv-sba" secondAttribute="trailing" id="kpL-uk-3cz"/>
+                        <constraint firstItem="gij-lv-sba" firstAttribute="leading" secondItem="8m6-RW-62d" secondAttribute="leading" id="tTM-0X-k15"/>
+                        <constraint firstAttribute="trailing" secondItem="7fZ-PH-mhR" secondAttribute="trailing" id="uph-te-kdD"/>
+                        <constraint firstItem="gij-lv-sba" firstAttribute="height" secondItem="8m6-RW-62d" secondAttribute="height" id="x6r-v8-pE4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="qT2-CX-40k"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wtj-3Q-gFR" secondAttribute="trailing" id="G7C-A0-7ii"/>
+                <constraint firstItem="8m6-RW-62d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xt0-KN-rw6"/>
+                <constraint firstItem="8m6-RW-62d" firstAttribute="top" secondItem="Wtj-3Q-gFR" secondAttribute="bottom" id="nsl-X4-2Zk"/>
+                <constraint firstAttribute="trailing" secondItem="8m6-RW-62d" secondAttribute="trailing" id="pih-rC-yBr"/>
+                <constraint firstItem="Wtj-3Q-gFR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="q5f-sv-pbb"/>
+                <constraint firstItem="qT2-CX-40k" firstAttribute="bottom" secondItem="8m6-RW-62d" secondAttribute="bottom" id="qkk-hU-vfH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="56.521739130434788" y="118.52678571428571"/>
+        </view>
+    </objects>
+</document>
