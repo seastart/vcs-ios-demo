@@ -7,7 +7,7 @@
 
 客户端开发需要用到两部分：API和SDK。
 
-API是以HTTP Restful形式提供的一组接口，主要负责帐号的登录、注册、充值、会议管理等操作，通过API接口获取到相应的入会凭证，然后才可以使用SDK库进入会议室，API详细接口请参见[《VCS服务端API开发手册》](https://www.yuque.com/anyconf/api?# 《VCS SDK 服务端API 开发手册》)。
+API是以HTTP Restful形式提供的一组接口，主要负责帐号的登录、注册、充值、会议管理等操作，通过API接口获取到相应的入会凭证，然后才可以使用SDK库进入会议室，API详细接口请参见[《VCS服务端API开发手册》](https://www.yuque.com/anyconf/api?#)。
 
 ## 示例的使用
 
@@ -32,7 +32,7 @@ pod install
 step 4：替换申请的```AppID```和```AppKey```
 
 ```
-NSString * const VCSSDKAPPID = <# 替换成平台分配的Appid #>
+NSString * const VCSSDKAPPID = <# 替换成平台分配的AppID #>
 NSString * const VCSSDKAPPKEY = <# 替换成平台分配的AppKey #>
 ```
 
