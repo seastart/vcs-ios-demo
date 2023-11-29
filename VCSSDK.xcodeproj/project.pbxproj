@@ -1039,7 +1039,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Depend/FURenderKit.framework",
+				"${PODS_ROOT}/../../VCSSDK/Classes/Beauty/Depend/FURenderKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1071,14 +1071,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-resources.sh",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSAudio.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSBeauty.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSDrawing.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSLogger.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSLogin.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSMessage.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSNetCall.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSAudio.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSBeauty.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSDrawing.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogger.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogin.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSMessage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSNetCall.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1087,9 +1087,9 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSDrawing.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogger.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogin.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSMessage.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSNetCall.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1103,14 +1103,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VCSReplayBroadcastUpload/Pods-VCSReplayBroadcastUpload-resources.sh",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSAudio.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSBeauty.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSDrawing.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSLogger.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSLogin.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSMessage.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSNetCall.bundle",
-				"${PODS_ROOT}/VCSSDK/VCSSDK/Resources/VCSSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSAudio.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSBeauty.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSDrawing.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogger.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogin.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSMessage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSNetCall.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1119,9 +1119,9 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSDrawing.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogger.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogin.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSMessage.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSNetCall.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
