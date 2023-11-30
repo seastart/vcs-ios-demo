@@ -1056,8 +1056,8 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
-				"${PODS_ROOT}/../../VCSSDK/Classes/Beauty/Depend/FURenderKit.framework",
-				"${PODS_ROOT}/../../VCSSDK/Classes/Meeting/Depend/WebRTC.framework",
+				"${PODS_ROOT}/../../../VCSSDK/Classes/Beauty/Depend/FURenderKit.framework",
+				"${PODS_ROOT}/../../../VCSSDK/Classes/Meeting/Depend/WebRTC.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
