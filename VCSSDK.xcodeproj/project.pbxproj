@@ -132,12 +132,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		062932884AB1744D07DBBE17 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		28198E8D2CC61A6FACC60576 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		30E529EB95FCAC8D38834D80 /* Pods_VCSReplayBroadcastUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCSReplayBroadcastUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		443081FCC70D1E6D0D9F6AA6 /* Pods_VCSReplayBroadcastCasting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCSReplayBroadcastCasting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		542BD432CD9FBAAA539098FA /* Pods_VCSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C76B62C772BE5C2D9257E21 /* VCSSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VCSSDK.podspec; path = ../VCSSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* VCSDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCSDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -283,6 +280,9 @@
 		F48BBA652614A6D200A98DA5 /* FWMQTTClientModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWMQTTClientModel.m; sourceTree = "<group>"; };
 		F48F59DB2B17350B00F6E6F3 /* FWKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWKeychain.h; sourceTree = "<group>"; };
 		F48F59DC2B17350B00F6E6F3 /* FWKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWKeychain.m; sourceTree = "<group>"; };
+		F48F59DE2B18402400F6E6F3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
+		F48F59DF2B18402500F6E6F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		F48F59E02B18402500F6E6F3 /* VCSSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = VCSSDK.podspec; path = ../../VCSSDK.podspec; sourceTree = "<group>"; };
 		F49640912A1C5238001BB911 /* FWCastingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCastingViewController.h; sourceTree = "<group>"; };
 		F49640922A1C5238001BB911 /* FWCastingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCastingViewController.m; sourceTree = "<group>"; };
 		F49640932A1C5238001BB911 /* FWCastingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWCastingViewController.xib; sourceTree = "<group>"; };
@@ -390,9 +390,9 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				5C76B62C772BE5C2D9257E21 /* VCSSDK.podspec */,
-				28198E8D2CC61A6FACC60576 /* README.md */,
-				062932884AB1744D07DBBE17 /* LICENSE */,
+				F48F59DE2B18402400F6E6F3 /* LICENSE */,
+				F48F59DF2B18402500F6E6F3 /* README.md */,
+				F48F59E02B18402500F6E6F3 /* VCSSDK.podspec */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -1039,7 +1039,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
-				"${PODS_ROOT}/../../VCSSDK/Classes/Beauty/Depend/FURenderKit.framework",
+				"${PODS_ROOT}/../../../VCSSDK/Classes/Beauty/Depend/FURenderKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
