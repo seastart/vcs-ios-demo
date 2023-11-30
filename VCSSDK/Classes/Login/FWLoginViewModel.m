@@ -8,6 +8,7 @@
 
 #import "FWLoginViewModel.h"
 #import "FWAppDelegate.h"
+#import <VCSSDK/VCSSDK.h>
 #import <VCSSDK/VCSLogin.h>
 
 @interface FWLoginViewModel()
@@ -43,16 +44,27 @@
     self.loading = YES;
     self.promptText = @"登录中...";
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    [params setValue:self.accountText forKey:@"loginname"];
-    [params setValue:[[FWToolHelper sharedManager] HmacSha1:HmacSha1Key data:[NSString stringWithFormat:@"%@%@",self.accountText, self.passwordText]] forKey:@"password"];
-    [params setValue:@(3) forKey:@"dev_type"];
-    [params setValue:DeviceUUID forKey:@"device_id"];
-    [[FWNetworkBridge sharedManager] POST:FWUserLoginInterfacePart params:params className:@"FWLoginModel" result:^(BOOL isSuccess, id _Nullable result, NSString * _Nullable errorMsg) {
+    /// 创建配置参数
+    VCSLoginConfig *loginConfig = [[VCSLoginConfig alloc] init];
+    /// 服务器地址
+    loginConfig.domainUrl = [kSGUserDefaults objectForKey:DATADEFAULTAPIKEY];
+    /// AppID
+    loginConfig.appId = VCSSDKAPPID;
+    /// AppKey
+    loginConfig.appKey = VCSSDKAPPKEY;
+    /// 账号登录
+    loginConfig.isTourist = NO;
+    /// 登录账号
+    loginConfig.loginname = self.accountText;
+    /// 登录密码
+    loginConfig.password = self.passwordText;
+    /// 通过配置初始化组件
+    [[VCSMeetingManager sharedManager] initializeWithConfig:loginConfig resultBlock:^(BOOL result, id  _Nullable data, NSString * _Nullable errorMsg) {
         self.loading = NO;
-        if (isSuccess && result) {
+        if (result && data) {
             self.promptText = @"登录成功";
-            self.loginModel = (FWLoginModel *)result;
+            /// 转换成登录数据模型
+            self.loginModel = [[FWLoginModel alloc] initWithDictionary:data];
             /// 设置userToken
             [[FWNetworkBridge sharedManager] setUserToken:self.loginModel.data.token];
             /// 登录VCSSDK
