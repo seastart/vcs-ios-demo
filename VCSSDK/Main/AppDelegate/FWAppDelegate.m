@@ -11,6 +11,7 @@
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <ReplayKit/ReplayKit.h>
 #import <VCSSDK/VCSBeauty.h>
+#import <VCSSDK/VCSWebRTCManager.h>
 
 @interface FWAppDelegate()
 
