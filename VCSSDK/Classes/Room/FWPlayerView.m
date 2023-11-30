@@ -338,6 +338,7 @@
 #pragma mark - 用于播放用户的特定画面
 /// 用于播放用户的特定画面
 /// @param linkId 视频链路ID
+/// @param stamp 时间戳
 /// @param track 视频轨道
 /// @param type 视频存储格式(0 - I420 , 1 - NV12, 2 - NV21)
 /// @param lable 视频角度
@@ -346,7 +347,7 @@
 /// @param yData 流媒体像素数据
 /// @param uData 流媒体像素数据
 /// @param vData 流媒体像素数据
-- (void)playCallbackFrameWithLinkId:(int)linkId track:(int)track type:(int)type lable:(int)lable width:(int)width height:(int)height yData:(void *)yData uData:(void *)uData vData:(void *)vData {
+- (void)playCallbackFrameWithLinkId:(int)linkId stamp:(int)stamp track:(int)track type:(int)type lable:(int)lable width:(int)width height:(int)height yData:(void *)yData uData:(void *)uData vData:(void *)vData {
     
     dispatch_async(dispatch_get_main_queue(), ^{
         if (linkId) {
@@ -365,7 +366,7 @@
             }
             if (isCon) {
                 FWYUVPlayerView *player = (FWYUVPlayerView *)[self.playDic objectForKey:streamId];
-                [player playCallbackFrameWithLinkId:linkId track:track type:type lable:lable width:width height:height yData:yData uData:uData vData:vData];
+                [player playCallbackFrameWithLinkId:linkId stamp:stamp track:track type:type lable:lable width:width height:height yData:yData uData:uData vData:vData];
             } else {
                 if (yData) {
                     free(yData);

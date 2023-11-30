@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark 用于播放用户的特定画面
 /// 用于播放用户的特定画面
 /// @param linkId 视频链路ID
+/// @param stamp 时间戳
 /// @param track 视频轨道
 /// @param type 视频存储格式(0 - I420 , 1 - NV12, 2 - NV21)
 /// @param lable 视频角度
@@ -44,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param yData 流媒体像素数据
 /// @param uData 流媒体像素数据
 /// @param vData 流媒体像素数据
-- (void)playCallbackFrameWithLinkId:(int)linkId track:(int)track type:(int)type lable:(int)lable width:(int)width height:(int)height yData:(void *)yData uData:(void *)uData vData:(void *)vData;
+- (void)playCallbackFrameWithLinkId:(int)linkId stamp:(int)stamp track:(int)track type:(int)type lable:(int)lable width:(int)width height:(int)height yData:(void *)yData uData:(void *)uData vData:(void *)vData;
 
 #pragma mark 会议时成员状态更新
 /// 会议时成员状态更新
