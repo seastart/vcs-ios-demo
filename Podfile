@@ -30,9 +30,9 @@ end
 
 def meetingPods
   # 本地依赖开发版VCSSDK
-  pod 'VCSSDK', :path => '../'
+  pod 'VCSSDK', :path => '../../'
   # 本地依赖发布版VCSSDK
-  # pod 'VCSSDK', :path => '../Depend/VCSSDK'
+  # pod 'VCSSDK', :path => '../../Depend/VCSSDK'
   # 远程依赖VCSSDK分支
   # pod 'VCSSDK', :git => 'http://code.zaoing.com/meeting/VCSSDK-iOS.git', :branch => 'optimize'
   # 远程依赖VCSSDK

@@ -463,7 +463,7 @@ DEPENDENCIES:
   - ReactiveObjC
   - SDWebImage
   - TZImagePickerController
-  - VCSSDK (from `../`)
+  - VCSSDK (from `../../`)
   - YYModel
 
 SPEC REPOS:
@@ -484,7 +484,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   VCSSDK:
-    :path: "../"
+    :path: "../../"
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
@@ -502,6 +502,6 @@ SPEC CHECKSUMS:
   VCSSDK: 32587a0f9a2861500fbc4764d1ee9e4a1a0b2532
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: aff02bf77d2c8aed2b53da5f4ba80b98b063ca97
+PODFILE CHECKSUM: 8757a9cd8ba4919194b5d1938f5ab5f0ce33da76
 
 COCOAPODS: 1.12.1
