@@ -33,248 +33,248 @@ PODS:
     - TZImagePickerController/Location (= 3.8.3)
   - TZImagePickerController/Basic (3.8.3)
   - TZImagePickerController/Location (3.8.3)
-  - VCSSDK (1.3.22-screenshare.3):
+  - VCSSDK (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Audio (= 1.3.22-screenshare.3)
-    - VCSSDK/Beauty (= 1.3.22-screenshare.3)
-    - VCSSDK/Common (= 1.3.22-screenshare.3)
-    - VCSSDK/Drawing (= 1.3.22-screenshare.3)
-    - VCSSDK/Logger (= 1.3.22-screenshare.3)
-    - VCSSDK/Login (= 1.3.22-screenshare.3)
-    - VCSSDK/Meeting (= 1.3.22-screenshare.3)
-    - VCSSDK/Message (= 1.3.22-screenshare.3)
-    - VCSSDK/NetCall (= 1.3.22-screenshare.3)
-    - VCSSDK/Package (= 1.3.22-screenshare.3)
-    - VCSSDK/Pbobjc (= 1.3.22-screenshare.3)
-  - VCSSDK/Audio (1.3.22-screenshare.3):
+    - VCSSDK/Audio (= 1.3.23-screenshare.1)
+    - VCSSDK/Beauty (= 1.3.23-screenshare.1)
+    - VCSSDK/Common (= 1.3.23-screenshare.1)
+    - VCSSDK/Drawing (= 1.3.23-screenshare.1)
+    - VCSSDK/Logger (= 1.3.23-screenshare.1)
+    - VCSSDK/Login (= 1.3.23-screenshare.1)
+    - VCSSDK/Meeting (= 1.3.23-screenshare.1)
+    - VCSSDK/Message (= 1.3.23-screenshare.1)
+    - VCSSDK/NetCall (= 1.3.23-screenshare.1)
+    - VCSSDK/Package (= 1.3.23-screenshare.1)
+    - VCSSDK/Pbobjc (= 1.3.23-screenshare.1)
+  - VCSSDK/Audio (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Audio/Manager (= 1.3.22-screenshare.3)
+    - VCSSDK/Audio/Manager (= 1.3.23-screenshare.1)
     - VCSSDK/Logger
-  - VCSSDK/Audio/Manager (1.3.22-screenshare.3):
+  - VCSSDK/Audio/Manager (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Audio/Manager/Player (= 1.3.22-screenshare.3)
-    - VCSSDK/Audio/Manager/Protocol (= 1.3.22-screenshare.3)
-    - VCSSDK/Audio/Manager/Recorder (= 1.3.22-screenshare.3)
+    - VCSSDK/Audio/Manager/Player (= 1.3.23-screenshare.1)
+    - VCSSDK/Audio/Manager/Protocol (= 1.3.23-screenshare.1)
+    - VCSSDK/Audio/Manager/Recorder (= 1.3.23-screenshare.1)
     - VCSSDK/Logger
-  - VCSSDK/Audio/Manager/Player (1.3.22-screenshare.3):
+  - VCSSDK/Audio/Manager/Player (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Audio/Manager/Protocol
     - VCSSDK/Logger
-  - VCSSDK/Audio/Manager/Protocol (1.3.22-screenshare.3):
+  - VCSSDK/Audio/Manager/Protocol (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-  - VCSSDK/Audio/Manager/Recorder (1.3.22-screenshare.3):
+  - VCSSDK/Audio/Manager/Recorder (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Audio/Manager/Protocol
     - VCSSDK/Logger
-  - VCSSDK/Beauty (1.3.22-screenshare.3):
+  - VCSSDK/Beauty (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Beauty/Depend (= 1.3.22-screenshare.3)
-    - VCSSDK/Beauty/Manager (= 1.3.22-screenshare.3)
+    - VCSSDK/Beauty/Depend (= 1.3.23-screenshare.1)
+    - VCSSDK/Beauty/Manager (= 1.3.23-screenshare.1)
     - VCSSDK/Logger
-  - VCSSDK/Beauty/Depend (1.3.22-screenshare.3):
+  - VCSSDK/Beauty/Depend (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-  - VCSSDK/Beauty/Manager (1.3.22-screenshare.3):
+  - VCSSDK/Beauty/Manager (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Beauty/Depend
     - VCSSDK/Logger
-  - VCSSDK/Common (1.3.22-screenshare.3):
+  - VCSSDK/Common (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Common/Category (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Constants (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Helper (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Macros (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Vendors (= 1.3.22-screenshare.3)
-  - VCSSDK/Common/Category (1.3.22-screenshare.3):
+    - VCSSDK/Common/Category (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Constants (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Helper (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Macros (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Vendors (= 1.3.23-screenshare.1)
+  - VCSSDK/Common/Category (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Constants (1.3.22-screenshare.3):
+  - VCSSDK/Common/Constants (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Helper (1.3.22-screenshare.3):
+  - VCSSDK/Common/Helper (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Common/Helper/AudioFileBridge (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Helper/AudioTimerBridge (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Helper/MQTTBridge (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Helper/NetworkBridge (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Helper/ReachabilityBridge (= 1.3.22-screenshare.3)
+    - VCSSDK/Common/Helper/AudioFileBridge (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Helper/AudioTimerBridge (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Helper/MQTTBridge (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Helper/NetworkBridge (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Helper/ReachabilityBridge (= 1.3.23-screenshare.1)
     - VCSSDK/Common/Macros
-  - VCSSDK/Common/Helper/AudioFileBridge (1.3.22-screenshare.3):
-    - AFNetworking (>= 4.0.0)
-    - MMKV
-    - Protobuf
-    - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Common/Macros
-  - VCSSDK/Common/Helper/AudioTimerBridge (1.3.22-screenshare.3):
+  - VCSSDK/Common/Helper/AudioFileBridge (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common/Macros
-  - VCSSDK/Common/Helper/MQTTBridge (1.3.22-screenshare.3):
+  - VCSSDK/Common/Helper/AudioTimerBridge (1.3.23-screenshare.1):
+    - AFNetworking (>= 4.0.0)
+    - MMKV
+    - Protobuf
+    - SSZipArchive (>= 2.4.3)
+    - VCSSDK/Common/Macros
+  - VCSSDK/Common/Helper/MQTTBridge (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common/Macros
     - VCSSDK/Common/Vendors/MQTTClient
-  - VCSSDK/Common/Helper/NetworkBridge (1.3.22-screenshare.3):
+  - VCSSDK/Common/Helper/NetworkBridge (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common/Macros
-  - VCSSDK/Common/Helper/ReachabilityBridge (1.3.22-screenshare.3):
+  - VCSSDK/Common/Helper/ReachabilityBridge (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common/Macros
-  - VCSSDK/Common/Macros (1.3.22-screenshare.3):
+  - VCSSDK/Common/Macros (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Vendors (1.3.22-screenshare.3):
+  - VCSSDK/Common/Vendors (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Common/Vendors/CocoaAsyncSocket (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Vendors/JSONModel (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Vendors/MQTTClient (= 1.3.22-screenshare.3)
-    - VCSSDK/Common/Vendors/RTCModel (= 1.3.22-screenshare.3)
-  - VCSSDK/Common/Vendors/CocoaAsyncSocket (1.3.22-screenshare.3):
+    - VCSSDK/Common/Vendors/CocoaAsyncSocket (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Vendors/JSONModel (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Vendors/MQTTClient (= 1.3.23-screenshare.1)
+    - VCSSDK/Common/Vendors/RTCModel (= 1.3.23-screenshare.1)
+  - VCSSDK/Common/Vendors/CocoaAsyncSocket (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Vendors/JSONModel (1.3.22-screenshare.3):
+  - VCSSDK/Common/Vendors/JSONModel (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Vendors/MQTTClient (1.3.22-screenshare.3):
+  - VCSSDK/Common/Vendors/MQTTClient (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Vendors/RTCModel (1.3.22-screenshare.3):
+  - VCSSDK/Common/Vendors/RTCModel (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Drawing (1.3.22-screenshare.3):
+  - VCSSDK/Drawing (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Drawing/WhiteBoard (= 1.3.22-screenshare.3)
+    - VCSSDK/Drawing/WhiteBoard (= 1.3.23-screenshare.1)
     - VCSSDK/Logger
-  - VCSSDK/Drawing/WhiteBoard (1.3.22-screenshare.3):
+  - VCSSDK/Drawing/WhiteBoard (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Drawing/WhiteBoard/DrawingBoard (= 1.3.22-screenshare.3)
+    - VCSSDK/Drawing/WhiteBoard/DrawingBoard (= 1.3.23-screenshare.1)
     - VCSSDK/Logger
-  - VCSSDK/Drawing/WhiteBoard/DrawingBoard (1.3.22-screenshare.3):
+  - VCSSDK/Drawing/WhiteBoard/DrawingBoard (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network (= 1.3.22-screenshare.3)
+    - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network (= 1.3.23-screenshare.1)
     - VCSSDK/Logger
-  - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network (1.3.22-screenshare.3):
+  - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network/Pbobjc (= 1.3.22-screenshare.3)
+    - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network/Pbobjc (= 1.3.23-screenshare.1)
     - VCSSDK/Logger
-  - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network/Pbobjc (1.3.22-screenshare.3):
+  - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network/Pbobjc (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-  - VCSSDK/Logger (1.3.22-screenshare.3):
+  - VCSSDK/Logger (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common
-    - VCSSDK/Logger/Manager (= 1.3.22-screenshare.3)
-  - VCSSDK/Logger/Manager (1.3.22-screenshare.3):
+    - VCSSDK/Logger/Manager (= 1.3.23-screenshare.1)
+  - VCSSDK/Logger/Manager (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common
-  - VCSSDK/Login (1.3.22-screenshare.3):
+  - VCSSDK/Login (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-    - VCSSDK/Login/Manager (= 1.3.22-screenshare.3)
-  - VCSSDK/Login/Manager (1.3.22-screenshare.3):
+    - VCSSDK/Login/Manager (= 1.3.23-screenshare.1)
+  - VCSSDK/Login/Manager (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-  - VCSSDK/Meeting (1.3.22-screenshare.3):
+  - VCSSDK/Meeting (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
     - VCSSDK/Login
-    - VCSSDK/Meeting/Depend (= 1.3.22-screenshare.3)
-    - VCSSDK/Meeting/Manager (= 1.3.22-screenshare.3)
+    - VCSSDK/Meeting/Depend (= 1.3.23-screenshare.1)
+    - VCSSDK/Meeting/Manager (= 1.3.23-screenshare.1)
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Depend (1.3.22-screenshare.3):
+  - VCSSDK/Meeting/Depend (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -284,7 +284,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager (1.3.22-screenshare.3):
+  - VCSSDK/Meeting/Manager (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -292,16 +292,16 @@ PODS:
     - VCSSDK/Logger
     - VCSSDK/Login
     - VCSSDK/Meeting/Depend
-    - VCSSDK/Meeting/Manager/Casting (= 1.3.22-screenshare.3)
-    - VCSSDK/Meeting/Manager/Helper (= 1.3.22-screenshare.3)
-    - VCSSDK/Meeting/Manager/Model (= 1.3.22-screenshare.3)
-    - VCSSDK/Meeting/Manager/Network (= 1.3.22-screenshare.3)
-    - VCSSDK/Meeting/Manager/Param (= 1.3.22-screenshare.3)
-    - VCSSDK/Meeting/Manager/ReplayKit (= 1.3.22-screenshare.3)
+    - VCSSDK/Meeting/Manager/Casting (= 1.3.23-screenshare.1)
+    - VCSSDK/Meeting/Manager/Helper (= 1.3.23-screenshare.1)
+    - VCSSDK/Meeting/Manager/Model (= 1.3.23-screenshare.1)
+    - VCSSDK/Meeting/Manager/Network (= 1.3.23-screenshare.1)
+    - VCSSDK/Meeting/Manager/Param (= 1.3.23-screenshare.1)
+    - VCSSDK/Meeting/Manager/ReplayKit (= 1.3.23-screenshare.1)
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Casting (1.3.22-screenshare.3):
+  - VCSSDK/Meeting/Manager/Casting (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -312,7 +312,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Helper (1.3.22-screenshare.3):
+  - VCSSDK/Meeting/Manager/Helper (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -324,7 +324,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Model (1.3.22-screenshare.3):
+  - VCSSDK/Meeting/Manager/Model (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -335,7 +335,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Network (1.3.22-screenshare.3):
+  - VCSSDK/Meeting/Manager/Network (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -349,7 +349,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Param (1.3.22-screenshare.3):
+  - VCSSDK/Meeting/Manager/Param (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -360,7 +360,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/ReplayKit (1.3.22-screenshare.3):
+  - VCSSDK/Meeting/Manager/ReplayKit (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -371,16 +371,16 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Message (1.3.22-screenshare.3):
+  - VCSSDK/Message (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Login
-    - VCSSDK/Message/Manager (= 1.3.22-screenshare.3)
+    - VCSSDK/Message/Manager (= 1.3.23-screenshare.1)
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Message/Manager (1.3.22-screenshare.3):
+  - VCSSDK/Message/Manager (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -388,27 +388,27 @@ PODS:
     - VCSSDK/Login
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/NetCall (1.3.22-screenshare.3):
+  - VCSSDK/NetCall (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
     - VCSSDK/Login
-    - VCSSDK/NetCall/Manager (= 1.3.22-screenshare.3)
+    - VCSSDK/NetCall/Manager (= 1.3.23-screenshare.1)
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/NetCall/Manager (1.3.22-screenshare.3):
+  - VCSSDK/NetCall/Manager (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
     - VCSSDK/Login
-    - VCSSDK/NetCall/Manager/Model (= 1.3.22-screenshare.3)
+    - VCSSDK/NetCall/Manager/Model (= 1.3.23-screenshare.1)
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/NetCall/Manager/Model (1.3.22-screenshare.3):
+  - VCSSDK/NetCall/Manager/Model (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -417,13 +417,13 @@ PODS:
     - VCSSDK/Login
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Package (1.3.22-screenshare.3):
+  - VCSSDK/Package (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Pbobjc
-  - VCSSDK/Pbobjc (1.3.22-screenshare.3):
+  - VCSSDK/Pbobjc (1.3.23-screenshare.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -475,7 +475,7 @@ SPEC CHECKSUMS:
   SDWebImage: 9bec4c5cdd9579e1f57104735ee0c37df274d593
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
-  VCSSDK: 809a6d542367ef4a04df088cebc37c6f3b600836
+  VCSSDK: ab6aa343f621aaadd59d9402ad6f0c6d7c15c364
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 8757a9cd8ba4919194b5d1938f5ab5f0ce33da76

@@ -158,7 +158,7 @@ API_AVAILABLE(ios(12.0))
 /// 用户重连标志
 @property (nonatomic, assign) BOOL isReconnect;
 /// 当前音频输出路由
-@property (nonatomic, assign) VCSOutputAudioPortState audioRouterState;
+@property (nonatomic, assign) VCSAudioRoute audioRoute;
 
 /// 网络监测配置
 @property (nonatomic, strong) VCSNetworkConfig *networkConfig;
@@ -765,17 +765,17 @@ API_AVAILABLE(ios(12.0))
     [[self.outputAudioButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable control) {
         @strongify(self);
         dispatch_async(dispatch_get_main_queue(), ^{
-            switch (self.audioRouterState) {
-                case VCSOutputAudioPortStateSpeaker:
+            switch (self.audioRoute) {
+                case VCSAudioRouteSpeaker:
                     /// 切换成听筒模式
-                    [[VCSMeetingManager sharedManager] overrideOutputAudioPort:VCSOutputAudioPortStateReceiver];
+                    [[VCSMeetingManager sharedManager] setAudioRoute:VCSAudioRouteReceiver];
                     break;
-                case VCSOutputAudioPortStateReceiver:
+                case VCSAudioRouteReceiver:
                     /// 切换成扬声器模式
-                    [[VCSMeetingManager sharedManager] overrideOutputAudioPort:VCSOutputAudioPortStateSpeaker];
+                    [[VCSMeetingManager sharedManager] setAudioRoute:VCSAudioRouteSpeaker];
                     break;
-                case VCSOutputAudioPortStateBluetooth:
-                case VCSOutputAudioPortStateHeadset:
+                case VCSAudioRouteHeadphone:
+                case VCSAudioRouteBluetooth:
                     /// 弹出RoutePickerView
                     [self showRoutePickerView];
                     break;
@@ -1264,32 +1264,32 @@ API_AVAILABLE(ios(12.0))
     SGLOG(@"++++++++++%@", state ? @"当前服务器允许你发言" : @"当前服务器不允许你发言");
 }
 
-#pragma mark 音频输出通道改变回调
-/// 音频输出通道改变回调
-/// @param state 音频输出端口类型
-/// @param deviceName 音频输出设置名称
-- (void)roomAudioOutputPortChangeWithState:(VCSOutputAudioPortState)state deviceName:(NSString *)deviceName {
+#pragma mark 音频路由变更回调
+/// 音频路由变更回调
+/// @param route 音频路由
+/// @param previousRoute 变更前的音频路由
+- (void)onAudioRouteChanged:(VCSAudioRoute)route previousRoute:(VCSAudioRoute)previousRoute {
     
-    SGLOG(@"++++++++切换音频输出端口回调通知 state = %ld deviceName = %@ ", state, deviceName);
+    SGLOG(@"++++++++音频输出端口变更回调 route = %ld, previousRoute = %ld", route, previousRoute);
     /// 记录当前音频输出路由
-    self.audioRouterState = state;
+    self.audioRoute = route;
     dispatch_async(dispatch_get_main_queue(), ^{
-        switch (state) {
-            case VCSOutputAudioPortStateSpeaker:
+        switch (route) {
+            case VCSAudioRouteSpeaker:
                 /// 扬声器(免提模式)
                 [self.outputAudioButton setTitle:@" 当前为免提模式 " forState:UIControlStateNormal];
                 break;
-            case VCSOutputAudioPortStateReceiver:
+            case VCSAudioRouteReceiver:
                 /// 听筒(听筒模式)
                 [self.outputAudioButton setTitle:@" 当前为听筒模式 " forState:UIControlStateNormal];
                 break;
-            case VCSOutputAudioPortStateBluetooth:
-                /// 蓝牙设备(蓝牙模式)
-                [self.outputAudioButton setTitle:@" 当前为蓝牙模式 " forState:UIControlStateNormal];
-                break;
-            case VCSOutputAudioPortStateHeadset:
+            case VCSAudioRouteHeadphone:
                 /// 有线耳机设备(有线耳机模式)
                 [self.outputAudioButton setTitle:@" 当前为耳机模式 " forState:UIControlStateNormal];
+                break;
+            case VCSAudioRouteBluetooth:
+                /// 蓝牙设备(蓝牙模式)
+                [self.outputAudioButton setTitle:@" 当前为蓝牙模式 " forState:UIControlStateNormal];
                 break;
             default:
                 break;
