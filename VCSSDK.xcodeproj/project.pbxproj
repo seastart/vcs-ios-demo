@@ -95,7 +95,7 @@
 		F49640942A1C5238001BB911 /* FWCastingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F49640922A1C5238001BB911 /* FWCastingViewController.m */; };
 		F49640952A1C5238001BB911 /* FWCastingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49640932A1C5238001BB911 /* FWCastingViewController.xib */; };
 		F49640982A1C54AE001BB911 /* FWCastingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F49640972A1C54AE001BB911 /* FWCastingViewModel.m */; };
-		F49B132E2A4810430080D186 /* FWPackageBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = F49B132C2A4810430080D186 /* FWPackageBridge.mm */; };
+		F49B132A2A47E7D20080D186 /* FWPackageBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = F49B13282A47E7D20080D186 /* FWPackageBridge.mm */; };
 		F4B8AD5125BEAB5A00A6405D /* FWRoomGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B8AD4F25BEAB5A00A6405D /* FWRoomGestureViewController.m */; };
 		F4B8AD5225BEAB5A00A6405D /* FWRoomGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B8AD5025BEAB5A00A6405D /* FWRoomGestureViewController.xib */; };
 		F4BEA25C24E6308100039DF7 /* NSDictionary+compare.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BEA25B24E6308100039DF7 /* NSDictionary+compare.m */; };
@@ -293,8 +293,8 @@
 		F49640932A1C5238001BB911 /* FWCastingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWCastingViewController.xib; sourceTree = "<group>"; };
 		F49640962A1C54AE001BB911 /* FWCastingViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCastingViewModel.h; sourceTree = "<group>"; };
 		F49640972A1C54AE001BB911 /* FWCastingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCastingViewModel.m; sourceTree = "<group>"; };
-		F49B132C2A4810430080D186 /* FWPackageBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FWPackageBridge.mm; sourceTree = "<group>"; };
-		F49B132D2A4810430080D186 /* FWPackageBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWPackageBridge.h; sourceTree = "<group>"; };
+		F49B13282A47E7D20080D186 /* FWPackageBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FWPackageBridge.mm; sourceTree = "<group>"; };
+		F49B13292A47E7D20080D186 /* FWPackageBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWPackageBridge.h; sourceTree = "<group>"; };
 		F4B8AD4E25BEAB5A00A6405D /* FWRoomGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWRoomGestureViewController.h; sourceTree = "<group>"; };
 		F4B8AD4F25BEAB5A00A6405D /* FWRoomGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRoomGestureViewController.m; sourceTree = "<group>"; };
 		F4B8AD5025BEAB5A00A6405D /* FWRoomGestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWRoomGestureViewController.xib; sourceTree = "<group>"; };
@@ -440,8 +440,8 @@
 		A6972F76246D5E58003CE84D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F49B13272A47E7D20080D186 /* PackageBridge */,
 				A6972F77246D5E58003CE84D /* Category */,
-				F49B132B2A4810430080D186 /* PackageBridge */,
 				F425826629F119A600E4A1C2 /* CastingBridge */,
 				F4D8CA8528E6953F00D526F5 /* LoggerBridge */,
 				F43AD3EA24EBF4C400922C59 /* NetCallBridge */,
@@ -808,11 +808,11 @@
 			path = Casting;
 			sourceTree = "<group>";
 		};
-		F49B132B2A4810430080D186 /* PackageBridge */ = {
+		F49B13272A47E7D20080D186 /* PackageBridge */ = {
 			isa = PBXGroup;
 			children = (
-				F49B132D2A4810430080D186 /* FWPackageBridge.h */,
-				F49B132C2A4810430080D186 /* FWPackageBridge.mm */,
+				F49B13292A47E7D20080D186 /* FWPackageBridge.h */,
+				F49B13282A47E7D20080D186 /* FWPackageBridge.mm */,
 			);
 			path = PackageBridge;
 			sourceTree = "<group>";
@@ -1190,7 +1190,7 @@
 				F488AFD926FF176500FAF978 /* FWFilterView.m in Sources */,
 				A6972F8C246D5E58003CE84D /* FWConstants.m in Sources */,
 				F4CCCE0124A1A0E500ED67EB /* FWRoomViewModel.m in Sources */,
-				F49B132E2A4810430080D186 /* FWPackageBridge.mm in Sources */,
+				F49B132A2A47E7D20080D186 /* FWPackageBridge.mm in Sources */,
 				A694BEF324590F8400DCFA04 /* FWServeConfigViewModel.m in Sources */,
 				F48BBA662614A6D200A98DA5 /* FWMQTTClientModel.m in Sources */,
 				D16FDFBE24570A9100A48951 /* FWRegisterViewController.m in Sources */,
