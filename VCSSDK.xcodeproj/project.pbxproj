@@ -287,7 +287,7 @@
 		F48F59DC2B17350B00F6E6F3 /* FWKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWKeychain.m; sourceTree = "<group>"; };
 		F48F59DE2B18402400F6E6F3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		F48F59DF2B18402500F6E6F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		F48F59E02B18402500F6E6F3 /* VCSSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = VCSSDK.podspec; path = ../../VCSSDK.podspec; sourceTree = "<group>"; };
+		F48F59E02B18402500F6E6F3 /* VCSSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = VCSSDK.podspec; path = ../../VCSSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F49640912A1C5238001BB911 /* FWCastingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCastingViewController.h; sourceTree = "<group>"; };
 		F49640922A1C5238001BB911 /* FWCastingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCastingViewController.m; sourceTree = "<group>"; };
 		F49640932A1C5238001BB911 /* FWCastingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWCastingViewController.xib; sourceTree = "<group>"; };

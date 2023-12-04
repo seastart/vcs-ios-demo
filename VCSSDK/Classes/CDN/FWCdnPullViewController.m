@@ -125,7 +125,7 @@
     /// 创建入会参数
     VCSMeetingParam *meetingParam = [[VCSMeetingParam alloc] init];
     /// 设置服务地址
-    meetingParam.domain = @"https://ws-webrtc-pull-dev.srtc.live";
+    meetingParam.webinarHost = @"https://ws-webrtc-pull-dev.srtc.live";
     /// 加入房间
     [[VCSWebRTCManager sharedManager] enterRoomWithMeetingParam:meetingParam roomNo:@"50505050" delegate:self];
 }
