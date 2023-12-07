@@ -1804,11 +1804,11 @@ API_AVAILABLE(ios(12.0))
     self.isRaiseHand = YES;
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"成员举手提示" message:[NSString stringWithFormat:@"成员=%@,昵称=%@,发起了举手", account.name, account.nickname] preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"同意" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
-        [[VCSMeetingManager sharedManager] hostDisposeRoomRaiseHandWithTargetId:account.id_p hus:account.hus result:YES];
+        [[VCSMeetingManager sharedManager] hostDisposeRoomRaiseHandWithTargetId:account.id_p hus:account.hus result:YES isAudience:NO];
         weakSelf.isRaiseHand = NO;
     }];
     UIAlertAction *ensureAction = [UIAlertAction actionWithTitle:@"不同意" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-        [[VCSMeetingManager sharedManager] hostDisposeRoomRaiseHandWithTargetId:account.id_p hus:account.hus result:NO];
+        [[VCSMeetingManager sharedManager] hostDisposeRoomRaiseHandWithTargetId:account.id_p hus:account.hus result:NO isAudience:YES];
         weakSelf.isRaiseHand = NO;
     }];
     [alert addAction:cancelAction];
