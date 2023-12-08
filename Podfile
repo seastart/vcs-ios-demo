@@ -1,6 +1,5 @@
 # 指明依赖库的来源地址
 source 'https://cdn.cocoapods.org'
-source 'https://code.zaoing.com/meeting/freewindSpecs.git'
 
 # 说明平台和版本
 platform :ios, '11.0'
@@ -34,7 +33,7 @@ def meetingPods
   # 本地依赖发布版VCSSDK
   # pod 'VCSSDK', :path => '../../Depend/VCSSDK'
   # 远程依赖VCSSDK分支
-  # pod 'VCSSDK', :git => 'http://code.zaoing.com/meeting/VCSSDK-iOS.git', :branch => 'optimize'
+  # pod 'VCSSDK', :git => 'https://github.com/seastart/vcs-ios-cocoapods.git', :branch => 'cdnmeeting'
   # 远程依赖VCSSDK
   # pod 'VCSSDK'
 end
