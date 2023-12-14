@@ -250,7 +250,7 @@
             account.status = InviteStatus_Waiting;
         }
         /// 发起呼叫
-        [[FWMQTTClientBridge sharedManager] callWithAccountsArray:self.callDataArray currentMember:self.selfAccount roomNo:self.viewModel.roomText restart:YES];
+        [[FWMQTTClientBridge sharedManager] callWithAccountsArray:self.callDataArray currentMember:self.selfAccount roomNo:self.viewModel.roomText restart:YES role:ConferenceRole_CrMember];
     }];
     
     /// 绑定取消呼叫按钮事件

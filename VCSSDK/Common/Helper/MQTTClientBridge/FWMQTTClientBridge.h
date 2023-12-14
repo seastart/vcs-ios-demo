@@ -61,7 +61,8 @@ typedef void(^FWMQTTClientBridgeMeetingBeginNotificationBlock)(MeetingBeginNotif
 /// @param currentMember 当前成员
 /// @param roomNo 房间ID
 /// @param restart 是否重新开始(YES-忽略上次的呼叫 NO-叠加上次的呼叫)
-- (void)callWithAccountsArray:(nullable NSMutableArray<WaitingAccount *> *)accountsArray currentMember:(WaitingAccount *)currentMember roomNo:(NSString *)roomNo restart:(BOOL)restart;
+/// @param role 参会角色
+- (void)callWithAccountsArray:(nullable NSMutableArray<WaitingAccount *> *)accountsArray currentMember:(WaitingAccount *)currentMember roomNo:(NSString *)roomNo restart:(BOOL)restart role:(ConferenceRole)role;
 
 #pragma mark 取消呼叫
 /// 取消呼叫

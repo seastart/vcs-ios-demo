@@ -213,7 +213,7 @@
             account.status = InviteStatus_Waiting;
         }
         /// 发起呼叫
-        [[FWNetCallBridge sharedManager] callWithAccountsArray:self.callDataArray currentMember:self.selfAccount roomNo:self.viewModel.roomText restart:YES];
+        [[FWNetCallBridge sharedManager] callWithAccountsArray:self.callDataArray currentMember:self.selfAccount roomNo:self.viewModel.roomText restart:YES role:ConferenceRole_CrMember];
     }];
     
     /// 绑定取消呼叫按钮事件
