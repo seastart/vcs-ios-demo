@@ -297,7 +297,6 @@ PODS:
     - VCSSDK/Meeting/Manager/Model (= 1.3.23-cdnmeeting.16)
     - VCSSDK/Meeting/Manager/Network (= 1.3.23-cdnmeeting.16)
     - VCSSDK/Meeting/Manager/Param (= 1.3.23-cdnmeeting.16)
-    - VCSSDK/Meeting/Manager/Redirect (= 1.3.23-cdnmeeting.16)
     - VCSSDK/Meeting/Manager/ReplayKit (= 1.3.23-cdnmeeting.16)
     - VCSSDK/Meeting/Manager/WebRTC (= 1.3.23-cdnmeeting.16)
     - VCSSDK/NetCall
@@ -352,17 +351,6 @@ PODS:
     - VCSSDK/Package
     - VCSSDK/Pbobjc
   - VCSSDK/Meeting/Manager/Param (1.3.23-cdnmeeting.16):
-    - AFNetworking (>= 4.0.0)
-    - MMKV
-    - Protobuf
-    - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Logger
-    - VCSSDK/Login
-    - VCSSDK/Meeting/Depend
-    - VCSSDK/NetCall
-    - VCSSDK/Package
-    - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Redirect (1.3.23-cdnmeeting.16):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -499,7 +487,7 @@ SPEC CHECKSUMS:
   SDWebImage: 9bec4c5cdd9579e1f57104735ee0c37df274d593
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
-  VCSSDK: a0ae33331d470a3138c42d3d164053c65e3f61df
+  VCSSDK: 795149468f614bfa56cb59b7d050f59a80f68bfe
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 3d1a8638b6a47837184210868c97c5c1c24c2cc4
