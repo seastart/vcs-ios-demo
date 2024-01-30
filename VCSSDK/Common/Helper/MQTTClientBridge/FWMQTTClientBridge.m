@@ -70,6 +70,18 @@
     [[VCSMQTTClientManager sharedManager] callWithAccountsArray:accountsArray currentMember:currentMember roomNo:roomNo restart:restart];
 }
 
+#pragma mark 发起呼叫
+/// 发起呼叫
+/// @param accountsArray 呼叫列表
+/// @param currentMember 当前成员
+/// @param roomNo 房间ID
+/// @param restart 是否重新开始(YES-忽略上次的呼叫 NO-叠加上次的呼叫)
+/// @param role 参会角色
+- (void)callWithAccountsArray:(nullable NSMutableArray<WaitingAccount *> *)accountsArray currentMember:(WaitingAccount *)currentMember roomNo:(NSString *)roomNo restart:(BOOL)restart role:(ConferenceRole)role {
+    
+    [[VCSMQTTClientManager sharedManager] callWithAccountsArray:accountsArray currentMember:currentMember roomNo:roomNo restart:restart role:role];
+}
+
 #pragma mark 取消呼叫
 /// 取消呼叫
 /// @param accountsArray 取消呼叫列表
