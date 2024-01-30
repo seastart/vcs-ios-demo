@@ -18,6 +18,7 @@
 #import "FWBeautyViewController.h"
 #import "FWNetworkViewController.h"
 #import "FWCastingViewController.h"
+#import "FWCdnPullViewController.h"
 #import "FWLoginViewModel.h"
 #import <ReplayKit/ReplayKit.h>
 #import <VCSSDK/VCSCastingManager.h>
@@ -40,6 +41,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *serveConfigButton;
 /// 电子白板按钮
 @property (weak, nonatomic) IBOutlet UIButton *drawingConfigButton;
+/// CDN拉流按钮
+@property (weak, nonatomic) IBOutlet UIButton *cdnPullStreamButton;
 /// 呼叫服务按钮
 @property (weak, nonatomic) IBOutlet UIButton *netCallButton;
 /// MQTT呼叫服务按钮
@@ -193,6 +196,13 @@
         [self drawingConfigClick];
     }];
     
+    /// 绑定CDN拉流按钮
+    [[self.cdnPullStreamButton rac_signalForControlEvents :UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable control) {
+        @strongify(self);
+        /// CDN拉流按钮事件
+        [self cdnPullStreamClick];
+    }];
+    
     /// 绑定呼叫服务按钮事件
     [[self.netCallButton rac_signalForControlEvents :UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable control) {
         @strongify(self);
@@ -277,6 +287,13 @@
     /// 跳转电子白板配置页面
     FWDrawingConfigViewController *drawingConfigVC = [[FWDrawingConfigViewController alloc] init];
     [self.navigationController pushViewController:drawingConfigVC animated:YES];
+}
+
+#pragma mark - CDN拉流按钮事件
+- (void)cdnPullStreamClick {
+    
+    FWCdnPullViewController *cdnPullVC = [[FWCdnPullViewController alloc] init];
+    [self.navigationController pushViewController:cdnPullVC animated:YES];
 }
 
 #pragma mark - 呼叫服务按钮事件

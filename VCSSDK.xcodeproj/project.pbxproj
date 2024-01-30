@@ -74,6 +74,8 @@
 		F45F0E94260C258300DDC21F /* FWRecorderAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F0E92260C258300DDC21F /* FWRecorderAudioViewController.m */; };
 		F45F0E95260C258300DDC21F /* FWRecorderAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45F0E93260C258300DDC21F /* FWRecorderAudioViewController.xib */; };
 		F45F0EF3260C632000DDC21F /* Recording.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F0EF2260C632000DDC21F /* Recording.xcassets */; };
+		F4621E662AD54373009DD06C /* FWCdnPullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4621E642AD54373009DD06C /* FWCdnPullViewController.m */; };
+		F4621E672AD54373009DD06C /* FWCdnPullViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4621E652AD54373009DD06C /* FWCdnPullViewController.xib */; };
 		F470498B24D7E43B0075BDD2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F470498A24D7E43B0075BDD2 /* CoreTelephony.framework */; };
 		F47782EE25FF08B30003E921 /* FWMQTTClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F47782EC25FF08B30003E921 /* FWMQTTClientViewController.m */; };
 		F47782EF25FF08B30003E921 /* FWMQTTClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47782ED25FF08B30003E921 /* FWMQTTClientViewController.xib */; };
@@ -252,6 +254,9 @@
 		F45F0E92260C258300DDC21F /* FWRecorderAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRecorderAudioViewController.m; sourceTree = "<group>"; };
 		F45F0E93260C258300DDC21F /* FWRecorderAudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWRecorderAudioViewController.xib; sourceTree = "<group>"; };
 		F45F0EF2260C632000DDC21F /* Recording.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Recording.xcassets; sourceTree = "<group>"; };
+		F4621E632AD54373009DD06C /* FWCdnPullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCdnPullViewController.h; sourceTree = "<group>"; };
+		F4621E642AD54373009DD06C /* FWCdnPullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCdnPullViewController.m; sourceTree = "<group>"; };
+		F4621E652AD54373009DD06C /* FWCdnPullViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWCdnPullViewController.xib; sourceTree = "<group>"; };
 		F470498A24D7E43B0075BDD2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F47782EB25FF08B30003E921 /* FWMQTTClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWMQTTClientViewController.h; sourceTree = "<group>"; };
 		F47782EC25FF08B30003E921 /* FWMQTTClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWMQTTClientViewController.m; sourceTree = "<group>"; };
@@ -282,7 +287,7 @@
 		F48F59DC2B17350B00F6E6F3 /* FWKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWKeychain.m; sourceTree = "<group>"; };
 		F48F59DE2B18402400F6E6F3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		F48F59DF2B18402500F6E6F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		F48F59E02B18402500F6E6F3 /* VCSSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = VCSSDK.podspec; path = ../../VCSSDK.podspec; sourceTree = "<group>"; };
+		F48F59E02B18402500F6E6F3 /* VCSSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = VCSSDK.podspec; path = ../../VCSSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F49640912A1C5238001BB911 /* FWCastingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCastingViewController.h; sourceTree = "<group>"; };
 		F49640922A1C5238001BB911 /* FWCastingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCastingViewController.m; sourceTree = "<group>"; };
 		F49640932A1C5238001BB911 /* FWCastingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWCastingViewController.xib; sourceTree = "<group>"; };
@@ -532,6 +537,7 @@
 				D16FDFBA24570A8300A48951 /* Register */,
 				D16FDF9D2456FD6800A48951 /* Login */,
 				F49640902A1C51D3001BB911 /* Casting */,
+				F4621E622AD53FC1009DD06C /* CDN */,
 				D16FDFA6245709AF00A48951 /* ServeConfig */,
 				F4E83A7924D98BA200657712 /* DrawingConfig */,
 				F4E83A7A24D98BA300657712 /* Drawing */,
@@ -734,6 +740,16 @@
 				F45F0E93260C258300DDC21F /* FWRecorderAudioViewController.xib */,
 			);
 			path = RecorderAudio;
+			sourceTree = "<group>";
+		};
+		F4621E622AD53FC1009DD06C /* CDN */ = {
+			isa = PBXGroup;
+			children = (
+				F4621E632AD54373009DD06C /* FWCdnPullViewController.h */,
+				F4621E642AD54373009DD06C /* FWCdnPullViewController.m */,
+				F4621E652AD54373009DD06C /* FWCdnPullViewController.xib */,
+			);
+			path = CDN;
 			sourceTree = "<group>";
 		};
 		F47782EA25FF087D0003E921 /* MQTTClient */ = {
@@ -958,6 +974,7 @@
 				F43AD45F24F39A9B00922C59 /* FWNetCallViewController.xib in Resources */,
 				D16FDF992456FA8900A48951 /* Main.storyboard in Resources */,
 				A694BF1C2463EB4500DCFA04 /* FWYUVPlayerView.xib in Resources */,
+				F4621E672AD54373009DD06C /* FWCdnPullViewController.xib in Resources */,
 				F488AFE52702AF3600FAF978 /* FWBeautyViewController.xib in Resources */,
 				D16FDFAC245709D100A48951 /* FWServeConfigViewController.xib in Resources */,
 				A694BF1A245DCF3100DCFA04 /* Room.xcassets in Resources */,
@@ -1192,6 +1209,7 @@
 				F432A575273005FA0001FE46 /* FWNetworkViewModel.m in Sources */,
 				A6920BA9247FA91D00269F49 /* FWWhiteBoardView.m in Sources */,
 				A6972F91246D5E58003CE84D /* FWIPAddressBridge.m in Sources */,
+				F4621E662AD54373009DD06C /* FWCdnPullViewController.m in Sources */,
 				F488AFE42702AF3600FAF978 /* FWBeautyViewController.m in Sources */,
 				D16FDFB824570A0400A48951 /* FWRoomViewController.m in Sources */,
 				D16FDFAB245709D100A48951 /* FWServeConfigViewController.m in Sources */,
