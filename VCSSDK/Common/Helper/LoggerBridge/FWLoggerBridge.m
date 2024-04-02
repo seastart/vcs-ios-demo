@@ -107,4 +107,20 @@
     return itemModel;
 }
 
+#pragma mark 重定向日志扩展事件回调
+/// 重定向日志扩展事件回调
+/// - Parameters:
+///   - manager: 日志组件实例
+///   - redirectModel: 重定向日志对象
+- (VCSRedirectModel *)loggerManager:(VCSLoggerManager *)manager onRedirectExpand:(VCSRedirectModel *)redirectModel {
+    
+    /// 补充用户标识
+    redirectModel.uid = @"Your User Id";
+    /// 补充会议日志标识
+    redirectModel.conf_log_id = @"Your Meeting Log Id";
+    
+    /// 返回扩展后数据
+    return redirectModel;
+}
+
 @end
