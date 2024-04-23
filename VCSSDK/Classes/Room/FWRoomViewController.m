@@ -330,6 +330,8 @@ API_AVAILABLE(ios(12.0))
     }
     /// 开启录屏服务端
     [[VCSMeetingManager sharedManager] startScreenRecordWithAppGroup:VCSAPPGROUP];
+    /// 获取可用音频路由
+    /// [[VCSMeetingManager sharedManager] getAvailableAudioRoutes];
     
     /// 默认设置横屏
     self.isHorizontalScreen = [VCSMeetingManager sharedManager].meetingParam.isHorizontalScreen;
@@ -1267,8 +1269,10 @@ API_AVAILABLE(ios(12.0))
 #pragma mark 音频路由变更回调
 /// 音频路由变更回调
 /// @param route 音频路由
+/// @param routeName 音频路由名称
 /// @param previousRoute 变更前的音频路由
-- (void)onAudioRouteChanged:(VCSAudioRoute)route previousRoute:(VCSAudioRoute)previousRoute {
+/// @param previousRouteName 变更前的音频路由名称
+- (void)onAudioRouteChanged:(VCSAudioRoute)route routeName:(NSString *)routeName previousRoute:(VCSAudioRoute)previousRoute previousRouteName:(NSString *)previousRouteName {
     
     SGLOG(@"++++++++音频输出端口变更回调 route = %ld, previousRoute = %ld", route, previousRoute);
     /// 记录当前音频输出路由
