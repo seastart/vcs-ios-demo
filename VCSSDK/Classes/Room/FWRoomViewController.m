@@ -330,7 +330,7 @@ API_AVAILABLE(ios(12.0))
     }
     /// 开启录屏服务端
     [[VCSMeetingManager sharedManager] startScreenRecordWithAppGroup:VCSAPPGROUP];
-    /// 获取可用音频路由
+    /// 获取音频路由列表
     /// [[VCSMeetingManager sharedManager] getAvailableAudioRoutes];
     
     /// 默认设置横屏
