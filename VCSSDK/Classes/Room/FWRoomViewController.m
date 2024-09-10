@@ -1787,6 +1787,42 @@ API_AVAILABLE(ios(12.0))
     [self sendLocalNotificationToHostAppWithTitle:@"会控聊天通知" msg:notify.message.content userInfo:nil];
 }
 
+#pragma mark 云录制状态通知
+/// 云录制状态通知
+/// @param notify 通知信息
+/// @param error 错误信息
+- (void)onListenRoomCloudRecordEventWithNotify:(McuRunStateNotify *)notify error:(NSError *)error {
+    
+    SGLOG(@"++++++云录制状态通知 Notify == %@ error = %@", notify, error);
+}
+
+#pragma mark 网络研讨成员角色通知
+/// 网络研讨成员角色通知
+/// @param notify 通知信息
+/// @param error 错误信息
+- (void)onListenWebinarMemberRoleWithNotify:(WebinarRoleNotify *)notify error:(NSError *)error {
+    
+    SGLOG(@"++++++网络研讨成员角色通知 Notify == %@ error = %@", notify, error);
+}
+
+#pragma mark 网络研讨会观众数量通知
+/// 网络研讨会观众数量通知
+/// @param notify 通知信息
+/// @param error 错误信息
+- (void)onListenWebinarAudienceCountWithNotify:(WebinarAudienceNumNotify *)notify error:(NSError *)error {
+    
+    SGLOG(@"++++++网络研讨会观众数量通知 Notify == %@ error = %@", notify, error);
+}
+
+#pragma mark 语音转写失败通知
+/// 语音转写失败通知
+/// @param notify 通知信息
+/// @param error 错误信息
+- (void)onListenRoomSpeechErrorWithNotify:(RoomSpeechErrorNotify *)notify error:(NSError *)error {
+    
+    SGLOG(@"++++++语音转写失败通知 Notify == %@ error = %@", notify, error);
+}
+
 #pragma mark 事件命令透传通知
 /// 事件命令透传通知
 /// @param command 消息指令
