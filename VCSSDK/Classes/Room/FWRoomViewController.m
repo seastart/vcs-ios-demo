@@ -1823,6 +1823,15 @@ API_AVAILABLE(ios(12.0))
     SGLOG(@"++++++语音转写失败通知 Notify == %@ error = %@", notify, error);
 }
 
+#pragma mark 需要身份验证通知
+/// 需要身份验证通知
+/// @param notify 通知信息
+/// @param error 错误信息
+- (void)onListenIdentityVerifyRequiredWithNotify:(IdentityVerifyRequiredNotify *)notify error:(NSError *)error {
+    
+    SGLOG(@"++++++需要身份验证通知 Notify == %@ error = %@", notify, error);
+}
+
 #pragma mark 事件命令透传通知
 /// 事件命令透传通知
 /// @param command 消息指令
