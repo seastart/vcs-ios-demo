@@ -1796,6 +1796,15 @@ API_AVAILABLE(ios(12.0))
     SGLOG(@"++++++云录制状态通知 Notify == %@ error = %@", notify, error);
 }
 
+#pragma mark 会议违规提醒通知
+/// 会议违规提醒通知
+/// @param notify 通知信息
+/// @param error 错误信息
+- (void)onListenRoomViolationWithNotify:(CmdRoomDetectionResultNotify *)notify error:(NSError *)error {
+    
+    SGLOG(@"++++++会议违规提醒通知 Notify == %@ error = %@", notify, error);
+}
+
 #pragma mark 网络研讨成员角色通知
 /// 网络研讨成员角色通知
 /// @param notify 通知信息
@@ -1821,6 +1830,15 @@ API_AVAILABLE(ios(12.0))
 - (void)onListenRoomSpeechErrorWithNotify:(RoomSpeechErrorNotify *)notify error:(NSError *)error {
     
     SGLOG(@"++++++语音转写失败通知 Notify == %@ error = %@", notify, error);
+}
+
+#pragma mark 需要身份验证通知
+/// 需要身份验证通知
+/// @param notify 通知信息
+/// @param error 错误信息
+- (void)onListenIdentityVerifyRequiredWithNotify:(IdentityVerifyRequiredNotify *)notify error:(NSError *)error {
+    
+    SGLOG(@"++++++需要身份验证通知 Notify == %@ error = %@", notify, error);
 }
 
 #pragma mark 事件命令透传通知
