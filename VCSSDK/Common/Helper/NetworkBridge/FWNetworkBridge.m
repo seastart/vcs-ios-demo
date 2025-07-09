@@ -209,6 +209,14 @@
 /// @param responseObject 响应信息
 - (void)outputlog:(BOOL)failure way:(NSString *)way api:(NSString *)api params:(NSDictionary *)params response:(id)responseObject {
     
+    /// 如果请求成功，解析响应状态码
+    if (failure) {
+        /// 解析请求结果
+        NSInteger api_code = [[responseObject objectForKey:@"code"] integerValue];
+        /// 重置请求结果
+        failure = (api_code == ResponseCodeSucceed);
+    }
+    
     NSMutableString *debugStr = [NSMutableString string];
     [debugStr appendString:failure ? @"\n+++++***请求成功***+++++\n" : @"\n+++++***请求失败***+++++\n"];
     [debugStr appendString:[NSString stringWithFormat:@"+++++%@请求：%@%@ \n",way, self.manager.baseURL.absoluteString, api]];
@@ -216,7 +224,12 @@
     [debugStr appendString:[NSString stringWithFormat:@"+++++请求参数：%@ \n",params]];
     [debugStr appendString:[NSString stringWithFormat:@"+++++返回数据：%@ \n",[self UTF8Format:responseObject]]];
     [debugStr appendString:failure ? @"\n+++++***请求成功***+++++\n" : @"\n+++++***请求失败***+++++\n"];
-    SGLOG(@"%@",debugStr);
+    
+    /// 如果请求失败
+    if (!failure) {
+        /// 打印响应日志
+        SGLOG(@"%@",debugStr);
+    }
 }
 
 #pragma mark - 格式化日志数据
