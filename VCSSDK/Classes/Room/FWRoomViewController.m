@@ -1825,6 +1825,15 @@ API_AVAILABLE(ios(12.0))
     SGLOG(@"++++++会议违规提醒通知 Notify == %@ error = %@", notify, error);
 }
 
+#pragma mark 涉诈账号封禁通知
+/// 涉诈账号封禁通知
+/// @param notify 通知信息
+/// @param error 错误信息
+- (void)onListenRoomViolationBanWithNotify:(CmdRoomDetectionBanNotify *)notify error:(NSError *)error {
+    
+    SGLOG(@"++++++涉诈账号封禁通知 Notify == %@ error = %@", notify, error);
+}
+
 #pragma mark 网络研讨成员角色通知
 /// 网络研讨成员角色通知
 /// @param notify 通知信息
