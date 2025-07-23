@@ -318,20 +318,40 @@ API_AVAILABLE(ios(12.0))
     self.versionLabel.text = [NSString stringWithFormat:@"%@ 当前房间sdk no = %ld",[[VCSMeetingManager sharedManager] getVersionInfo], (long)self.enterRoomModel.data.sdk_no];
     /// 测试提前设置用户轨道
     /// [[VCSMeetingManager sharedManager] setStreamTrackWithClientId:20000660 mark:2 isSync:NO];
-    if (isSucceed) {
-        /// 初始化SDK成功(添加视频采集画面并开始推流)
-        [self.cameraPlayerView addSubview:self.playerView];
-        /// 设置网络延时抖动档位(重传档位)
-        [[VCSMeetingManager sharedManager] setNetworkDelayShakeWithState:VCSNetworkDelayShakeStateMedium];
-    } else {
+    /// 启动会议组件失败
+    if (!isSucceed) {
+        /// 日志输出
         SGLOG(@"++++++++++互动服务器连接失败可再次做重连操作");
         /// 不需要重连直接调用退出
         [self dismiss];
+        /// 结束此次调用
+        return;
     }
+    
+    /// 初始化SDK成功(添加视频采集画面并开始推流)
+    [self.cameraPlayerView addSubview:self.playerView];
+    /// 设置网络延时抖动档位(重传档位)
+    [[VCSMeetingManager sharedManager] setNetworkDelayShakeWithState:VCSNetworkDelayShakeStateMedium];
     /// 开启录屏服务端
     [[VCSMeetingManager sharedManager] startScreenRecordWithAppGroup:VCSAPPGROUP];
     /// 获取音频路由列表
     /// [[VCSMeetingManager sharedManager] getAvailableAudioRoutes];
+    /// 设置时间戳回调
+    [[VCSMeetingManager sharedManager] setTimestampBlock:^(void (^ _Nonnull completionHandler)(NSInteger)) {
+        /// 这里是上层获取时间戳的逻辑
+        SGLOG(@"会议组件 需要时间戳，请求上层提供...");
+        /// 示例：获取当前时间戳（实际实现可能有更复杂的逻辑）
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            /// 模拟获取时间戳的延迟操作
+            [NSThread sleepForTimeInterval:3.0];
+            /// 获取当前时间戳
+            NSInteger timestamp = (NSInteger)[[VCSToolBridge sharedManager] getNowTimeInterval];
+            /// 返回给视频会议组件
+            completionHandler(timestamp);
+        });
+    }];
+    /// 更新房间成员列表
+    [[VCSMeetingManager sharedManager] onRoomMembersUpdate:nil];
     
     /// 默认设置横屏
     self.isHorizontalScreen = [VCSMeetingManager sharedManager].meetingParam.isHorizontalScreen;
