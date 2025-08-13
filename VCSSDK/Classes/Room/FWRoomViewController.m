@@ -1870,6 +1870,15 @@ API_AVAILABLE(ios(12.0))
     SGLOG(@"++++++需要身份验证通知 Notify == %@ error = %@", notify, error);
 }
 
+#pragma mark 录制视角跟随用户通知
+/// 录制视角跟随用户通知
+/// @param notify 通知信息
+/// @param error 错误信息
+- (void)onListenCloudRecordFollowWithNotify:(RoomMcuRecordFollowNotify *)notify error:(NSError *)error {
+    
+    SGLOG(@"++++++录制视角跟随用户通知 Notify == %@ error = %@", notify, error);
+}
+
 #pragma mark 事件命令透传通知
 /// 事件命令透传通知
 /// @param command 消息指令
