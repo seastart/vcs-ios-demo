@@ -22,6 +22,7 @@
 #import "FWToolHelper.h"
 #import "FWToastBridge.h"
 #import "FWLoggerBridge.h"
+#import "FWEntryBridge.h"
 #import "FWBaseModel.h"
 #import "FWNetworkBridge.h"
 #import "FWIPAddressBridge.h"
