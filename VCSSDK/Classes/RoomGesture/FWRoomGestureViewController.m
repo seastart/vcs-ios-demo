@@ -145,11 +145,11 @@ API_AVAILABLE(ios(12.0))
         if (control.selected) {
             /// 不发送自己的视频
             [[VCSMeetingManager sharedManager] enableSendVideo:DeviceState_DsClosed];
-            [FWToastBridge showToastAction:NSLocalizedString(@"已关闭视频", nil)];
+            [SVProgressHUD showInfoWithStatus:NSLocalizedString(@"已关闭视频", nil)];
         } else {
             /// 发送自己的音频
             [[VCSMeetingManager sharedManager] enableSendVideo:DeviceState_DsActive];
-            [FWToastBridge showToastAction:NSLocalizedString(@"已开启视频", nil)];
+            [SVProgressHUD showInfoWithStatus:NSLocalizedString(@"已开启视频", nil)];
         }
     }];
     
@@ -325,7 +325,10 @@ API_AVAILABLE(ios(12.0))
         /// 后置采集
         [self.minePlayer setViewflip:NO flipY:NO];
     }
-    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    
+    NSSet<UIScene *> *scenes = [UIApplication sharedApplication].connectedScenes;
+    UIWindowScene *windowScene = (UIWindowScene *)[[scenes allObjects] firstObject];
+    UIInterfaceOrientation orientation = windowScene.interfaceOrientation;
     /// 更新本地预览小窗口旋转角度
     switch (orientation) {
         case UIInterfaceOrientationUnknown:

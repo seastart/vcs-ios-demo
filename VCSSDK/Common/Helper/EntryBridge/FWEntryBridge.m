@@ -61,12 +61,48 @@
     /// [NSThread sleepForTimeInterval:3];
     /// 存储默认服务器
     [kSGUserDefaults setObject:DATADEFAULTAPI forKey:DATADEFAULTAPIKEY];
+    
     /// 启用键盘功能
-    [IQKeyboardManager sharedManager].enable = YES;
+    [[IQKeyboardManager sharedManager] setEnable:YES];
     /// 键盘弹出时点击背景键盘收回
-    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    [[IQKeyboardManager sharedManager] setShouldResignOnTouchOutside:YES];
+    /// 禁用IQKeyboard的Toolbar
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];
+    
+    /// 提示框样式
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    /// 提示框背景颜色
+    /// [SVProgressHUD setBackgroundColor:[UIColor colorWithWhite:0.f alpha:0.6]];
+    [SVProgressHUD setBackgroundColor:[UIColor blackColor]];
+    /// 提示框内容颜色
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    /// 提示框显示最短时间
+    [SVProgressHUD setMinimumDismissTimeInterval:2.f];
+    /// 提示框文本字体
+    [SVProgressHUD setFont:[UIFont systemFontOfSize:14.f weight:UIFontWeightRegular]];
+    /// 提示框无文本圆环半径
+    [SVProgressHUD setRingNoTextRadius:18.f];
+    /// 提示框有文本圆环半径
+    [SVProgressHUD setRingRadius:18.f];
+    /// 提示框阴影不透明度
+    [SVProgressHUD setShadowOpacity:0.f];
+    /// 提示框阴影半径
+    [SVProgressHUD setShadowRadius:0.f];
+    /// 提示框圆角
+    [SVProgressHUD setCornerRadius:8.f];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnonnull"
+    /// 提示框信息消息图像
+    [SVProgressHUD setInfoImage:nil];
+    /// 提示框成功消息图像
+    [SVProgressHUD setSuccessImage:nil];
+    /// 提示框错误消息图像
+    [SVProgressHUD setErrorImage:nil];
+#pragma clang diagnostic pop
+    
     /// 添加内存监测白名单
-    [NSObject addClassNamesToWhitelist:@[@"UIAlertController", @"UITextField", @"RPSystemBroadcastPickerView", @"RPBroadcastPickerStandaloneViewController"]];
+    [NSObject addClassNamesToWhitelist:@[@"UIAlertController", @"UITextField", @"UITextView", @"SFSafariViewController", @"RPSystemBroadcastPickerView", @"RPBroadcastPickerStandaloneViewController", @"UIDocumentPickerViewController", @"QLPreviewController"]];
+    
     /// 初始化美颜服务
     [[VCSBeautyManager sharedManager] setupRenderKit:g_auth_package authDataSize:sizeof(g_auth_package) logLevel:VCSBeautyLogLevelError];
 }

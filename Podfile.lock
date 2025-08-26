@@ -28,6 +28,9 @@ PODS:
     - SDWebImage/Core (= 5.20.0)
   - SDWebImage/Core (5.20.0)
   - SSZipArchive (2.4.3)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
   - TZImagePickerController (3.8.8):
     - TZImagePickerController/Basic (= 3.8.8)
     - TZImagePickerController/Location (= 3.8.8)
@@ -462,6 +465,7 @@ DEPENDENCIES:
   - MLeaksFinder
   - ReactiveObjC
   - SDWebImage
+  - SVProgressHUD (from `https://github.com/SilenceLove/SVProgressHUD`)
   - TZImagePickerController
   - VCSSDK (from `../../`)
   - YYModel
@@ -483,8 +487,15 @@ SPEC REPOS:
     - YYModel
 
 EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SilenceLove/SVProgressHUD
   VCSSDK:
     :path: "../../"
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: ffd939e28a4aec34bf136f9dbfc272fb0154f716
+    :git: https://github.com/SilenceLove/SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
@@ -498,10 +509,11 @@ SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  SVProgressHUD: 75bf569c9126226b6528098e123b0d886d6f0ca4
   TZImagePickerController: d084a7b97c82d387e7669dd86dc9a9057500aacf
   VCSSDK: 459caebb1523f8aef893d9c065df16cb45ad3a2e
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 7ab131d579fd8667e17a6d43b0e63198641764f4
+PODFILE CHECKSUM: 5c544e939aaaec7bf6101f09e89b935c893ea99f
 
 COCOAPODS: 1.16.1

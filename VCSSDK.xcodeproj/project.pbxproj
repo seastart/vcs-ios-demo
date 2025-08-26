@@ -33,7 +33,6 @@
 		A6972F8F246D5E58003CE84D /* FWNetworkBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F7F246D5E58003CE84D /* FWNetworkBridge.m */; };
 		A6972F90246D5E58003CE84D /* FWIPAddressConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F82246D5E58003CE84D /* FWIPAddressConfig.m */; };
 		A6972F91246D5E58003CE84D /* FWIPAddressBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F83246D5E58003CE84D /* FWIPAddressBridge.m */; };
-		A6972F92246D5E58003CE84D /* FWToastBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F88246D5E58003CE84D /* FWToastBridge.m */; };
 		A6972F93246D5E58003CE84D /* FWToolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F89246D5E58003CE84D /* FWToolHelper.m */; };
 		A69EAA262471301600A42AEB /* FWCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = A69EAA252471301600A42AEB /* FWCameraView.m */; };
 		A6F114C424580E1500662C6C /* FWLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F114C324580E1500662C6C /* FWLoginViewModel.m */; };
@@ -186,8 +185,6 @@
 		A6972F83246D5E58003CE84D /* FWIPAddressBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWIPAddressBridge.m; sourceTree = "<group>"; };
 		A6972F84246D5E58003CE84D /* FWIPAddressBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWIPAddressBridge.h; sourceTree = "<group>"; };
 		A6972F85246D5E58003CE84D /* FWIPAddressConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWIPAddressConfig.h; sourceTree = "<group>"; };
-		A6972F87246D5E58003CE84D /* FWToastBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWToastBridge.h; sourceTree = "<group>"; };
-		A6972F88246D5E58003CE84D /* FWToastBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWToastBridge.m; sourceTree = "<group>"; };
 		A6972F89246D5E58003CE84D /* FWToolHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWToolHelper.m; sourceTree = "<group>"; };
 		A69EAA242471301600A42AEB /* FWCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCameraView.h; sourceTree = "<group>"; };
 		A69EAA252471301600A42AEB /* FWCameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCameraView.m; sourceTree = "<group>"; };
@@ -455,7 +452,6 @@
 				F477836F26004B990003E921 /* MQTTClientBridge */,
 				A6972F7A246D5E58003CE84D /* NetworkBridge */,
 				A6972F81246D5E58003CE84D /* IPAddressBridge */,
-				A6972F86246D5E58003CE84D /* ToastBridge */,
 				A6972F80246D5E58003CE84D /* FWToolHelper.h */,
 				A6972F89246D5E58003CE84D /* FWToolHelper.m */,
 			);
@@ -501,15 +497,6 @@
 				A6972F83246D5E58003CE84D /* FWIPAddressBridge.m */,
 			);
 			path = IPAddressBridge;
-			sourceTree = "<group>";
-		};
-		A6972F86246D5E58003CE84D /* ToastBridge */ = {
-			isa = PBXGroup;
-			children = (
-				A6972F87246D5E58003CE84D /* FWToastBridge.h */,
-				A6972F88246D5E58003CE84D /* FWToastBridge.m */,
-			);
-			path = ToastBridge;
 			sourceTree = "<group>";
 		};
 		A6FDBF9924849A3B00856C8C /* VCSReplayBroadcastUpload */ = {
@@ -1073,6 +1060,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 				"${PODS_ROOT}/../../../VCSSDK/Classes/Beauty/Depend/FURenderKit.framework",
 				"${PODS_ROOT}/../../../VCSSDK/Classes/Meeting/Depend/WebRTC.framework",
@@ -1091,6 +1079,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FURenderKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
@@ -1213,7 +1202,6 @@
 				A694BEF324590F8400DCFA04 /* FWServeConfigViewModel.m in Sources */,
 				F48BBA662614A6D200A98DA5 /* FWMQTTClientModel.m in Sources */,
 				D16FDFBE24570A9100A48951 /* FWRegisterViewController.m in Sources */,
-				A6972F92246D5E58003CE84D /* FWToastBridge.m in Sources */,
 				A6972F8A246D5E58003CE84D /* FWInterfaces.m in Sources */,
 				F488AFE82702E4F900FAF978 /* FWBeautyViewBar.m in Sources */,
 				A69EAA262471301600A42AEB /* FWCameraView.m in Sources */,

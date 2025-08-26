@@ -25,6 +25,8 @@ def commonPods
   pod 'MLeaksFinder'
   # 数据模型
   pod 'YYModel'
+  # 轻量级加载框
+  pod 'SVProgressHUD', :git => "https://github.com/SilenceLove/SVProgressHUD"
 end
 
 def meetingPods
