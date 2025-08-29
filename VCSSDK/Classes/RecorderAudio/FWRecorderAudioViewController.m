@@ -129,7 +129,7 @@
 - (void)startRecording {
     
     if (kStringIsEmpty(self.filePath)) {
-        [FWToastBridge showToastAction:@"录制文件地址为空"];
+        [SVProgressHUD showInfoWithStatus:@"录制文件地址为空"];
         return;
     }
     /// 设置录制代理
@@ -141,7 +141,7 @@
     /// 开启录制
     [[VCSAudioManager sharedManager].audioRecorder recorderStartWithFilePath:self.filePath complete:^(BOOL isFailed) {
         if (isFailed) {
-            [FWToastBridge showToastAction:@"音频文件地址无效，录制失败"];
+            [SVProgressHUD showInfoWithStatus:@"音频文件地址无效，录制失败"];
         }
     }];
 }
@@ -151,7 +151,7 @@
 - (void)stopRecording {
     
     if (kStringIsEmpty(self.filePath)) {
-        [FWToastBridge showToastAction:@"录制文件地址为空"];
+        [SVProgressHUD showInfoWithStatus:@"录制文件地址为空"];
         return;
     }
     /// 停止录制
@@ -163,7 +163,7 @@
 - (void)startPlayer {
     
     if (kDataIsEmpty(self.audioData)) {
-        [FWToastBridge showToastAction:@"录制音频数据为空"];
+        [SVProgressHUD showInfoWithStatus:@"录制音频数据为空"];
         return;
     }
     /// 获取文件路径
@@ -174,7 +174,7 @@
     /// 开始播放
     [[VCSAudioManager sharedManager].audioPlayer playerStartWithFilePath:filePath complete:^(BOOL isFailed) {
         if (isFailed) {
-            [FWToastBridge showToastAction:@"音频文件地址无效，播放失败"];
+            [SVProgressHUD showInfoWithStatus:@"音频文件地址无效，播放失败"];
         }
     }];
 }

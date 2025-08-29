@@ -73,7 +73,7 @@
     
     if ([VCSMeetingManager sharedManager].enterRoom) {
         /// 当前正在会议中，结束此次投屏操作
-        [FWToastBridge showToastAction:@"当前正在会议中，请先退出当前会议再尝试投屏。"];
+        [SVProgressHUD showInfoWithStatus:@"当前正在会议中，请先退出当前会议再尝试投屏。"];
         return;
     }
     
