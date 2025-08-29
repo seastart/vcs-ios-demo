@@ -2,7 +2,7 @@
 source 'https://cdn.cocoapods.org'
 
 # 说明平台和版本
-platform :ios, '11.0'
+platform :ios, '13.0'
 
 # 忽略引入库的所有警告
 inhibit_all_warnings!
@@ -25,6 +25,8 @@ def commonPods
   pod 'MLeaksFinder'
   # 数据模型
   pod 'YYModel'
+  # 轻量级加载框
+  pod 'SVProgressHUD', :git => "https://github.com/SilenceLove/SVProgressHUD"
 end
 
 def meetingPods
