@@ -586,16 +586,16 @@ API_AVAILABLE(ios(12.0))
     /// 监听订阅加载状态
     [RACObserve(self.viewModel, loading) subscribeNext:^(NSNumber * _Nullable value) {
         if(value.boolValue) {
-            [FWToastBridge showToastAction];
+            [SVProgressHUD show];
         } else {
-            [FWToastBridge hiddenToastAction];
+            [SVProgressHUD dismiss];
         }
     }];
     
     /// 提示框订阅
     [self.viewModel.toastSubject subscribeNext:^(id _Nullable message) {
         if (!kStringIsEmpty(message)) {
-            [FWToastBridge showToastAction:message];
+            [SVProgressHUD showInfoWithStatus:message];
         }
     }];
     
@@ -636,15 +636,15 @@ API_AVAILABLE(ios(12.0))
     [[self.openBoardButton rac_signalForControlEvents :UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable control) {
         @strongify(self);
         if (self.isSharingScreen) {
-            [FWToastBridge showToastAction:@"当前在共享屏幕，请稍后再试"];
+            [SVProgressHUD showInfoWithStatus:@"当前在共享屏幕，请稍后再试"];
             return;
         }
         if (self.isSharingWhiteBoard) {
-            [FWToastBridge showToastAction:@"当前在共享电子白板，请稍后再试"];
+            [SVProgressHUD showInfoWithStatus:@"当前在共享电子白板，请稍后再试"];
             return;
         }
         if (self.isSharingPicture) {
-            [FWToastBridge showToastAction:@"当前在共享图片，请稍后再试"];
+            [SVProgressHUD showInfoWithStatus:@"当前在共享图片，请稍后再试"];
             return;
         }
         /// 开始分享(包括：白板、图片、桌面)
@@ -961,11 +961,11 @@ API_AVAILABLE(ios(12.0))
 - (void)sharingScreenClick {
     
     if (self.isSharingPicture) {
-        [FWToastBridge showToastAction:@"当前在共享图片，请稍后再试"];
+        [SVProgressHUD showInfoWithStatus:@"当前在共享图片，请稍后再试"];
         return;
     }
     if (self.isSharingWhiteBoard) {
-        [FWToastBridge showToastAction:@"当前在共享电子白板，请稍后再试"];
+        [SVProgressHUD showInfoWithStatus:@"当前在共享电子白板，请稍后再试"];
         return;
     }
     if (!self.isSharingScreen) {
@@ -976,7 +976,7 @@ API_AVAILABLE(ios(12.0))
         /// 当前有人在屏幕图片
         /// 限制只有主持人和共享屏幕所有者才能操作共享屏幕开关
         if (!kStringIsEmpty(self.sharingAccountId) && ![self.sharingAccountId isEqualToString:[VCSMeetingManager sharedManager].meetingParam.accountId]) {
-            [FWToastBridge showToastAction:@"当前有参会人共享屏幕，您没有权限完成此操作"];
+            [SVProgressHUD showInfoWithStatus:@"当前有参会人共享屏幕，您没有权限完成此操作"];
             return;
         }
         /// 弹出BroadcastPicker
@@ -998,7 +998,9 @@ API_AVAILABLE(ios(12.0))
 #pragma mark - 设备方向改变的处理
 - (void)handleStatusBarOrientationChange:(NSNotification *)notification {
     
-    UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+    NSSet<UIScene *> *scenes = [UIApplication sharedApplication].connectedScenes;
+    UIWindowScene *windowScene = (UIWindowScene *)[[scenes allObjects] firstObject];
+    UIInterfaceOrientation interfaceOrientation = windowScene.interfaceOrientation;
     switch (interfaceOrientation) {
         case UIInterfaceOrientationUnknown:
             SGLOG(@"++++++++++++未知方向");
@@ -1048,15 +1050,15 @@ API_AVAILABLE(ios(12.0))
 - (void)showImagePicker {
     
     if (self.isSharingScreen) {
-        [FWToastBridge showToastAction:@"当前在共享屏幕，请稍后再试"];
+        [SVProgressHUD showInfoWithStatus:@"当前在共享屏幕，请稍后再试"];
         return;
     }
     if (self.isSharingWhiteBoard) {
-        [FWToastBridge showToastAction:@"当前在共享电子白板，请稍后再试"];
+        [SVProgressHUD showInfoWithStatus:@"当前在共享电子白板，请稍后再试"];
         return;
     }
     if (self.isSharingPicture) {
-        [FWToastBridge showToastAction:@"当前在共享图片，请稍后再试"];
+        [SVProgressHUD showInfoWithStatus:@"当前在共享图片，请稍后再试"];
         return;
     }
     TZImagePickerController *imagePickerVC = [[TZImagePickerController alloc] initWithMaxImagesCount:1 delegate:nil];
@@ -1102,7 +1104,7 @@ API_AVAILABLE(ios(12.0))
 /// 开启网络检测
 - (void)roomNetworkManagerDidBegined {
     
-    [FWToastBridge showToastAction:@"网络检测已开启"];
+    [SVProgressHUD showInfoWithStatus:@"网络检测已开启"];
 }
 
 #pragma mark 完成网络检测
@@ -1112,7 +1114,7 @@ API_AVAILABLE(ios(12.0))
 /// @param connectModel 网络连接状况
 - (void)roomNetworkManagerDidFinshedWithUploadModel:(nullable VCSNetworkModel *)uploadModel downModel:(nullable VCSNetworkModel *)downModel connectModel:(VCSNetworkConnectModel *)connectModel {
     
-    [FWToastBridge showToastAction:@"网络检测已完成"];
+    [SVProgressHUD showInfoWithStatus:@"网络检测已完成"];
 }
 
 #pragma mark 流媒体连接结果回调
@@ -1463,11 +1465,11 @@ API_AVAILABLE(ios(12.0))
         if (self.videoState == DeviceState_DsActive) {
             /// 视频状态为开启
             self.roomVideoStateButton.selected = NO;
-            [FWToastBridge showToastAction:@"视频状态变更为开启"];
+            [SVProgressHUD showInfoWithStatus:@"视频状态变更为开启"];
         } else {
             /// 视频状态为关闭或禁用
             self.roomVideoStateButton.selected = YES;
-            [FWToastBridge showToastAction:@"视频状态变更为关闭或禁用"];
+            [SVProgressHUD showInfoWithStatus:@"视频状态变更为关闭或禁用"];
         }
     }
     if (notify.room.astate != self.audioState) {
@@ -1476,11 +1478,11 @@ API_AVAILABLE(ios(12.0))
         if (self.audioState == DeviceState_DsActive) {
             /// 音频状态为开启
             self.roomAudioStateButton.selected = NO;
-            [FWToastBridge showToastAction:@"音频状态变更为开启"];
+            [SVProgressHUD showInfoWithStatus:@"音频状态变更为开启"];
         } else {
             /// 音频状态为关闭或禁用
             self.roomAudioStateButton.selected = YES;
-            [FWToastBridge showToastAction:@"音频状态变更为关闭或禁用"];
+            [SVProgressHUD showInfoWithStatus:@"音频状态变更为关闭或禁用"];
         }
     }
     /// 判断电子白板控制开关
@@ -1537,7 +1539,7 @@ API_AVAILABLE(ios(12.0))
         }
         
         /// 显示加载框
-        [FWToastBridge showToastAction];
+        [SVProgressHUD show];
         /// 首先下载图片
         [[FWNetworkBridge sharedManager] downloadImageWithImageUrl:notify.room.sharingPicURL finishBlock:^(UIImage * _Nullable image) {
             if (!image) {
@@ -1547,7 +1549,7 @@ API_AVAILABLE(ios(12.0))
             /// 开启电子白板(图片共享)
             [self.whiteBoardView showView:self.enterRoomModel.data.wb_host userId:self.loginModel.data.account.id meetingId:self.enterRoomModel.data.room.no privileges:isPrivileges imageUrl:notify.room.sharingPicURL image:image];
             /// 隐藏加载框
-            [FWToastBridge hiddenToastAction];
+            [SVProgressHUD dismiss];
         }];
         /// 标记当前会议室内在共享图片
         self.isSharingPicture = YES;
@@ -1609,7 +1611,7 @@ API_AVAILABLE(ios(12.0))
 - (void)onListenKickoutWithNotify:(KickoutNotify *)notify error:(NSError *)error {
     
     /// 收到被踢通知主动退出会议室
-    [FWToastBridge showToastAction:@"您已经被主持人踢出会议室"];
+    [SVProgressHUD showInfoWithStatus:@"您已经被主持人踢出会议室"];
     [self dismiss];
     SGLOG(@"++++++被踢通知 Notify == %@ error = %@", notify, error);
 }
@@ -1752,7 +1754,9 @@ API_AVAILABLE(ios(12.0))
 - (void)onListenChatWithNotify:(ChatNotify *)notify error:(NSError *)error {
     
     SGLOG(@"++++++聊天消息通知 Notify == %@ error = %@", notify, error);
-    [FWToastBridge showToast:[NSString stringWithFormat:@"%@：%@", notify.accountName, notify.message] location:@"bottom" showTime:1.5];
+    [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"%@：%@", notify.accountName, notify.message]];
+    /// 延迟后关闭提示
+    [SVProgressHUD dismissWithDelay:2.f];
 }
 
 #pragma mark 举手发言的处理通知

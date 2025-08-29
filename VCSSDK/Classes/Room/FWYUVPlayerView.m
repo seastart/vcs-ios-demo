@@ -146,28 +146,28 @@
     /// 切换一号轨道(0视频轨)按钮事件
     [[self.streamTrackButtonOne rac_signalForControlEvents :UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable control) {
         @strongify(self);
-        [FWToastBridge showToastAction:@"已切换到0轨道"];
+        [SVProgressHUD showInfoWithStatus:@"已切换到0轨道"];
         [[VCSMeetingManager sharedManager] setStreamTrackWithClientId:self.account.streamId mark:1 isSync:NO];
     }];
     
     /// 切换二号轨道(1视频轨)按钮事件
     [[self.streamTrackButtonTwo rac_signalForControlEvents :UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable control) {
         @strongify(self);
-        [FWToastBridge showToastAction:@"已切换到1轨道"];
+        [SVProgressHUD showInfoWithStatus:@"已切换到1轨道"];
         [[VCSMeetingManager sharedManager] setStreamTrackWithClientId:self.account.streamId mark:2 isSync:NO];
     }];
     
     /// 切换三号轨道(2视频轨)按钮事件
     [[self.streamTrackButtontThree rac_signalForControlEvents :UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable control) {
         @strongify(self);
-        [FWToastBridge showToastAction:@"已切换到2轨道"];
+        [SVProgressHUD showInfoWithStatus:@"已切换到2轨道"];
         [[VCSMeetingManager sharedManager] setStreamTrackWithClientId:self.account.streamId mark:4 isSync:NO];
     }];
     
     /// 切换四号轨道(0视频轨和1视频轨)按钮事件
     [[self.streamTrackButtonFour rac_signalForControlEvents :UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable control) {
         @strongify(self);
-        [FWToastBridge showToastAction:@"已切换到0~1轨道"];
+        [SVProgressHUD showInfoWithStatus:@"已切换到0~1轨道"];
         [[VCSMeetingManager sharedManager] setStreamTrackWithClientId:self.account.streamId mark:3 isSync:NO];
     }];
 }

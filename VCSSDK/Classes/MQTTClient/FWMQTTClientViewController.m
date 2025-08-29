@@ -344,7 +344,7 @@
 - (void)startRecording {
     
     if (kStringIsEmpty(self.filePath)) {
-        [FWToastBridge showToastAction:@"录制文件地址为空"];
+        [SVProgressHUD showInfoWithStatus:@"录制文件地址为空"];
         return;
     }
     /// 设置录制代理
@@ -356,7 +356,7 @@
     /// 开启录制
     [[VCSAudioManager sharedManager].audioRecorder recorderStartWithFilePath:self.filePath complete:^(BOOL isFailed) {
         if (isFailed) {
-            [FWToastBridge showToastAction:@"音频文件地址无效，录制失败"];
+            [SVProgressHUD showInfoWithStatus:@"音频文件地址无效，录制失败"];
         }
     }];
 }
@@ -366,7 +366,7 @@
 - (void)stopRecording {
     
     if (kStringIsEmpty(self.filePath)) {
-        [FWToastBridge showToastAction:@"录制文件地址为空"];
+        [SVProgressHUD showInfoWithStatus:@"录制文件地址为空"];
         return;
     }
     /// 停止录制
@@ -460,7 +460,7 @@
 - (void)imReceiveChatText:(NSString *)message {
     
     if (kStringIsEmpty(message)) {
-        [FWToastBridge showToastAction:@"接收文本数据为空"];
+        [SVProgressHUD showInfoWithStatus:@"接收文本数据为空"];
         return;
     }
     self.viewModel.promptText = message;
@@ -472,7 +472,7 @@
 - (void)imReceiveChatImagePath:(NSString *)imagePath {
     
     if (kStringIsEmpty(imagePath)) {
-        [FWToastBridge showToastAction:@"接收图片数据为空"];
+        [SVProgressHUD showInfoWithStatus:@"接收图片数据为空"];
         return;
     }
     [self.receiveImageView sd_setImageWithURL:[[FWToolHelper sharedManager] placeImg:imagePath] placeholderImage:nil];
@@ -484,7 +484,7 @@
 - (void)imReceiveChatAudioPath:(NSString *)audioPath {
     
     if (kStringIsEmpty(audioPath)) {
-        [FWToastBridge showToastAction:@"接收音频数据为空"];
+        [SVProgressHUD showInfoWithStatus:@"接收音频数据为空"];
         return;
     }
     /// 设置播放代理
@@ -492,7 +492,7 @@
     /// 开始播放
     [[VCSAudioManager sharedManager].audioPlayer playerStartWithFilePath:audioPath complete:^(BOOL isFailed) {
         if (isFailed) {
-            [FWToastBridge showToastAction:@"音频文件地址无效，播放失败"];
+            [SVProgressHUD showInfoWithStatus:@"音频文件地址无效，播放失败"];
         }
     }];
 }
