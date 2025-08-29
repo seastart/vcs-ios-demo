@@ -42,6 +42,25 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>FWSceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>LaunchScreen</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>需要您的同意，VCSDEMO 才能使用相机进行拍照。</string>
 	<key>NSMicrophoneUsageDescription</key>
