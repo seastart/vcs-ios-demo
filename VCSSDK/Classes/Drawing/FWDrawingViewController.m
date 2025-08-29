@@ -86,13 +86,13 @@
     }
     
     /// 显示加载框
-    [FWToastBridge showToastAction];
+    [SVProgressHUD show];
     /// 首先下载图片
     [[FWNetworkBridge sharedManager] downloadImageWithImageUrl:imageUrl finishBlock:^(UIImage * _Nullable image) {
         /// 开启电子画板
         [self drawServicConnectWithImage:image imageUrl:imageUrl];
         /// 隐藏加载框
-        [FWToastBridge hiddenToastAction];
+        [SVProgressHUD dismiss];
     }];
     
     /// 添加到父视图
@@ -164,13 +164,13 @@
 - (void)changeDrawBackImage:(nullable NSString *)imageUrl {
     
     /// 显示加载框
-    [FWToastBridge showToastAction];
+    [SVProgressHUD show];
     /// 首先下载图片
     [[FWNetworkBridge sharedManager] downloadImageWithImageUrl:imageUrl finishBlock:^(UIImage * _Nullable image) {
         /// 更换画板背景图片(共享图片)
         [self.whiteBoard changeDrawBackImageWithImage:image imageUrl:imageUrl];
         /// 隐藏加载框
-        [FWToastBridge hiddenToastAction];
+        [SVProgressHUD dismiss];
     }];
 }
 
@@ -215,13 +215,13 @@
 - (void)onChangeDrawBackImageEvent:(nullable NSString *)imageUrl {
     
     /// 显示加载框
-    [FWToastBridge showToastAction];
+    [SVProgressHUD show];
     /// 首先下载图片
     [[FWNetworkBridge sharedManager] downloadImageWithImageUrl:imageUrl finishBlock:^(UIImage * _Nullable image) {
         /// 更换本地背景图片
         [self.whiteBoard setupDrawBackImage:image];
         /// 隐藏加载框
-        [FWToastBridge hiddenToastAction];
+        [SVProgressHUD dismiss];
     }];
 }
 

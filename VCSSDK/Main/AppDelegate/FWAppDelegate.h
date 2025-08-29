@@ -10,6 +10,7 @@
 
 @interface FWAppDelegate : UIResponder <UIApplicationDelegate>
 
+/// 应用窗口
 @property (strong, nonatomic) UIWindow *window;
 
 @end
