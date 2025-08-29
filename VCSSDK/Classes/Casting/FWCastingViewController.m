@@ -112,7 +112,7 @@
     /// 提示框订阅
     [self.viewModel.toastSubject subscribeNext:^(id _Nullable message) {
         if (!kStringIsEmpty(message)) {
-            [FWToastBridge showToastAction:message];
+            [SVProgressHUD showInfoWithStatus:message];
         }
     }];
     
@@ -128,9 +128,9 @@
     /// 监听订阅加载状态
     [RACObserve(self.viewModel, loading) subscribeNext:^(NSNumber * _Nullable value) {
         if(value.boolValue) {
-            [FWToastBridge showToastAction];
+            [SVProgressHUD show];
         } else {
-            [FWToastBridge hiddenToastAction];
+            [SVProgressHUD dismiss];
         }
     }];
     
