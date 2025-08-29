@@ -99,7 +99,7 @@
 - (void)buildView {
     
     /// 设置默认数据
-    self.accountTextField.text = @"15606946789";
+    self.accountTextField.text = @"15606946786";
     self.passwordTextField.text = @"abc@12345";
     
     /// 设置title
