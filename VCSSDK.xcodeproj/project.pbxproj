@@ -33,7 +33,6 @@
 		A6972F8F246D5E58003CE84D /* FWNetworkBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F7F246D5E58003CE84D /* FWNetworkBridge.m */; };
 		A6972F90246D5E58003CE84D /* FWIPAddressConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F82246D5E58003CE84D /* FWIPAddressConfig.m */; };
 		A6972F91246D5E58003CE84D /* FWIPAddressBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F83246D5E58003CE84D /* FWIPAddressBridge.m */; };
-		A6972F92246D5E58003CE84D /* FWToastBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F88246D5E58003CE84D /* FWToastBridge.m */; };
 		A6972F93246D5E58003CE84D /* FWToolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A6972F89246D5E58003CE84D /* FWToolHelper.m */; };
 		A69EAA262471301600A42AEB /* FWCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = A69EAA252471301600A42AEB /* FWCameraView.m */; };
 		A6F114C424580E1500662C6C /* FWLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F114C324580E1500662C6C /* FWLoginViewModel.m */; };
@@ -74,6 +73,8 @@
 		F45F0E94260C258300DDC21F /* FWRecorderAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F0E92260C258300DDC21F /* FWRecorderAudioViewController.m */; };
 		F45F0E95260C258300DDC21F /* FWRecorderAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45F0E93260C258300DDC21F /* FWRecorderAudioViewController.xib */; };
 		F45F0EF3260C632000DDC21F /* Recording.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F0EF2260C632000DDC21F /* Recording.xcassets */; };
+		F4621CAA2E5C5EFE0054B27B /* FWSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4621CA92E5C5EFE0054B27B /* FWSceneDelegate.m */; };
+		F4621CAE2E5C5FCC0054B27B /* FWEntryBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F4621CAD2E5C5FCC0054B27B /* FWEntryBridge.m */; };
 		F4621E662AD54373009DD06C /* FWCdnPullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4621E642AD54373009DD06C /* FWCdnPullViewController.m */; };
 		F4621E672AD54373009DD06C /* FWCdnPullViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4621E652AD54373009DD06C /* FWCdnPullViewController.xib */; };
 		F470498B24D7E43B0075BDD2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F470498A24D7E43B0075BDD2 /* CoreTelephony.framework */; };
@@ -184,8 +185,6 @@
 		A6972F83246D5E58003CE84D /* FWIPAddressBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWIPAddressBridge.m; sourceTree = "<group>"; };
 		A6972F84246D5E58003CE84D /* FWIPAddressBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWIPAddressBridge.h; sourceTree = "<group>"; };
 		A6972F85246D5E58003CE84D /* FWIPAddressConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWIPAddressConfig.h; sourceTree = "<group>"; };
-		A6972F87246D5E58003CE84D /* FWToastBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWToastBridge.h; sourceTree = "<group>"; };
-		A6972F88246D5E58003CE84D /* FWToastBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWToastBridge.m; sourceTree = "<group>"; };
 		A6972F89246D5E58003CE84D /* FWToolHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWToolHelper.m; sourceTree = "<group>"; };
 		A69EAA242471301600A42AEB /* FWCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCameraView.h; sourceTree = "<group>"; };
 		A69EAA252471301600A42AEB /* FWCameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCameraView.m; sourceTree = "<group>"; };
@@ -254,6 +253,10 @@
 		F45F0E92260C258300DDC21F /* FWRecorderAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWRecorderAudioViewController.m; sourceTree = "<group>"; };
 		F45F0E93260C258300DDC21F /* FWRecorderAudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWRecorderAudioViewController.xib; sourceTree = "<group>"; };
 		F45F0EF2260C632000DDC21F /* Recording.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Recording.xcassets; sourceTree = "<group>"; };
+		F4621CA82E5C5EFE0054B27B /* FWSceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWSceneDelegate.h; sourceTree = "<group>"; };
+		F4621CA92E5C5EFE0054B27B /* FWSceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWSceneDelegate.m; sourceTree = "<group>"; };
+		F4621CAC2E5C5FCC0054B27B /* FWEntryBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWEntryBridge.h; sourceTree = "<group>"; };
+		F4621CAD2E5C5FCC0054B27B /* FWEntryBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWEntryBridge.m; sourceTree = "<group>"; };
 		F4621E632AD54373009DD06C /* FWCdnPullViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWCdnPullViewController.h; sourceTree = "<group>"; };
 		F4621E642AD54373009DD06C /* FWCdnPullViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWCdnPullViewController.m; sourceTree = "<group>"; };
 		F4621E652AD54373009DD06C /* FWCdnPullViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FWCdnPullViewController.xib; sourceTree = "<group>"; };
@@ -440,6 +443,7 @@
 		A6972F76246D5E58003CE84D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F4621CAB2E5C5FAF0054B27B /* EntryBridge */,
 				F49B13272A47E7D20080D186 /* PackageBridge */,
 				A6972F77246D5E58003CE84D /* Category */,
 				F425826629F119A600E4A1C2 /* CastingBridge */,
@@ -448,7 +452,6 @@
 				F477836F26004B990003E921 /* MQTTClientBridge */,
 				A6972F7A246D5E58003CE84D /* NetworkBridge */,
 				A6972F81246D5E58003CE84D /* IPAddressBridge */,
-				A6972F86246D5E58003CE84D /* ToastBridge */,
 				A6972F80246D5E58003CE84D /* FWToolHelper.h */,
 				A6972F89246D5E58003CE84D /* FWToolHelper.m */,
 			);
@@ -494,15 +497,6 @@
 				A6972F83246D5E58003CE84D /* FWIPAddressBridge.m */,
 			);
 			path = IPAddressBridge;
-			sourceTree = "<group>";
-		};
-		A6972F86246D5E58003CE84D /* ToastBridge */ = {
-			isa = PBXGroup;
-			children = (
-				A6972F87246D5E58003CE84D /* FWToastBridge.h */,
-				A6972F88246D5E58003CE84D /* FWToastBridge.m */,
-			);
-			path = ToastBridge;
 			sourceTree = "<group>";
 		};
 		A6FDBF9924849A3B00856C8C /* VCSReplayBroadcastUpload */ = {
@@ -568,6 +562,8 @@
 			children = (
 				D16FDF862456FA8800A48951 /* FWAppDelegate.h */,
 				D16FDF872456FA8800A48951 /* FWAppDelegate.m */,
+				F4621CA82E5C5EFE0054B27B /* FWSceneDelegate.h */,
+				F4621CA92E5C5EFE0054B27B /* FWSceneDelegate.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -740,6 +736,15 @@
 				F45F0E93260C258300DDC21F /* FWRecorderAudioViewController.xib */,
 			);
 			path = RecorderAudio;
+			sourceTree = "<group>";
+		};
+		F4621CAB2E5C5FAF0054B27B /* EntryBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F4621CAC2E5C5FCC0054B27B /* FWEntryBridge.h */,
+				F4621CAD2E5C5FCC0054B27B /* FWEntryBridge.m */,
+			);
+			path = EntryBridge;
 			sourceTree = "<group>";
 		};
 		F4621E622AD53FC1009DD06C /* CDN */ = {
@@ -1055,6 +1060,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 				"${PODS_ROOT}/../../../VCSSDK/Classes/Beauty/Depend/FURenderKit.framework",
 				"${PODS_ROOT}/../../../VCSSDK/Classes/Meeting/Depend/WebRTC.framework",
@@ -1073,6 +1079,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FURenderKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
@@ -1184,6 +1191,7 @@
 				F432A571272FD2EC0001FE46 /* FWNetworkViewController.m in Sources */,
 				F43AD3ED24EBF4D600922C59 /* FWNetCallBridge.m in Sources */,
 				A694BF0224598DA800DCFA04 /* FWEnterRoomModel.m in Sources */,
+				F4621CAE2E5C5FCC0054B27B /* FWEntryBridge.m in Sources */,
 				D16FDF952456FA8900A48951 /* FWAppDelegate.m in Sources */,
 				F488AFF02702EE6500FAF978 /* FWSlider.m in Sources */,
 				F4BEA25C24E6308100039DF7 /* NSDictionary+compare.m in Sources */,
@@ -1194,7 +1202,6 @@
 				A694BEF324590F8400DCFA04 /* FWServeConfigViewModel.m in Sources */,
 				F48BBA662614A6D200A98DA5 /* FWMQTTClientModel.m in Sources */,
 				D16FDFBE24570A9100A48951 /* FWRegisterViewController.m in Sources */,
-				A6972F92246D5E58003CE84D /* FWToastBridge.m in Sources */,
 				A6972F8A246D5E58003CE84D /* FWInterfaces.m in Sources */,
 				F488AFE82702E4F900FAF978 /* FWBeautyViewBar.m in Sources */,
 				A69EAA262471301600A42AEB /* FWCameraView.m in Sources */,
@@ -1212,6 +1219,7 @@
 				F4621E662AD54373009DD06C /* FWCdnPullViewController.m in Sources */,
 				F488AFE42702AF3600FAF978 /* FWBeautyViewController.m in Sources */,
 				D16FDFB824570A0400A48951 /* FWRoomViewController.m in Sources */,
+				F4621CAA2E5C5EFE0054B27B /* FWSceneDelegate.m in Sources */,
 				D16FDFAB245709D100A48951 /* FWServeConfigViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1295,7 +1303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1328,7 +1336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1353,7 +1361,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VCSSDK/Resources/VCSSDK-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/VCSSDK/Resources/VCSSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
@@ -1481,7 +1489,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VCSSDK/Resources/VCSSDK-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/VCSSDK/Resources/VCSSDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
@@ -1625,7 +1633,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = VCSReplayBroadcastUpload/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -1674,7 +1682,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = VCSReplayBroadcastUpload/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
