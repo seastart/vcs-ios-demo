@@ -9,9 +9,9 @@
 #import "FWKeychain.h"
 
 #pragma mark - VCSSDK Appid
-NSString * const VCSSDKAPPID = @"0a16828823ce41c5ad040be3ed384c14";
+NSString * const VCSSDKAPPID = <# 替换成平台分配的Appid #>
 #pragma mark - VCSSDK AppKey
-NSString * const VCSSDKAPPKEY = @"a67c660b29234e2891cc6627fc6401ce";
+NSString * const VCSSDKAPPKEY = <# 替换成平台分配的AppKey #>
 #pragma mark - VCSSDK Signature
 NSString * const VCSSDKSIGNATURE = @"";
 
