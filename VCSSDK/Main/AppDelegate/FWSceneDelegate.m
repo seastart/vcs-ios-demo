@@ -30,6 +30,8 @@
         UIWindowScene *windowScene = (UIWindowScene *)scene;
         /// 创建应用窗口
         self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+        /// 设置窗口背景色
+        self.window.backgroundColor = [UIColor whiteColor];
         /// 设置窗口布局
         self.window.frame = windowScene.coordinateSpace.bounds;
         /// 基础设置
