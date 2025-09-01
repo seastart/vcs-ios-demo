@@ -8,6 +8,7 @@
 
 #ifdef __OBJC__
 
+#import <SVProgressHUD/SVProgressHUD.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <MLeaksFinder/MLeaksFinder.h>
 #import <YYModel/YYModel.h>
