@@ -105,6 +105,10 @@
     self.meetingParam.onAudioCycle = 300;
     /// 设置设备标识码
     self.meetingParam.deviceId = DeviceUUID;
+    /// 设置关闭双流
+    /// self.meetingParam.enableMultiStream = NO;
+    /// 设置需要发送离会消息
+    self.meetingParam.whetherSendExitMessage = YES;
     
     /// 构建进入房间请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];

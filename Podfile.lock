@@ -36,248 +36,248 @@ PODS:
     - TZImagePickerController/Location (= 3.8.8)
   - TZImagePickerController/Basic (3.8.8)
   - TZImagePickerController/Location (3.8.8)
-  - VCSSDK (1.4.10-shareaudio.1):
+  - VCSSDK (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Audio (= 1.4.10-shareaudio.1)
-    - VCSSDK/Beauty (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common (= 1.4.10-shareaudio.1)
-    - VCSSDK/Drawing (= 1.4.10-shareaudio.1)
-    - VCSSDK/Logger (= 1.4.10-shareaudio.1)
-    - VCSSDK/Login (= 1.4.10-shareaudio.1)
-    - VCSSDK/Meeting (= 1.4.10-shareaudio.1)
-    - VCSSDK/Message (= 1.4.10-shareaudio.1)
-    - VCSSDK/NetCall (= 1.4.10-shareaudio.1)
-    - VCSSDK/Package (= 1.4.10-shareaudio.1)
-    - VCSSDK/Pbobjc (= 1.4.10-shareaudio.1)
-  - VCSSDK/Audio (1.4.10-shareaudio.1):
+    - VCSSDK/Audio (= 1.4.11-shareaudio.1)
+    - VCSSDK/Beauty (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common (= 1.4.11-shareaudio.1)
+    - VCSSDK/Drawing (= 1.4.11-shareaudio.1)
+    - VCSSDK/Logger (= 1.4.11-shareaudio.1)
+    - VCSSDK/Login (= 1.4.11-shareaudio.1)
+    - VCSSDK/Meeting (= 1.4.11-shareaudio.1)
+    - VCSSDK/Message (= 1.4.11-shareaudio.1)
+    - VCSSDK/NetCall (= 1.4.11-shareaudio.1)
+    - VCSSDK/Package (= 1.4.11-shareaudio.1)
+    - VCSSDK/Pbobjc (= 1.4.11-shareaudio.1)
+  - VCSSDK/Audio (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Audio/Manager (= 1.4.10-shareaudio.1)
+    - VCSSDK/Audio/Manager (= 1.4.11-shareaudio.1)
     - VCSSDK/Logger
-  - VCSSDK/Audio/Manager (1.4.10-shareaudio.1):
+  - VCSSDK/Audio/Manager (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Audio/Manager/Player (= 1.4.10-shareaudio.1)
-    - VCSSDK/Audio/Manager/Protocol (= 1.4.10-shareaudio.1)
-    - VCSSDK/Audio/Manager/Recorder (= 1.4.10-shareaudio.1)
+    - VCSSDK/Audio/Manager/Player (= 1.4.11-shareaudio.1)
+    - VCSSDK/Audio/Manager/Protocol (= 1.4.11-shareaudio.1)
+    - VCSSDK/Audio/Manager/Recorder (= 1.4.11-shareaudio.1)
     - VCSSDK/Logger
-  - VCSSDK/Audio/Manager/Player (1.4.10-shareaudio.1):
+  - VCSSDK/Audio/Manager/Player (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Audio/Manager/Protocol
     - VCSSDK/Logger
-  - VCSSDK/Audio/Manager/Protocol (1.4.10-shareaudio.1):
+  - VCSSDK/Audio/Manager/Protocol (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-  - VCSSDK/Audio/Manager/Recorder (1.4.10-shareaudio.1):
+  - VCSSDK/Audio/Manager/Recorder (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Audio/Manager/Protocol
     - VCSSDK/Logger
-  - VCSSDK/Beauty (1.4.10-shareaudio.1):
+  - VCSSDK/Beauty (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Beauty/Depend (= 1.4.10-shareaudio.1)
-    - VCSSDK/Beauty/Manager (= 1.4.10-shareaudio.1)
+    - VCSSDK/Beauty/Depend (= 1.4.11-shareaudio.1)
+    - VCSSDK/Beauty/Manager (= 1.4.11-shareaudio.1)
     - VCSSDK/Logger
-  - VCSSDK/Beauty/Depend (1.4.10-shareaudio.1):
+  - VCSSDK/Beauty/Depend (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-  - VCSSDK/Beauty/Manager (1.4.10-shareaudio.1):
+  - VCSSDK/Beauty/Manager (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Beauty/Depend
     - VCSSDK/Logger
-  - VCSSDK/Common (1.4.10-shareaudio.1):
+  - VCSSDK/Common (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Common/Category (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Constants (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Helper (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Macros (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Vendors (= 1.4.10-shareaudio.1)
-  - VCSSDK/Common/Category (1.4.10-shareaudio.1):
+    - VCSSDK/Common/Category (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Constants (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Helper (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Macros (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Vendors (= 1.4.11-shareaudio.1)
+  - VCSSDK/Common/Category (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Constants (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Constants (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Helper (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Helper (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Common/Helper/AudioFileBridge (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Helper/AudioTimerBridge (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Helper/MQTTBridge (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Helper/NetworkBridge (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Helper/ReachabilityBridge (= 1.4.10-shareaudio.1)
+    - VCSSDK/Common/Helper/AudioFileBridge (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Helper/AudioTimerBridge (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Helper/MQTTBridge (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Helper/NetworkBridge (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Helper/ReachabilityBridge (= 1.4.11-shareaudio.1)
     - VCSSDK/Common/Macros
-  - VCSSDK/Common/Helper/AudioFileBridge (1.4.10-shareaudio.1):
-    - AFNetworking (>= 4.0.0)
-    - MMKV
-    - Protobuf
-    - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Common/Macros
-  - VCSSDK/Common/Helper/AudioTimerBridge (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Helper/AudioFileBridge (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common/Macros
-  - VCSSDK/Common/Helper/MQTTBridge (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Helper/AudioTimerBridge (1.4.11-shareaudio.1):
+    - AFNetworking (>= 4.0.0)
+    - MMKV
+    - Protobuf
+    - SSZipArchive (>= 2.4.3)
+    - VCSSDK/Common/Macros
+  - VCSSDK/Common/Helper/MQTTBridge (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common/Macros
     - VCSSDK/Common/Vendors/MQTTClient
-  - VCSSDK/Common/Helper/NetworkBridge (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Helper/NetworkBridge (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common/Macros
-  - VCSSDK/Common/Helper/ReachabilityBridge (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Helper/ReachabilityBridge (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common/Macros
-  - VCSSDK/Common/Macros (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Macros (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Vendors (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Vendors (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Common/Vendors/CocoaAsyncSocket (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Vendors/JSONModel (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Vendors/MQTTClient (= 1.4.10-shareaudio.1)
-    - VCSSDK/Common/Vendors/RTCModel (= 1.4.10-shareaudio.1)
-  - VCSSDK/Common/Vendors/CocoaAsyncSocket (1.4.10-shareaudio.1):
+    - VCSSDK/Common/Vendors/CocoaAsyncSocket (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Vendors/JSONModel (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Vendors/MQTTClient (= 1.4.11-shareaudio.1)
+    - VCSSDK/Common/Vendors/RTCModel (= 1.4.11-shareaudio.1)
+  - VCSSDK/Common/Vendors/CocoaAsyncSocket (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Vendors/JSONModel (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Vendors/JSONModel (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Vendors/MQTTClient (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Vendors/MQTTClient (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Common/Vendors/RTCModel (1.4.10-shareaudio.1):
+  - VCSSDK/Common/Vendors/RTCModel (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-  - VCSSDK/Drawing (1.4.10-shareaudio.1):
+  - VCSSDK/Drawing (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Drawing/WhiteBoard (= 1.4.10-shareaudio.1)
+    - VCSSDK/Drawing/WhiteBoard (= 1.4.11-shareaudio.1)
     - VCSSDK/Logger
-  - VCSSDK/Drawing/WhiteBoard (1.4.10-shareaudio.1):
+  - VCSSDK/Drawing/WhiteBoard (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Drawing/WhiteBoard/DrawingBoard (= 1.4.10-shareaudio.1)
+    - VCSSDK/Drawing/WhiteBoard/DrawingBoard (= 1.4.11-shareaudio.1)
     - VCSSDK/Logger
-  - VCSSDK/Drawing/WhiteBoard/DrawingBoard (1.4.10-shareaudio.1):
+  - VCSSDK/Drawing/WhiteBoard/DrawingBoard (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network (= 1.4.10-shareaudio.1)
+    - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network (= 1.4.11-shareaudio.1)
     - VCSSDK/Logger
-  - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network (1.4.10-shareaudio.1):
+  - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
-    - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network/Pbobjc (= 1.4.10-shareaudio.1)
+    - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network/Pbobjc (= 1.4.11-shareaudio.1)
     - VCSSDK/Logger
-  - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network/Pbobjc (1.4.10-shareaudio.1):
+  - VCSSDK/Drawing/WhiteBoard/DrawingBoard/Network/Pbobjc (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-  - VCSSDK/Logger (1.4.10-shareaudio.1):
+  - VCSSDK/Logger (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common
-    - VCSSDK/Logger/Manager (= 1.4.10-shareaudio.1)
-  - VCSSDK/Logger/Manager (1.4.10-shareaudio.1):
+    - VCSSDK/Logger/Manager (= 1.4.11-shareaudio.1)
+  - VCSSDK/Logger/Manager (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Common
-  - VCSSDK/Login (1.4.10-shareaudio.1):
+  - VCSSDK/Login (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-    - VCSSDK/Login/Manager (= 1.4.10-shareaudio.1)
-  - VCSSDK/Login/Manager (1.4.10-shareaudio.1):
+    - VCSSDK/Login/Manager (= 1.4.11-shareaudio.1)
+  - VCSSDK/Login/Manager (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
-  - VCSSDK/Meeting (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
     - VCSSDK/Login
-    - VCSSDK/Meeting/Depend (= 1.4.10-shareaudio.1)
-    - VCSSDK/Meeting/Manager (= 1.4.10-shareaudio.1)
+    - VCSSDK/Meeting/Depend (= 1.4.11-shareaudio.1)
+    - VCSSDK/Meeting/Manager (= 1.4.11-shareaudio.1)
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Depend (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Depend (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -287,7 +287,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Manager (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -295,18 +295,18 @@ PODS:
     - VCSSDK/Logger
     - VCSSDK/Login
     - VCSSDK/Meeting/Depend
-    - VCSSDK/Meeting/Manager/Casting (= 1.4.10-shareaudio.1)
-    - VCSSDK/Meeting/Manager/Helper (= 1.4.10-shareaudio.1)
-    - VCSSDK/Meeting/Manager/Model (= 1.4.10-shareaudio.1)
-    - VCSSDK/Meeting/Manager/Network (= 1.4.10-shareaudio.1)
-    - VCSSDK/Meeting/Manager/Param (= 1.4.10-shareaudio.1)
-    - VCSSDK/Meeting/Manager/Redirect (= 1.4.10-shareaudio.1)
-    - VCSSDK/Meeting/Manager/ReplayKit (= 1.4.10-shareaudio.1)
-    - VCSSDK/Meeting/Manager/WebRTC (= 1.4.10-shareaudio.1)
+    - VCSSDK/Meeting/Manager/Casting (= 1.4.11-shareaudio.1)
+    - VCSSDK/Meeting/Manager/Helper (= 1.4.11-shareaudio.1)
+    - VCSSDK/Meeting/Manager/Model (= 1.4.11-shareaudio.1)
+    - VCSSDK/Meeting/Manager/Network (= 1.4.11-shareaudio.1)
+    - VCSSDK/Meeting/Manager/Param (= 1.4.11-shareaudio.1)
+    - VCSSDK/Meeting/Manager/Redirect (= 1.4.11-shareaudio.1)
+    - VCSSDK/Meeting/Manager/ReplayKit (= 1.4.11-shareaudio.1)
+    - VCSSDK/Meeting/Manager/WebRTC (= 1.4.11-shareaudio.1)
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Casting (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Manager/Casting (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -317,7 +317,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Helper (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Manager/Helper (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -329,7 +329,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Model (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Manager/Model (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -340,7 +340,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Network (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Manager/Network (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -354,7 +354,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Param (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Manager/Param (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -365,7 +365,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/Redirect (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Manager/Redirect (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -376,7 +376,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/ReplayKit (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Manager/ReplayKit (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -387,7 +387,7 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Meeting/Manager/WebRTC (1.4.10-shareaudio.1):
+  - VCSSDK/Meeting/Manager/WebRTC (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -398,16 +398,16 @@ PODS:
     - VCSSDK/NetCall
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Message (1.4.10-shareaudio.1):
+  - VCSSDK/Message (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Login
-    - VCSSDK/Message/Manager (= 1.4.10-shareaudio.1)
+    - VCSSDK/Message/Manager (= 1.4.11-shareaudio.1)
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Message/Manager (1.4.10-shareaudio.1):
+  - VCSSDK/Message/Manager (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -415,27 +415,27 @@ PODS:
     - VCSSDK/Login
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/NetCall (1.4.10-shareaudio.1):
+  - VCSSDK/NetCall (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
     - VCSSDK/Login
-    - VCSSDK/NetCall/Manager (= 1.4.10-shareaudio.1)
+    - VCSSDK/NetCall/Manager (= 1.4.11-shareaudio.1)
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/NetCall/Manager (1.4.10-shareaudio.1):
+  - VCSSDK/NetCall/Manager (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Logger
     - VCSSDK/Login
-    - VCSSDK/NetCall/Manager/Model (= 1.4.10-shareaudio.1)
+    - VCSSDK/NetCall/Manager/Model (= 1.4.11-shareaudio.1)
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/NetCall/Manager/Model (1.4.10-shareaudio.1):
+  - VCSSDK/NetCall/Manager/Model (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -444,13 +444,13 @@ PODS:
     - VCSSDK/Login
     - VCSSDK/Package
     - VCSSDK/Pbobjc
-  - VCSSDK/Package (1.4.10-shareaudio.1):
+  - VCSSDK/Package (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
     - SSZipArchive (>= 2.4.3)
     - VCSSDK/Pbobjc
-  - VCSSDK/Pbobjc (1.4.10-shareaudio.1):
+  - VCSSDK/Pbobjc (1.4.11-shareaudio.1):
     - AFNetworking (>= 4.0.0)
     - MMKV
     - Protobuf
@@ -511,7 +511,7 @@ SPEC CHECKSUMS:
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SVProgressHUD: 75bf569c9126226b6528098e123b0d886d6f0ca4
   TZImagePickerController: d084a7b97c82d387e7669dd86dc9a9057500aacf
-  VCSSDK: a11db3ac8e77a3edf358ee27a99ae85db88ce9ca
+  VCSSDK: b8b839c9ae2ef1181d921f91e86597fb75d90f78
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 5c544e939aaaec7bf6101f09e89b935c893ea99f
