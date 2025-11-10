@@ -194,6 +194,17 @@
     }
 }
 
+#pragma mark 呼叫服务收到数据回调
+/// 呼叫服务收到数据回调
+/// @param data 消息体，注：该数据为未解包数据需要解包获取PacketType、Command、Result以及结构数据NSData
+/// @param topic 订阅主题
+/// @param retained 保留字段
+- (void)onListenNetCallReceiveWithData:(NSData *)data topic:(nullable NSString *)topic retained:(BOOL)retained {
+    
+    /// 输出到控制台
+    SGLOG(@"+++++++++收到呼叫服务原始通知回调");
+}
+
 #pragma mark 邀请入会通知
 /// 邀请入会通知
 /// @param notify 通知信息
