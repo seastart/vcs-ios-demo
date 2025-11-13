@@ -1133,6 +1133,29 @@ API_AVAILABLE(ios(12.0))
     SGLOG(@"%@", succeed ? @"流媒体连接闪断重连成功" : @"流媒体连接闪断了，正在尝试重连...");
 }
 
+#pragma mark 音频采集原数据回调
+/// 音频采集原数据回调
+/// @param samplerate 采样率
+/// @param channel 声道数
+/// @param stamp 时间戳
+/// @param dataSize 数据大小
+/// @param pcmData 音频元数据
+- (void)onRoomAudioCapture:(int)samplerate channel:(int)channel stamp:(unsigned int)stamp dataSize:(int)dataSize pcmData:(void *)pcmData {
+    
+    /// SGLOG(@"音频采集数据回调，samplerate = %d, channel = %d, stamp = %d", samplerate, channel, stamp);
+}
+
+#pragma mark 音频采集重采样数据回调
+/// 音频采集重采样数据回调
+/// @param samplerate 采样率
+/// @param channel 声道数
+/// @param stamp 时间戳
+/// @param resampledData 音频重采样数据
+- (void)onRoomAudioResampled:(int)samplerate channel:(int)channel stamp:(unsigned int)stamp resampledData:(NSData *)resampledData {
+    
+    /// SGLOG(@"音频采集重采样数据回调，samplerate = %d, channel = %d, stamp = %d，输出数据大小: %lu字节", samplerate, channel, stamp, (unsigned long)resampledData.length);
+}
+
 #pragma mark 码率自适应状态(当前发送端码率变化回调)
 /// 码率自适应状态(当前发送端码率变化回调)
 /// @param state 当前发送端码率变化状态
