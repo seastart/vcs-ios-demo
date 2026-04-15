@@ -876,7 +876,7 @@
 				6003F588195388D20070C39A /* Resources */,
 				A6FDBF8F248499C800856C8C /* Embed App Extensions */,
 				42198F3958BFD26B0E1B737F /* [CP] Embed Pods Frameworks */,
-				6D0721670E40CCB25771ABFA /* [CP] Copy Pods Resources */,
+				B4F138FC0122B40B8CE3950B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -896,7 +896,7 @@
 				A6FDBF9324849A3B00856C8C /* Sources */,
 				A6FDBF9424849A3B00856C8C /* Frameworks */,
 				A6FDBF9524849A3B00856C8C /* Resources */,
-				D0406C52E78DCCB809A2C194 /* [CP] Copy Pods Resources */,
+				7FA4BD1436D222F07218E959 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1090,39 +1090,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6D0721670E40CCB25771ABFA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSAudio.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSBeauty.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSDrawing.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogger.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogin.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSSDK.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSMessage.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSNetCall.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSAudio.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSBeauty.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSDrawing.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogger.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogin.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSMessage.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSNetCall.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D0406C52E78DCCB809A2C194 /* [CP] Copy Pods Resources */ = {
+		7FA4BD1436D222F07218E959 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1152,6 +1120,38 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VCSReplayBroadcastUpload/Pods-VCSReplayBroadcastUpload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F138FC0122B40B8CE3950B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSAudio.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSBeauty.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSDrawing.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogger.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSLogin.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSMessage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VCSSDK/VCSNetCall.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSAudio.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSBeauty.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSDrawing.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogger.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSLogin.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSMessage.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCSNetCall.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VCSSDK_Example/Pods-VCSSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
