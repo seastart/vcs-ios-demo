@@ -10,7 +10,7 @@ use_frameworks!
 
 def commonPods
   # 网络请求库
-  pod 'AFNetworking'
+  pod 'AFNetworking', :git => 'https://github.com/seastart/afnetworking-ios-cocoapods.git'
   # 数据模型
   pod 'JSONModel'
   # 重置键盘
