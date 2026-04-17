@@ -89,7 +89,7 @@ post_install do |installer|
             config.build_settings['ARCHS'] = 'arm64'
             config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
             config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
-            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
         end
     end
 end
