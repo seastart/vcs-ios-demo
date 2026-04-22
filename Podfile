@@ -10,7 +10,7 @@ use_frameworks!
 
 def commonPods
   # 网络请求库
-  pod 'AFNetworking'
+  pod 'AFNetworking', :git => 'https://github.com/seastart/afnetworking-ios-cocoapods.git'
   # 数据模型
   pod 'JSONModel'
   # 重置键盘
@@ -89,7 +89,7 @@ post_install do |installer|
             config.build_settings['ARCHS'] = 'arm64'
             config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
             config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
-            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
         end
     end
 end
