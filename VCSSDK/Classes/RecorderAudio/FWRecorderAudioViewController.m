@@ -224,31 +224,31 @@
 /// @param volume 音量
 - (void)recordingVoiceWithVolume:(double)volume {
     
-    if (0 < volume <= 0.06) {
+    if (volume > 0 && volume <= 0.06) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_01.png")];
-    } else if (0.06 < volume <= 0.13) {
+    } else if (volume > 0.06 && volume <= 0.13) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_02.png")];
-    } else if (0.13 < volume <= 0.20) {
+    } else if (volume > 0.13 && volume <= 0.20) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_03.png")];
-    } else if (0.20 < volume <= 0.27) {
+    } else if (volume > 0.20 && volume <= 0.27) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_04.png")];
-    } else if (0.27 < volume <= 0.34) {
+    } else if (volume > 0.27 && volume <= 0.34) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_05.png")];
-    } else if (0.34 < volume <= 0.41) {
+    } else if (volume > 0.34 && volume <= 0.41) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_06.png")];
-    } else if (0.41 < volume <= 0.48) {
+    } else if (volume > 0.41 && volume <= 0.48) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_07.png")];
-    } else if (0.48 < volume <= 0.55) {
+    } else if (volume > 0.48 && volume <= 0.55) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_08.png")];
-    } else if (0.55 < volume <= 0.62) {
+    } else if (volume > 0.55 && volume <= 0.62) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_09.png")];
-    } else if (0.62 < volume <= 0.69) {
+    } else if (volume > 0.62 && volume <= 0.69) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_10.png")];
-    } else if (0.69 < volume <= 0.76) {
+    } else if (volume > 0.69 && volume <= 0.76) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_11.png")];
-    } else if (0.76 < volume <= 0.83) {
+    } else if (volume > 0.76 && volume <= 0.83) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_12.png")];
-    } else if (0.83 < volume <= 0.9) {
+    } else if (volume > 0.83 && volume <= 0.9) {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_13.png")];
     } else {
         [self.recorderImageView setImage:kGetImage(@"icon_record_animate_14.png")];
